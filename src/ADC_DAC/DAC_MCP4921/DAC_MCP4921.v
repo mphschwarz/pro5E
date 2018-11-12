@@ -1,0 +1,119 @@
+////////////////////////////////////////////////////////////////////////////////////////////
+module DAC_MCP4921 (
+	input CLK,
+	input LATCH,
+	input [11:0] VALUE,
+	output reg CS_DAC,
+	output reg CLK_DAC,
+	output reg SDO_DAC,
+	output reg LDAC_DAC
+	);
+	//
+	reg [15:0] ctr_clk_delay;
+	reg [11:0] index;
+	reg [15:0] value_temp;
+	reg [4:0] state;
+	//
+	reg hri1; reg hri2; reg hri3; reg hri4;
+	wire latch_start;
+	wire clk_dac_re;
+	wire clk_dac_fe;	
+	//
+	assign	latch_start = (hri1 && !hri2);
+	assign	clk_dac_re = (hri3 && !hri4);
+	assign	clk_dac_fe = (!hri3 && hri4);
+	//	
+	initial
+	begin
+		
+		CS_DAC <= 1;
+		CLK_DAC <= 0;
+		SDO_DAC <= 0;
+		LDAC_DAC <= 1;
+		index <= 15;
+		value_temp <= 16'b0011000000000000;// Datasheet S.18
+		state <= 0;
+		ctr_clk_delay <= 1;
+		//
+		hri1 <= 0; hri2 <= 0;
+	end	
+	//
+	always	@(posedge CLK)
+	begin
+	// Impulsauswertung
+	hri1 <= LATCH;
+	hri2 <= hri1;
+	hri3 <= CLK_DAC;
+	hri4 <= hri3;
+	//
+	if (state == 0) 
+		begin
+		CS_DAC <= 1;
+		index <= 15;
+		value_temp <= 16'b0011000000000000;// Datasheet S.18
+		ctr_clk_delay <= 1;
+		//
+		if(latch_start) 
+			begin
+			value_temp[11:0] <= VALUE[11:0];
+			CS_DAC <= 0;
+			state <= 1;
+			end
+		//
+		end
+	//
+	if (state == 1) 
+		begin
+		ctr_clk_delay <= ctr_clk_delay + 1;
+		if (ctr_clk_delay == 20) 
+			begin
+			ctr_clk_delay <= 1;
+			CLK_DAC <= !CLK_DAC;
+			end
+		//
+		SDO_DAC <= value_temp[index];
+		if (clk_dac_fe && (index > 0)) index <= index - 1;
+		//
+		if (clk_dac_fe && (index == 0)) 
+			begin
+			ctr_clk_delay <= 1;
+			state <= 2;
+			end
+		end
+	//
+	if (state == 2) 
+		begin
+		ctr_clk_delay <= ctr_clk_delay + 1;
+		if (ctr_clk_delay == 20) 
+			begin
+			ctr_clk_delay <= 1;
+			CS_DAC <= 1;
+			state <= 3;
+			end
+		end
+	//
+	if (state == 3) 
+		begin
+		ctr_clk_delay <= ctr_clk_delay + 1;
+		if (ctr_clk_delay == 20) 
+			begin
+			ctr_clk_delay <= 1;
+			LDAC_DAC <= 0;
+			state <= 4;
+			end
+		end
+	//
+	if (state == 4) 
+		begin
+		ctr_clk_delay <= ctr_clk_delay + 1;
+		if (ctr_clk_delay == 20) 
+			begin
+			ctr_clk_delay <= 1;
+			LDAC_DAC <= 1;
+			state <= 0;
+			end
+		end
+	//
+	end
+endmodule
+////////////////////////////////////////////////////////////////////////////////////////////
