@@ -1,0 +1,97 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Mon Mar 26 18:14:08 2018
+[*]
+[dumpfile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA\FPGA_MODUL_MAX1000_00_28\src\DC_MOTOR\vcd\icarus_tb.vcd"
+[dumpfile_mtime] "Mon Mar 26 17:40:53 2018"
+[dumpfile_size] 4643442
+[savefile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA\FPGA_MODUL_MAX1000_00_28\src\DC_MOTOR\vcd\default.gtkw"
+[timestart] 326204
+[size] 1739 2098
+[pos] -1 -1
+*-9.002861 327620 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ICARUS_TB.
+[sst_width] 197
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 1437
+@200
+-DC_MOTOR_ANTRIEB
+@28
+ICARUS_TB.dc_motor_antrieb.CLK
+ICARUS_TB.dc_motor_antrieb.ENABLE
+ICARUS_TB.dc_motor_antrieb.CW
+ICARUS_TB.dc_motor_antrieb.CCW
+@c00024
+ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+@28
+(0)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(1)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(2)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(3)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(4)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(5)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(6)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(7)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(8)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(9)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(10)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(11)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+@1401200
+-group_end
+@24
+ICARUS_TB.dc_motor_antrieb.ADC_CMP[11:0]
+ICARUS_TB.dc_motor_antrieb.ADC[11:0]
+@28
+ICARUS_TB.dc_motor_antrieb.OUT1
+ICARUS_TB.dc_motor_antrieb.OUT2
+ICARUS_TB.dc_motor_antrieb.EN1
+ICARUS_TB.dc_motor_antrieb.EN2
+ICARUS_TB.dc_motor_antrieb.ADC_LATCH
+@c08022
+ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+@28
+(0)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+(1)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+(2)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+(3)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+(4)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+(5)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+(6)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+(7)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+(8)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+(9)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+(10)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+(11)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+(12)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+(13)ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+@1401200
+-group_end
+@20000
+-
+-
+-
+@24
+ICARUS_TB.dc_motor_antrieb.value_temp[13:0]
+@25
+ICARUS_TB.dc_motor_antrieb.ctr[13:0]
+@200
+-DC_MOTOR_RAMPE
+@28
+ICARUS_TB.dc_motor_rampe.CLK
+ICARUS_TB.dc_motor_rampe.ENABLE
+ICARUS_TB.dc_motor_rampe.CW
+ICARUS_TB.dc_motor_rampe.CCW
+@24
+ICARUS_TB.dc_motor_rampe.value_temp[11:0]
+@8024
+ICARUS_TB.dc_motor_rampe.VALUE_OUT[11:0]
+@20000
+-
+-
+@28
+ICARUS_TB.dc_motor_rampe.latch_cmp
+@200
+-
+[pattern_trace] 1
+[pattern_trace] 0

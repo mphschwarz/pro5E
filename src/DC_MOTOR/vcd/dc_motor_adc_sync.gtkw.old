@@ -1,0 +1,75 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Wed Mar 28 09:28:06 2018
+[*]
+[dumpfile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA\FPGA_MODUL_MAX1000_00_30\src\DC_MOTOR\vcd\icarus_tb.vcd"
+[dumpfile_mtime] "Wed Mar 28 09:27:28 2018"
+[dumpfile_size] 4423891
+[savefile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA\FPGA_MODUL_MAX1000_00_30\src\DC_MOTOR\vcd\dc_motor_adc_sync.gtkw"
+[timestart] 406970
+[size] 958 1018
+[pos] -1 -1
+*-11.002861 409520 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ICARUS_TB.
+[sst_width] 197
+[signals_width] 217
+[sst_expanded] 1
+[sst_vpaned_height] 634
+@200
+-DC_MOTOR_ANTRIEB
+@28
+ICARUS_TB.dc_motor_antrieb.CLK
+ICARUS_TB.dc_motor_antrieb.ENABLE
+ICARUS_TB.dc_motor_antrieb.CW
+ICARUS_TB.dc_motor_antrieb.CCW
+@c00024
+ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+@28
+(0)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(1)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(2)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(3)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(4)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(5)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(6)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(7)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(8)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(9)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(10)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+(11)ICARUS_TB.dc_motor_antrieb.VALUE[11:0]
+@1401200
+-group_end
+@24
+ICARUS_TB.dc_motor_antrieb.ADC_CMP[11:0]
+ICARUS_TB.dc_motor_antrieb.ADC[11:0]
+@28
+ICARUS_TB.dc_motor_antrieb.OUT1
+ICARUS_TB.dc_motor_antrieb.OUT2
+ICARUS_TB.dc_motor_antrieb.EN1
+ICARUS_TB.dc_motor_antrieb.EN2
+@29
+ICARUS_TB.dc_motor_antrieb.ADC_LATCH
+@20000
+-
+-
+-
+@200
+-DC_MOTOR_RAMPE
+@28
+ICARUS_TB.dc_motor_rampe.CLK
+ICARUS_TB.dc_motor_rampe.ENABLE
+ICARUS_TB.dc_motor_rampe.CW
+ICARUS_TB.dc_motor_rampe.CCW
+@24
+ICARUS_TB.dc_motor_rampe.value_temp[11:0]
+@8024
+ICARUS_TB.dc_motor_rampe.VALUE_OUT[11:0]
+@20000
+-
+-
+@28
+ICARUS_TB.dc_motor_rampe.latch_cmp
+@200
+-
+[pattern_trace] 1
+[pattern_trace] 0
