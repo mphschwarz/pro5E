@@ -17,12 +17,12 @@ module DC_MOTOR (
 	//
 	reg cw_temp;
 	reg ccw_temp;
-	reg [13:0] value_temp;
+	reg [13:0] value_temp;  //internes Register für gewünschte Ausgangsspannung
 	reg [13:0] adc_cmp_temp;
 	reg [11:0] adc_temp;
 	reg en_adc;
-	reg [13:0] ctr;
-	reg ctr_dir;
+	reg [13:0] ctr;  //Dreiecksignal, zählt auf und ab
+	reg ctr_dir;  //Zählrichtung
 	reg [13:0] ctr_adc_latch;
 	initial
 		begin
@@ -59,11 +59,11 @@ module DC_MOTOR (
 			en_adc <= 1;
 			end
 		//
-		if (ctr == 1) ctr_dir <= 1;
-		if (ctr == 16382) ctr_dir <= 0;
+		if (ctr == 1) ctr_dir <= 1;  //counter unten angekommen, Zählrichtung auf aufwärts geändert
+		if (ctr == 16382) ctr_dir <= 0;  //counter oben angekommen, Zählrichtung auf abwärts geändert
 		//
-		if (ctr_dir) ctr <= ctr + 1;
-		else ctr <= ctr - 1;	
+		if (ctr_dir) ctr <= ctr + 1;  //counter zählt aufwärts
+		else ctr <= ctr - 1;  //counter zählt abwärts
 		//
 		if ((value_temp >= ctr) && (value_temp > 0) && en_adc)
 			begin
