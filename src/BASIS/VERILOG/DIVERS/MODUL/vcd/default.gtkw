@@ -1,0 +1,35 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Wed May 23 06:43:26 2018
+[*]
+[dumpfile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA_MODUL_MAX1000_DIT_RET_UR\FPGA_MODUL_MAX1000_DIT_RET_UR_01_00\src\BASIS\VERILOG\TEST\vcd\icarus_tb.vcd"
+[dumpfile_mtime] "Wed May 23 05:28:53 2018"
+[dumpfile_size] 1175
+[savefile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA_MODUL_MAX1000_DIT_RET_UR\FPGA_MODUL_MAX1000_DIT_RET_UR_01_00\src\BASIS\VERILOG\TEST\vcd\default.gtkw"
+[timestart] 0
+[size] 1205 454
+[pos] 382 -116
+*-7.241758 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ICARUS_TB.
+[treeopen] ICARUS_TB.flankentrigger.
+[sst_width] 197
+[signals_width] 254
+[sst_expanded] 1
+[sst_vpaned_height] 105
+@28
+ICARUS_TB.flankentrigger.CLK
+ICARUS_TB.flankentrigger.SIGNAL
+ICARUS_TB.flankentrigger.RE
+ICARUS_TB.flankentrigger.FE
+@420
+ICARUS_TB.flankentrigger.COUNTER[7:0]
+@200
+-
+@28
+ICARUS_TB.flankentrigger.hri1
+ICARUS_TB.flankentrigger.hri2
+@200
+-
+-
+[pattern_trace] 1
+[pattern_trace] 0

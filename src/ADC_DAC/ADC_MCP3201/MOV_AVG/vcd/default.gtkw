@@ -1,0 +1,56 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Sun May 13 11:54:48 2018
+[*]
+[dumpfile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA_MODUL_MAX1000_DIT_RET_UR\FPGA_MODUL_MAX1000_DIT_RET_UR_00_02\src\ADC_DAC\ADC_MCP3201\MOV_AVG\vcd\icarus_tb.vcd"
+[dumpfile_mtime] "Sun May 13 11:54:08 2018"
+[dumpfile_size] 1022985
+[savefile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA_MODUL_MAX1000_DIT_RET_UR\FPGA_MODUL_MAX1000_DIT_RET_UR_00_02\src\ADC_DAC\ADC_MCP3201\MOV_AVG\vcd\default.gtkw"
+[timestart] 830
+[size] 1918 2098
+[pos] -1 -1
+*-12.580311 1220 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ICARUS_TB.
+[treeopen] ICARUS_TB.adc_mcp3201_mov_avg.
+[sst_width] 197
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 1437
+@200
+-ADC_MCP3201
+@28
+ICARUS_TB.adc_mcp3201.CLK
+ICARUS_TB.adc_mcp3201.LATCH
+ICARUS_TB.adc_mcp3201.SDI_ADC
+ICARUS_TB.adc_mcp3201.CS_ADC
+ICARUS_TB.adc_mcp3201.CLK_ADC
+@24
+ICARUS_TB.adc_mcp3201.VALUE[11:0]
+ICARUS_TB.adc_mcp3201.ctr_clk_cs[11:0]
+@200
+-ADC_MCP3201_MOV_AVG
+@28
+ICARUS_TB.adc_mcp3201_mov_avg.CLK
+ICARUS_TB.adc_mcp3201_mov_avg.LATCH
+ICARUS_TB.adc_mcp3201_mov_avg.SDI_ADC
+ICARUS_TB.adc_mcp3201_mov_avg.CS_ADC
+ICARUS_TB.adc_mcp3201_mov_avg.CLK_ADC
+@24
+ICARUS_TB.adc_mcp3201_mov_avg.VALUE[11:0]
+@28
+ICARUS_TB.adc_mcp3201_mov_avg.LATCH_DAC
+@29
+ICARUS_TB.adc_mcp3201_mov_avg.CS_ADC
+@24
+ICARUS_TB.adc_mcp3201_mov_avg.ctr_latch[11:0]
+ICARUS_TB.adc_mcp3201_mov_avg.ctr_sample[11:0]
+@28
+ICARUS_TB.adc_mcp3201_mov_avg.ctr_latch_enable
+@24
+ICARUS_TB.adc_mcp3201_mov_avg.state[15:0]
+ICARUS_TB.adc_mcp3201_mov_avg.value_adc_1[11:0]
+ICARUS_TB.adc_mcp3201_mov_avg.value_adc_3[11:0]
+ICARUS_TB.adc_mcp3201_mov_avg.value_adc_2[11:0]
+ICARUS_TB.adc_mcp3201_mov_avg.ctr_mov_avg[10:0]
+[pattern_trace] 1
+[pattern_trace] 0

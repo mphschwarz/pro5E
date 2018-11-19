@@ -1,0 +1,39 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Sat Mar 24 12:29:20 2018
+[*]
+[dumpfile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA\FPGA_MODUL_MAX1000_00_26\src\ADC_DAC\DAC_MCP4921\vcd\icarus_tb.vcd"
+[dumpfile_mtime] "Sat Mar 24 12:01:30 2018"
+[dumpfile_size] 38198
+[savefile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA\FPGA_MODUL_MAX1000_00_26\src\ADC_DAC\DAC_MCP4921\vcd\default.gtkw"
+[timestart] 0
+[size] 1906 2098
+[pos] -1 -1
+*-9.580311 1720 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ICARUS_TB.
+[sst_width] 197
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 446
+@200
+-DAC_MCP4921
+@28
+ICARUS_TB.dac_mcp4921.CLK
+ICARUS_TB.dac_mcp4921.LATCH
+@22
+ICARUS_TB.dac_mcp4921.VALUE[11:0]
+@28
+ICARUS_TB.dac_mcp4921.CS_DAC
+ICARUS_TB.dac_mcp4921.CLK_DAC
+ICARUS_TB.dac_mcp4921.SDO_DAC
+ICARUS_TB.dac_mcp4921.LDAC_DAC
+@24
+ICARUS_TB.dac_mcp4921.index[11:0]
+@22
+ICARUS_TB.dac_mcp4921.state[4:0]
+@24
+ICARUS_TB.dac_mcp4921.ctr_clk_delay[15:0]
+@29
+ICARUS_TB.dac_mcp4921.value_temp[15:0]
+[pattern_trace] 1
+[pattern_trace] 0

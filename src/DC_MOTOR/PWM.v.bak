@@ -1,0 +1,24 @@
+module PWM (
+	input SYS_CLK,
+	input [11:0] VALUE,
+	output reg PWM);
+	//
+	reg [11:0] ctr;
+	reg [11:0] valueTest;
+	//
+	initial
+		begin
+			PWM <= 0;
+			ctr <= 0;
+			valueTest <= 0;
+		end
+	//
+	always	@(posedge SYS_CLK)
+	begin	
+		if (VALUE <= 4095) valueTest <= VALUE;
+		if (VALUE > 4095) valueTest <= 4095;
+		if (valueTest > ctr) PWM <= 1;
+		else PWM <= 0;
+		ctr <= ctr + 1;
+	end
+endmodule

@@ -1,0 +1,39 @@
+module IO_VERILOG(
+	input CLK,
+	input CLK_1MHz,
+	input CLK_1Hz,
+	input S1,
+	input S2,
+	input S3,
+	input S4,
+	input S5,
+	input S6,
+	input S7,
+	input S8,
+	//
+	output reg LED1,
+	output reg LED2,
+	output reg LED3, 
+	output reg LED4,
+	output reg LED5,
+	output reg LED6,
+	output reg LED7, 
+	output reg LED8);
+	//
+	initial
+		begin
+			LED1 <= 0; LED2 <= 0; LED3 <= 0; LED4 <= 0; LED5 <= 0; LED6 <= 0; LED7 <= 0; LED8 <= 0;
+		end
+	//
+	always @(posedge CLK)
+	begin
+		LED1 <= S1;
+		LED2 <= S2;
+		LED3 <= S3;
+		LED4 <= S4;
+		LED5 <= S5;
+		LED6 <= S6;
+		LED7 <= S7;
+		LED8 <= S8;
+	end
+endmodule

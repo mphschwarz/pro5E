@@ -1,0 +1,593 @@
+$date
+	Wed May 30 10:01:06 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module ICARUS_TB $end
+$var wire 1 ! led9 $end
+$var wire 1 " led8 $end
+$var wire 1 # led7 $end
+$var wire 1 $ led6 $end
+$var wire 1 % led5 $end
+$var wire 1 & led4 $end
+$var wire 1 ' led3 $end
+$var wire 1 ( led2 $end
+$var wire 1 ) led16 $end
+$var wire 1 * led15 $end
+$var wire 1 + led14 $end
+$var wire 1 , led13 $end
+$var wire 1 - led12 $end
+$var wire 1 . led11 $end
+$var wire 1 / led10 $end
+$var wire 1 0 led1 $end
+$var reg 1 1 clk $end
+$var reg 1 2 clk_1Hz $end
+$var reg 1 3 clk_1MHz $end
+$var reg 1 4 s1 $end
+$var reg 1 5 s10 $end
+$var reg 1 6 s11 $end
+$var reg 1 7 s12 $end
+$var reg 1 8 s13 $end
+$var reg 1 9 s14 $end
+$var reg 1 : s15 $end
+$var reg 1 ; s16 $end
+$var reg 1 < s2 $end
+$var reg 1 = s3 $end
+$var reg 1 > s4 $end
+$var reg 1 ? s5 $end
+$var reg 1 @ s6 $end
+$var reg 1 A s7 $end
+$var reg 1 B s8 $end
+$var reg 1 C s9 $end
+$scope module io16_verilog $end
+$var wire 1 1 CLK $end
+$var wire 1 2 CLK_1Hz $end
+$var wire 1 3 CLK_1MHz $end
+$var wire 1 4 S1 $end
+$var wire 1 5 S10 $end
+$var wire 1 D S10re $end
+$var wire 1 6 S11 $end
+$var wire 1 7 S12 $end
+$var wire 1 8 S13 $end
+$var wire 1 9 S14 $end
+$var wire 1 : S15 $end
+$var wire 1 ; S16 $end
+$var wire 1 < S2 $end
+$var wire 1 = S3 $end
+$var wire 1 > S4 $end
+$var wire 1 ? S5 $end
+$var wire 1 @ S6 $end
+$var wire 1 A S7 $end
+$var wire 1 B S8 $end
+$var wire 1 C S9 $end
+$var wire 1 E S9re $end
+$var wire 1 F s10fe $end
+$var wire 1 G s9fe $end
+$var reg 1 0 D1 $end
+$var reg 1 / D10 $end
+$var reg 1 . D11 $end
+$var reg 1 - D12 $end
+$var reg 1 , D13 $end
+$var reg 1 + D14 $end
+$var reg 1 * D15 $end
+$var reg 1 ) D16 $end
+$var reg 1 ( D2 $end
+$var reg 1 ' D3 $end
+$var reg 1 & D4 $end
+$var reg 1 % D5 $end
+$var reg 1 $ D6 $end
+$var reg 1 # D7 $end
+$var reg 1 " D8 $end
+$var reg 1 ! D9 $end
+$var reg 8 H counter [7:0] $end
+$var reg 1 I hri1 $end
+$var reg 1 J hri2 $end
+$var reg 1 K hri3 $end
+$var reg 1 L hri4 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0L
+0K
+0J
+0I
+b0 H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+13
+12
+11
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10
+01
+#20
+11
+#30
+01
+#40
+11
+#50
+01
+#60
+11
+#70
+01
+#80
+11
+#90
+01
+#100
+1E
+1!
+1I
+11
+1C
+#110
+01
+#120
+0E
+b1 H
+1J
+11
+#130
+01
+#140
+1"
+11
+#150
+01
+#160
+11
+#170
+01
+#180
+11
+#190
+01
+#200
+1G
+0!
+0I
+11
+0C
+#210
+01
+#220
+0G
+0J
+11
+#230
+01
+#240
+11
+#250
+01
+#260
+11
+#270
+01
+#280
+11
+#290
+01
+#300
+1E
+1!
+1I
+11
+1C
+#310
+01
+#320
+0E
+b10 H
+1J
+11
+#330
+01
+#340
+0"
+1#
+11
+#350
+01
+#360
+11
+#370
+01
+#380
+11
+#390
+01
+#400
+1G
+0!
+0I
+11
+0C
+#410
+01
+#420
+0G
+0J
+11
+#430
+01
+#440
+11
+#450
+01
+#460
+11
+#470
+01
+#480
+11
+#490
+01
+#500
+1E
+1!
+1I
+11
+1C
+03
+#510
+01
+#520
+0E
+b11 H
+1J
+11
+#530
+01
+#540
+1"
+11
+#550
+01
+#560
+11
+#570
+01
+#580
+11
+#590
+01
+#600
+1G
+0!
+0I
+11
+0C
+#610
+01
+#620
+0G
+0J
+11
+#630
+01
+#640
+11
+#650
+01
+#660
+11
+#670
+01
+#680
+11
+#690
+01
+#700
+1E
+1!
+1I
+11
+1C
+#710
+01
+#720
+0E
+b100 H
+1J
+11
+#730
+01
+#740
+0"
+0#
+1$
+11
+#750
+01
+#760
+11
+#770
+01
+#780
+11
+#790
+01
+#800
+1G
+0!
+0I
+11
+0C
+#810
+01
+#820
+0G
+0J
+11
+#830
+01
+#840
+11
+#850
+01
+#860
+11
+#870
+01
+#880
+11
+#890
+01
+#900
+1E
+1!
+1I
+11
+1C
+#910
+01
+#920
+0E
+b101 H
+1J
+11
+#930
+01
+#940
+1"
+11
+#950
+01
+#960
+11
+#970
+01
+#980
+11
+#990
+01
+#1000
+1G
+0!
+0I
+11
+0C
+13
+#1010
+01
+#1020
+0G
+0J
+11
+#1030
+01
+#1040
+11
+#1050
+01
+#1060
+11
+#1070
+01
+#1080
+11
+#1090
+01
+#1100
+1D
+1/
+1K
+11
+15
+#1110
+01
+#1120
+0D
+b100 H
+1L
+11
+#1130
+01
+#1140
+0"
+11
+#1150
+01
+#1160
+11
+#1170
+01
+#1180
+11
+#1190
+01
+#1200
+1F
+0/
+0K
+11
+05
+#1210
+01
+#1220
+0F
+0L
+11
+#1230
+01
+#1240
+11
+#1250
+01
+#1260
+11
+#1270
+01
+#1280
+11
+#1290
+01
+#1300
+1D
+1/
+1K
+11
+15
+#1310
+01
+#1320
+0D
+b11 H
+1L
+11
+#1330
+01
+#1340
+1"
+1#
+0$
+11
+#1350
+01
+#1360
+11
+#1370
+01
+#1380
+11
+#1390
+01
+#1400
+1F
+0/
+0K
+11
+05
+#1410
+01
+#1420
+0F
+0L
+11
+#1430
+01
+#1440
+11
+#1450
+01
+#1460
+11
+#1470
+01
+#1480
+11
+#1490
+01
+#1500
+1.
+b0 H
+11
+16
+03
+#1510
+01
+#1520
+0"
+0#
+11
+#1530
+01
+#1540
+11
+#1550
+01
+#1560
+11
+#1570
+01
+#1580
+11
+#1590
+01
+#1600
+0.
+11
+06
+#1610
+01
+#1620
+11
+#1630
+01
+#1640
+11
+#1650
+01
+#1660
+11
+#1670
+01
+#1680
+11
+#1690
+01
+#1700
+11

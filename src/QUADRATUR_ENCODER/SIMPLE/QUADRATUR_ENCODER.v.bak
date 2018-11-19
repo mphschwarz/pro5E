@@ -1,0 +1,141 @@
+module QUADRATUR_ENCODER(
+	input CLK,
+	input A,
+	input B,
+	input LATCH,
+	input RESET,
+	output A_,
+	output B_,
+	output reg CW,
+	output reg CCW,
+	output reg signed [31:0] COUNTER,
+	output reg signed [31:0] SPEED
+	);
+	//
+	reg st1;
+	reg st2;
+	reg st3;
+	reg st4;
+	reg st5;
+	reg st6;
+	reg sm1;
+	reg sm2;
+	reg sm3;
+	reg sm4;
+	reg sm5;
+	reg sm6;
+	reg sm7;
+	reg sm8;
+	
+	wire chA;
+	wire chAn;
+	wire chB;
+	wire chBn;
+	wire transfer_reg;
+	reg signed [31:0] counterInt;
+	reg signed [31:0] speedInt1;
+	reg signed [31:0] speedInt2;	
+	reg [15:0] speedClkCounter;
+	//
+	assign chA = (st1 && !st2);
+	assign chAn = (!st1 && st2);	
+	assign chB = (st3 && !st4);
+	assign chBn = (!st3 && st4);
+	assign transfer_reg = (st5 && !st6);	
+	//
+	initial
+	begin	
+		counterInt <= 0;
+		speedInt1 <= 0;
+		speedInt2 <= 0;
+		speedClkCounter <= 0;
+		CW <= 0;
+		CCW <= 0;
+		COUNTER <= 0;
+		SPEED <= 0;
+	end
+	//
+	always @(posedge CLK)
+	begin
+		// Zaehler
+		st1 <= A;
+		st2 <= st1;	
+		//
+		st3 <= B;
+		st4 <= st3;	
+		//
+		st5 <= LATCH;
+		st6 <= st5;	
+		//////////////////////////////////////////
+		// Geschwindigkeit
+		if ((A && CW) || (B && CCW))
+			begin
+			speedClkCounter <= speedClkCounter + 1;
+			end
+		if (speedClkCounter >= 32)
+			begin
+			speedClkCounter <= 0;
+			speedInt2 <= speedInt1;
+			speedInt1 <= 0;
+			end
+		else
+			begin
+			if (CW) speedInt1 <= speedInt1 + 1;
+			else speedInt1 <= speedInt1 - 1;
+			end
+		//
+		if (speedInt1 > 2147483645)
+			begin
+			speedInt1 <= 2147483645;
+			end
+		//
+		if (speedInt1 < -2147483645)
+			begin
+			speedInt1 <= -2147483645;
+			end
+		//////////////////////////////////////////
+		// Zaehler
+		if (A && !B)
+			begin
+			CW <= 1;
+			CCW <= 0;
+			end
+		//
+		if (B && !A)
+			begin
+			CW <= 0;
+			CCW <= 1;
+			end
+		//
+		if (A && CCW)
+			begin
+			counterInt <= counterInt - 1;
+			end			
+		//
+		if (B && CW)
+			begin
+			counterInt <= counterInt + 1;
+			end
+		//
+		if (RESET)
+			begin
+			counterInt <= 0;
+			end
+		//
+		if (counterInt >= 2147483645)
+			begin
+			counterInt <= 2147483645;
+			end
+		//
+		if (counterInt <= -2147483645)
+			begin
+			counterInt <= -2147483645;
+			end
+		//////////////////////////////////////////
+		if (transfer_reg)
+			begin
+			COUNTER <= counterInt;
+			SPEED <= speedInt2;
+			end
+	end
+endmodule

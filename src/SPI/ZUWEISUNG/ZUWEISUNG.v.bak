@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////////////////
+module DATA_IN_VAR_0(
+	input [7:0] DUMMY,
+	output [255:0] DATA
+	);
+	//
+	assign DATA[7:0] = DUMMY [7:0];
+	//
+endmodule
+////////////////////////////////////////////////////////////////////////////////////////////
+module DATA_OUT_VAR_0(
+	input [255:0] DATA,
+	output [7:0] D1_ROT,
+	output [7:0] D1_GRUEN,
+	output [7:0] D1_BLAU,	
+	output [7:0] D2_ROT,
+	output [7:0] D2_GRUEN,
+	output [7:0] D2_BLAU,	
+	output [7:0] D3_ROT,
+	output [7:0] D3_GRUEN,
+	output [7:0] D3_BLAU
+	);
+	//
+	assign D1_ROT[7:0]   = DATA[023:016];
+	assign D1_GRUEN[7:0] = DATA[031:024];
+	assign D1_BLAU[7:0]  = DATA[039:032];
+	assign D2_ROT[7:0]   = DATA[047:040];
+	assign D2_GRUEN[7:0] = DATA[055:048];
+	assign D2_BLAU[7:0]  = DATA[063:056];
+	assign D3_ROT[7:0]   = DATA[071:064];
+	assign D3_GRUEN[7:0] = DATA[079:072];
+	assign D3_BLAU[7:0]  = DATA[087:080];	
+	//
+endmodule
+////////////////////////////////////////////////////////////////////////////////////////////

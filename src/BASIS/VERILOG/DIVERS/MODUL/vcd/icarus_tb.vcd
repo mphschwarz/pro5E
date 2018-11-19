@@ -1,0 +1,131 @@
+$date
+	Wed May 23 11:40:41 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module ICARUS_TB $end
+$var wire 8 ! out_8bit_reg [7:0] $end
+$var wire 1 " out_1bit_wire $end
+$var wire 1 # out_1bit_reg $end
+$var reg 1 $ clk $end
+$var reg 1 % in_1bit $end
+$var reg 8 & in_8bit [7:0] $end
+$scope module moduldemo $end
+$var wire 1 $ CLK $end
+$var wire 1 % IN_1BIT $end
+$var wire 8 ' IN_8BIT [7:0] $end
+$var wire 1 " OUT_1BIT_WIRE $end
+$var reg 1 # OUT_1BIT_REG $end
+$var reg 8 ( OUT_8BIT_REG [7:0] $end
+$var reg 1 ) state $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1)
+b11111111 (
+b0 '
+b0 &
+0%
+1$
+0#
+1"
+b11111111 !
+$end
+#10
+0$
+#20
+0"
+b0 !
+b0 (
+0)
+1$
+#30
+1"
+0$
+b10101010 &
+b10101010 '
+1%
+#40
+b11111111 !
+b11111111 (
+1#
+1)
+1$
+#50
+0$
+#60
+b10101010 !
+b10101010 (
+0)
+1$
+#70
+0"
+0$
+b11001100 &
+b11001100 '
+0%
+#80
+1"
+b11111111 !
+b11111111 (
+0#
+1)
+1$
+#90
+0$
+#100
+0"
+b11001100 !
+b11001100 (
+0)
+1$
+#110
+0$
+b11101110 &
+b11101110 '
+#120
+1"
+b11111111 !
+b11111111 (
+1)
+1$
+#130
+0$
+#140
+0"
+b11101110 !
+b11101110 (
+0)
+1$
+#150
+0$
+#160
+1"
+b11111111 !
+b11111111 (
+1)
+1$
+#170
+0$
+#180
+0"
+b11101110 !
+b11101110 (
+0)
+1$
+#190
+0$
+#200
+1"
+b11111111 !
+b11111111 (
+1)
+1$
+#210
+0$

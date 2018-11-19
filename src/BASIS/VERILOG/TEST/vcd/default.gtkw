@@ -1,0 +1,50 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Wed May 30 07:12:21 2018
+[*]
+[dumpfile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA_MODUL_MAX1000_DIT_RET_UR\FPGA_MODUL_MAX1000_DIT_RET_UR_01_00\src\BASIS\VERILOG\TEST\vcd\icarus_tb.vcd"
+[dumpfile_mtime] "Wed May 30 07:10:58 2018"
+[dumpfile_size] 121832
+[savefile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA_MODUL_MAX1000_DIT_RET_UR\FPGA_MODUL_MAX1000_DIT_RET_UR_01_00\src\BASIS\VERILOG\TEST\vcd\default.gtkw"
+[timestart] 0
+[size] 1918 2098
+[pos] -1 -1
+*-14.623443 539 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ICARUS_TB.
+[sst_width] 197
+[signals_width] 254
+[sst_expanded] 1
+[sst_vpaned_height] 678
+@28
+ICARUS_TB.test.CLK
+ICARUS_TB.test.CLK_1Hz
+ICARUS_TB.test.CLK_1MHz
+ICARUS_TB.test.IN8
+ICARUS_TB.test.IN9
+ICARUS_TB.test.IN10
+ICARUS_TB.test.IN11
+ICARUS_TB.test.IN12
+ICARUS_TB.test.IN13
+ICARUS_TB.test.IN14
+@22
+ICARUS_TB.test.IN16BIT1[15:0]
+ICARUS_TB.test.IN16BIT2[15:0]
+ICARUS_TB.test.IN16BIT3[15:0]
+ICARUS_TB.test.IN16BIT4[15:0]
+@28
+ICARUS_TB.test.OUT8
+ICARUS_TB.test.OUT9
+ICARUS_TB.test.OUT10
+ICARUS_TB.test.OUT11
+ICARUS_TB.test.OUT12
+ICARUS_TB.test.OUT13
+ICARUS_TB.test.OUT14
+ICARUS_TB.test.OUT15
+@22
+ICARUS_TB.test.OUT16BIT1[15:0]
+ICARUS_TB.test.OUT16BIT2[15:0]
+ICARUS_TB.test.OUT16BIT3[15:0]
+@23
+ICARUS_TB.test.OUT16BIT4[15:0]
+[pattern_trace] 1
+[pattern_trace] 0

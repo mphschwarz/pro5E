@@ -1,0 +1,38 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Sun May 06 07:37:13 2018
+[*]
+[dumpfile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA_MODUL_MAX1000_DIT_UR\FPGA_MODUL_MAX1000_DIT_UR_00_01\src\TOOLBOX\SEL\vcd\icarus_tb.vcd"
+[dumpfile_mtime] "Sun May 06 07:17:49 2018"
+[dumpfile_size] 470675
+[savefile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA_MODUL_MAX1000_DIT_UR\FPGA_MODUL_MAX1000_DIT_UR_00_01\src\TOOLBOX\SEL\vcd\default.gtkw"
+[timestart] 190620
+[size] 1918 2098
+[pos] -1 -1
+*-12.000000 200000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ICARUS_TB.
+[sst_width] 197
+[signals_width] 254
+[sst_expanded] 1
+[sst_vpaned_height] 678
+@28
+ICARUS_TB.sel_spi_input.CLK
+ICARUS_TB.sel_spi_input.CLK_1kHz
+ICARUS_TB.sel_spi_input.SEL
+ICARUS_TB.sel_spi_input.CS0
+ICARUS_TB.sel_spi_input.CLK0
+@29
+ICARUS_TB.sel_spi_input.MOSI0
+@28
+ICARUS_TB.sel_spi_input.CS1
+ICARUS_TB.sel_spi_input.CLK1
+ICARUS_TB.sel_spi_input.MOSI1
+@200
+-
+@28
+ICARUS_TB.sel_spi_input.CS_OUT
+ICARUS_TB.sel_spi_input.CLK_OUT
+ICARUS_TB.sel_spi_input.MOSI_OUT
+ICARUS_TB.sel_spi_input.SEL_AKTIV
+[pattern_trace] 1
+[pattern_trace] 0

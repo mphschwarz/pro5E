@@ -1,0 +1,246 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 312 352)
+	(text "TIMER_APP" (rect 5 0 62 12)(font "Arial" ))
+	(text "inst" (rect 8 320 20 332)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 20 12)(font "Arial" ))
+		(text "CLK" (rect 21 27 41 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK_1kHz" (rect 0 0 44 12)(font "Arial" ))
+		(text "CLK_1kHz" (rect 21 43 65 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "CLK_100Hz" (rect 0 0 49 12)(font "Arial" ))
+		(text "CLK_100Hz" (rect 21 59 70 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "CLK_10Hz" (rect 0 0 44 12)(font "Arial" ))
+		(text "CLK_10Hz" (rect 21 75 65 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "CLK_1Hz" (rect 0 0 40 12)(font "Arial" ))
+		(text "CLK_1Hz" (rect 21 91 61 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "USER_BUTTON" (rect 0 0 73 12)(font "Arial" ))
+		(text "USER_BUTTON" (rect 21 107 94 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "SW7" (rect 0 0 21 12)(font "Arial" ))
+		(text "SW7" (rect 21 123 42 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "SW6" (rect 0 0 21 12)(font "Arial" ))
+		(text "SW6" (rect 21 139 42 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "SW5" (rect 0 0 21 12)(font "Arial" ))
+		(text "SW5" (rect 21 155 42 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "SW4" (rect 0 0 22 12)(font "Arial" ))
+		(text "SW4" (rect 21 171 43 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "SW3" (rect 0 0 21 12)(font "Arial" ))
+		(text "SW3" (rect 21 187 42 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "SW2" (rect 0 0 21 12)(font "Arial" ))
+		(text "SW2" (rect 21 203 42 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "SW1" (rect 0 0 20 12)(font "Arial" ))
+		(text "SW1" (rect 21 219 41 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "SW0" (rect 0 0 21 12)(font "Arial" ))
+		(text "SW0" (rect 21 235 42 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 1))
+	)
+	(port
+		(pt 296 32)
+		(output)
+		(text "LED8" (rect 0 0 24 12)(font "Arial" ))
+		(text "LED8" (rect 251 27 275 39)(font "Arial" ))
+		(line (pt 296 32)(pt 280 32)(line_width 1))
+	)
+	(port
+		(pt 296 48)
+		(output)
+		(text "LED7" (rect 0 0 24 12)(font "Arial" ))
+		(text "LED7" (rect 251 43 275 55)(font "Arial" ))
+		(line (pt 296 48)(pt 280 48)(line_width 1))
+	)
+	(port
+		(pt 296 64)
+		(output)
+		(text "LED6" (rect 0 0 24 12)(font "Arial" ))
+		(text "LED6" (rect 251 59 275 71)(font "Arial" ))
+		(line (pt 296 64)(pt 280 64)(line_width 1))
+	)
+	(port
+		(pt 296 80)
+		(output)
+		(text "LED5" (rect 0 0 24 12)(font "Arial" ))
+		(text "LED5" (rect 251 75 275 87)(font "Arial" ))
+		(line (pt 296 80)(pt 280 80)(line_width 1))
+	)
+	(port
+		(pt 296 96)
+		(output)
+		(text "LED4" (rect 0 0 25 12)(font "Arial" ))
+		(text "LED4" (rect 250 91 275 103)(font "Arial" ))
+		(line (pt 296 96)(pt 280 96)(line_width 1))
+	)
+	(port
+		(pt 296 112)
+		(output)
+		(text "LED3" (rect 0 0 24 12)(font "Arial" ))
+		(text "LED3" (rect 251 107 275 119)(font "Arial" ))
+		(line (pt 296 112)(pt 280 112)(line_width 1))
+	)
+	(port
+		(pt 296 128)
+		(output)
+		(text "LED2" (rect 0 0 24 12)(font "Arial" ))
+		(text "LED2" (rect 251 123 275 135)(font "Arial" ))
+		(line (pt 296 128)(pt 280 128)(line_width 1))
+	)
+	(port
+		(pt 296 144)
+		(output)
+		(text "LED1" (rect 0 0 23 12)(font "Arial" ))
+		(text "LED1" (rect 252 139 275 151)(font "Arial" ))
+		(line (pt 296 144)(pt 280 144)(line_width 1))
+	)
+	(port
+		(pt 296 160)
+		(output)
+		(text "LED0" (rect 0 0 24 12)(font "Arial" ))
+		(text "LED0" (rect 251 155 275 167)(font "Arial" ))
+		(line (pt 296 160)(pt 280 160)(line_width 1))
+	)
+	(port
+		(pt 296 176)
+		(output)
+		(text "MIN_ZEHNER[7..0]" (rect 0 0 87 12)(font "Arial" ))
+		(text "MIN_ZEHNER[7..0]" (rect 188 171 275 183)(font "Arial" ))
+		(line (pt 296 176)(pt 280 176)(line_width 3))
+	)
+	(port
+		(pt 296 192)
+		(output)
+		(text "MIN_EINER[7..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "MIN_EINER[7..0]" (rect 200 187 275 199)(font "Arial" ))
+		(line (pt 296 192)(pt 280 192)(line_width 3))
+	)
+	(port
+		(pt 296 208)
+		(output)
+		(text "SEK_ZEHNER[7..0]" (rect 0 0 89 12)(font "Arial" ))
+		(text "SEK_ZEHNER[7..0]" (rect 186 203 275 215)(font "Arial" ))
+		(line (pt 296 208)(pt 280 208)(line_width 3))
+	)
+	(port
+		(pt 296 224)
+		(output)
+		(text "SEK_EINER[7..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "SEK_EINER[7..0]" (rect 198 219 275 231)(font "Arial" ))
+		(line (pt 296 224)(pt 280 224)(line_width 3))
+	)
+	(port
+		(pt 296 240)
+		(output)
+		(text "SEK_ZEHNTEL[7..0]" (rect 0 0 93 12)(font "Arial" ))
+		(text "SEK_ZEHNTEL[7..0]" (rect 182 235 275 247)(font "Arial" ))
+		(line (pt 296 240)(pt 280 240)(line_width 3))
+	)
+	(port
+		(pt 296 256)
+		(output)
+		(text "SEK_HUNDERTSTEL[7..0]" (rect 0 0 120 12)(font "Arial" ))
+		(text "SEK_HUNDERTSTEL[7..0]" (rect 155 251 275 263)(font "Arial" ))
+		(line (pt 296 256)(pt 280 256)(line_width 3))
+	)
+	(port
+		(pt 296 272)
+		(output)
+		(text "SEK_TAUSENDSTEL[7..0]" (rect 0 0 119 12)(font "Arial" ))
+		(text "SEK_TAUSENDSTEL[7..0]" (rect 156 267 275 279)(font "Arial" ))
+		(line (pt 296 272)(pt 280 272)(line_width 3))
+	)
+	(port
+		(pt 296 288)
+		(output)
+		(text "COUNTER[31..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "COUNTER[31..0]" (rect 202 283 275 295)(font "Arial" ))
+		(line (pt 296 288)(pt 280 288)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 280 320)(line_width 1))
+	)
+)

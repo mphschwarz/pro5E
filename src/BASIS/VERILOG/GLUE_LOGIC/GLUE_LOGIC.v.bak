@@ -1,0 +1,18 @@
+module GLUE_LOGIC(
+	input CLK,
+	input IN1,
+	input IN2,
+	input IN3,
+	input IN4,
+	output wire OUT1,
+	output wire OUT2,
+	output wire OUT3, 
+	output wire OUT4
+	);
+	//
+	assign OUT1 = 1 && CLK && IN1 && IN2 && IN3 && IN4;
+	assign OUT2 = IN1 || IN2 || IN3;
+	assign OUT3 = !IN3;	
+	assign OUT4 = IN3 ^ IN4;		
+	//
+endmodule

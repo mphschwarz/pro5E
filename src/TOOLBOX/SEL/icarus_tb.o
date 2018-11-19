@@ -1,0 +1,252 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000002202720 .scope module, "ICARUS_TB" "ICARUS_TB" 2 5;
+ .timescale -8 -9;
+v00000000022a8e50_0 .var "clk", 0 0;
+v00000000022a8950_0 .var "clk0", 0 0;
+v00000000022a90d0_0 .var "clk1", 0 0;
+v00000000022a89f0_0 .var "clk_1kHz", 0 0;
+v00000000022a8b30_0 .net "clk_out", 0 0, v000000000223d070_0;  1 drivers
+v00000000022a8bd0_0 .var "cs0", 0 0;
+v00000000022a8c70_0 .var "cs1", 0 0;
+v00000000022a8d10_0 .net "cs_out", 0 0, v00000000022a9170_0;  1 drivers
+v00000000022a8770_0 .var "mosi0", 0 0;
+v00000000022a86d0_0 .var "mosi1", 0 0;
+v00000000022a8ef0_0 .net "mosi_out", 0 0, v000000000223a4c0_0;  1 drivers
+v00000000022a83b0_0 .var "sel", 0 0;
+v00000000022a9030_0 .net "sel_aktiv", 0 0, v000000000223d250_0;  1 drivers
+S_00000000022028a0 .scope module, "sel_spi_input" "SEL_SPI_INPUT" 2 51, 3 2 0, S_0000000002202720;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "CLK"
+    .port_info 1 /INPUT 1 "CLK_1kHz"
+    .port_info 2 /INPUT 1 "SEL"
+    .port_info 3 /INPUT 1 "CS0"
+    .port_info 4 /INPUT 1 "CLK0"
+    .port_info 5 /INPUT 1 "MOSI0"
+    .port_info 6 /INPUT 1 "CS1"
+    .port_info 7 /INPUT 1 "CLK1"
+    .port_info 8 /INPUT 1 "MOSI1"
+    .port_info 9 /OUTPUT 1 "SEL_AKTIV"
+    .port_info 10 /OUTPUT 1 "CS_OUT"
+    .port_info 11 /OUTPUT 1 "CLK_OUT"
+    .port_info 12 /OUTPUT 1 "MOSI_OUT"
+P_000000000224d120 .param/l "DELAY_TIME" 0 3 17, C4<0000000000110010>;
+L_0000000002235370 .functor AND 1, v00000000022a8db0_0, L_00000000022a8450, C4<1>, C4<1>;
+v00000000022474d0_0 .net "CLK", 0 0, v00000000022a8e50_0;  1 drivers
+v000000000223a2e0_0 .net "CLK0", 0 0, v00000000022a8950_0;  1 drivers
+v000000000223a380_0 .net "CLK1", 0 0, v00000000022a90d0_0;  1 drivers
+v000000000223a420_0 .net "CLK_1kHz", 0 0, v00000000022a89f0_0;  1 drivers
+v000000000223a4c0_0 .var "CLK_OUT", 0 0;
+v000000000223a560_0 .net "CS0", 0 0, v00000000022a8bd0_0;  1 drivers
+v000000000223a600_0 .net "CS1", 0 0, v00000000022a8c70_0;  1 drivers
+v000000000223d070_0 .var "CS_OUT", 0 0;
+v000000000223d110_0 .net "MOSI0", 0 0, v00000000022a8770_0;  1 drivers
+v000000000223d1b0_0 .net "MOSI1", 0 0, v00000000022a86d0_0;  1 drivers
+v000000000223d250_0 .var "MOSI_OUT", 0 0;
+v00000000022a8a90_0 .net "SEL", 0 0, v00000000022a83b0_0;  1 drivers
+v00000000022a9170_0 .var "SEL_AKTIV", 0 0;
+v00000000022a8f90_0 .net *"_s1", 0 0, L_00000000022a8450;  1 drivers
+v00000000022a8270_0 .var "counter", 15 0;
+v00000000022a8db0_0 .var "hri1", 0 0;
+v00000000022a8310_0 .var "hri2", 0 0;
+v00000000022a88b0_0 .net "imp1kHz", 0 0, L_0000000002235370;  1 drivers
+v00000000022a84f0_0 .var "status", 0 0;
+E_000000000224cea0 .event posedge, v00000000022474d0_0;
+L_00000000022a8450 .reduce/nor v00000000022a8310_0;
+    .scope S_00000000022028a0;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000223d070_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000223a4c0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000223d250_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a9170_0, 0;
+    %pushi/vec4 0, 0, 16;
+    %assign/vec4 v00000000022a8270_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a84f0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a8db0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a8310_0, 0;
+    %end;
+    .thread T_0;
+    .scope S_00000000022028a0;
+T_1 ;
+    %wait E_000000000224cea0;
+    %load/vec4 v000000000223a420_0;
+    %assign/vec4 v00000000022a8db0_0, 0;
+    %load/vec4 v00000000022a8db0_0;
+    %assign/vec4 v00000000022a8310_0, 0;
+    %load/vec4 v00000000022a88b0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %load/vec4 v00000000022a8270_0;
+    %addi 1, 0, 16;
+    %assign/vec4 v00000000022a8270_0, 0;
+T_1.0 ;
+    %load/vec4 v00000000022a8a90_0;
+    %flag_set/vec4 8;
+    %pushi/vec4 50, 0, 16;
+    %load/vec4 v00000000022a8270_0;
+    %cmp/u;
+    %flag_or 5, 4;
+    %flag_or 5, 8;
+    %jmp/0xz  T_1.2, 5;
+    %pushi/vec4 1, 0, 16;
+    %assign/vec4 v00000000022a8270_0, 0;
+    %load/vec4 v00000000022a8a90_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.4, 8;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v00000000022a84f0_0, 0;
+    %jmp T_1.5;
+T_1.4 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a84f0_0, 0;
+T_1.5 ;
+T_1.2 ;
+    %load/vec4 v00000000022a9170_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.6, 8;
+    %load/vec4 v000000000223a600_0;
+    %assign/vec4 v000000000223d070_0, 0;
+    %load/vec4 v000000000223a380_0;
+    %assign/vec4 v000000000223a4c0_0, 0;
+    %load/vec4 v000000000223d1b0_0;
+    %assign/vec4 v000000000223d250_0, 0;
+    %jmp T_1.7;
+T_1.6 ;
+    %load/vec4 v000000000223a560_0;
+    %assign/vec4 v000000000223d070_0, 0;
+    %load/vec4 v000000000223a2e0_0;
+    %assign/vec4 v000000000223a4c0_0, 0;
+    %load/vec4 v000000000223d110_0;
+    %assign/vec4 v000000000223d250_0, 0;
+T_1.7 ;
+    %load/vec4 v00000000022a84f0_0;
+    %pad/u 32;
+    %cmpi/e 0, 0, 32;
+    %jmp/0xz  T_1.8, 4;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a9170_0, 0;
+T_1.8 ;
+    %load/vec4 v00000000022a84f0_0;
+    %pad/u 32;
+    %cmpi/e 1, 0, 32;
+    %jmp/0xz  T_1.10, 4;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v00000000022a9170_0, 0;
+T_1.10 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0000000002202720;
+T_2 ;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v00000000022a8e50_0, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v00000000022a89f0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a83b0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a8bd0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a8950_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a8770_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a8c70_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a90d0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a86d0_0, 0;
+    %vpi_call 2 33 "$dumpfile", "vcd\134icarus_tb.vcd" {0 0 0};
+    %vpi_call 2 34 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000000002202720 {0 0 0};
+    %delay 100000, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v00000000022a83b0_0, 0;
+    %delay 100000, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000022a83b0_0, 0;
+    %delay 100000, 0;
+    %vpi_call 2 39 "$finish" {0 0 0};
+    %end;
+    .thread T_2;
+    .scope S_0000000002202720;
+T_3 ;
+    %delay 10, 0;
+    %load/vec4 v00000000022a8e50_0;
+    %nor/r;
+    %assign/vec4 v00000000022a8e50_0, 0;
+    %jmp T_3;
+    .thread T_3;
+    .scope S_0000000002202720;
+T_4 ;
+    %delay 100, 0;
+    %load/vec4 v00000000022a89f0_0;
+    %nor/r;
+    %assign/vec4 v00000000022a89f0_0, 0;
+    %jmp T_4;
+    .thread T_4;
+    .scope S_0000000002202720;
+T_5 ;
+    %delay 200, 0;
+    %load/vec4 v00000000022a8bd0_0;
+    %nor/r;
+    %assign/vec4 v00000000022a8bd0_0, 0;
+    %jmp T_5;
+    .thread T_5;
+    .scope S_0000000002202720;
+T_6 ;
+    %delay 300, 0;
+    %load/vec4 v00000000022a8950_0;
+    %nor/r;
+    %assign/vec4 v00000000022a8950_0, 0;
+    %jmp T_6;
+    .thread T_6;
+    .scope S_0000000002202720;
+T_7 ;
+    %delay 400, 0;
+    %load/vec4 v00000000022a8770_0;
+    %nor/r;
+    %assign/vec4 v00000000022a8770_0, 0;
+    %jmp T_7;
+    .thread T_7;
+    .scope S_0000000002202720;
+T_8 ;
+    %delay 500, 0;
+    %load/vec4 v00000000022a8c70_0;
+    %nor/r;
+    %assign/vec4 v00000000022a8c70_0, 0;
+    %jmp T_8;
+    .thread T_8;
+    .scope S_0000000002202720;
+T_9 ;
+    %delay 600, 0;
+    %load/vec4 v00000000022a90d0_0;
+    %nor/r;
+    %assign/vec4 v00000000022a90d0_0, 0;
+    %jmp T_9;
+    .thread T_9;
+    .scope S_0000000002202720;
+T_10 ;
+    %delay 700, 0;
+    %load/vec4 v00000000022a86d0_0;
+    %nor/r;
+    %assign/vec4 v00000000022a86d0_0, 0;
+    %jmp T_10;
+    .thread T_10;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "ICARUS_TB.v";
+    "./SEL.v";

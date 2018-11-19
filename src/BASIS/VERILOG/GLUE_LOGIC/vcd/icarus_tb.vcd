@@ -1,0 +1,229 @@
+$date
+	Thu Jun 07 11:13:06 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module ICARUS_TB $end
+$var wire 1 ! out7 $end
+$var wire 1 " out6 $end
+$var wire 1 # out5 $end
+$var wire 1 $ out4 $end
+$var reg 1 % clk $end
+$var reg 1 & clk_1Hz $end
+$var reg 1 ' clk_1MHz $end
+$var reg 1 ( in4 $end
+$var reg 1 ) in5 $end
+$var reg 1 * in6 $end
+$var reg 1 + in7 $end
+$scope module glue_logic $end
+$var wire 1 % CLK $end
+$var wire 1 & CLK_1Hz $end
+$var wire 1 ' CLK_1MHz $end
+$var wire 1 ( IN4 $end
+$var wire 1 ) IN5 $end
+$var wire 1 * IN6 $end
+$var wire 1 + IN7 $end
+$var wire 1 $ OUT4 $end
+$var wire 1 # OUT5 $end
+$var wire 1 " OUT6 $end
+$var wire 1 ! OUT7 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0+
+0*
+0)
+0(
+1'
+1&
+1%
+1$
+0#
+0"
+1!
+$end
+#10
+0%
+#20
+1%
+#30
+0%
+#40
+1%
+#50
+0%
+#60
+1%
+#70
+0%
+#80
+1%
+1+
+#90
+0%
+#100
+1%
+#110
+0%
+#120
+0$
+1%
+0+
+1"
+1*
+#130
+0%
+#140
+1%
+#150
+0%
+#160
+1%
+1+
+#170
+0%
+#180
+1%
+#190
+0%
+#200
+1$
+1%
+0+
+0"
+0*
+1#
+1)
+#210
+0%
+#220
+1%
+#230
+0%
+#240
+1%
+1+
+#250
+0%
+#260
+1%
+#270
+0%
+#280
+0$
+1%
+0+
+1"
+1*
+#290
+0%
+#300
+1%
+#310
+0%
+#320
+1%
+1+
+#330
+0%
+#340
+1%
+#350
+0%
+#360
+1$
+1%
+0+
+0"
+0*
+0#
+0)
+1(
+#370
+0%
+#380
+1%
+#390
+0%
+#400
+1%
+1+
+#410
+0%
+#420
+1%
+#430
+0%
+#440
+0$
+1%
+0+
+1"
+1*
+#450
+0%
+#460
+1%
+#470
+0%
+#480
+1%
+1+
+#490
+0%
+#500
+1%
+0'
+#510
+0%
+#520
+1$
+1%
+0+
+0"
+0*
+1#
+1)
+#530
+0%
+#540
+1%
+#550
+0%
+#560
+1%
+1+
+#570
+0%
+#580
+1%
+#590
+0%
+#600
+1%
+0+
+1"
+1*
+#610
+0%
+#620
+1%
+#630
+0%
+#640
+1%
+1+
+#650
+0%
+#660
+1%
+#670
+0%
+#680
+1%

@@ -1,0 +1,79 @@
+$date
+	Wed May 23 13:29:06 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module ICARUS_TB $end
+$var wire 1 ! out_sig_2 $end
+$var wire 1 " out_sig_1 $end
+$var reg 1 # clk $end
+$var reg 1 $ start $end
+$scope module fsm $end
+$var wire 1 # CLK $end
+$var wire 1 $ START $end
+$var reg 1 " OUT_SIG_1 $end
+$var reg 1 ! OUT_SIG_2 $end
+$var reg 3 % state [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 %
+0$
+1#
+0"
+0!
+$end
+#10
+0#
+#20
+1#
+#30
+0#
+#40
+1#
+#50
+0#
+#60
+1#
+#70
+0#
+1$
+#80
+b10 %
+1#
+#90
+0#
+0$
+#100
+b11 %
+1"
+1#
+#110
+0#
+#120
+b0 %
+1!
+1#
+#130
+0#
+#140
+b1 %
+0!
+0"
+1#
+#150
+0#
+#160
+1#
+#170
+0#
+#180
+1#
+#190
+0#

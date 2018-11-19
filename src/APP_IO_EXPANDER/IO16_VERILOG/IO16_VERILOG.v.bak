@@ -1,0 +1,65 @@
+module IO16_VERILOG(
+	input CLK,
+	input CLK_1MHz,
+	input CLK_1Hz,
+	input S1,
+	input S2,
+	input S3,
+	input S4,
+	input S5,
+	input S6,
+	input S7,
+	input S8,
+	input S9,
+	input S10,
+	input S11,
+	input S12,
+	input S13,
+	input S14,
+	input S15,
+	input S16,
+	//
+	output reg LED1,
+	output reg LED2,
+	output reg LED3, 
+	output reg LED4,
+	output reg LED5,
+	output reg LED6,
+	output reg LED7, 
+	output reg LED8,
+	output reg LED9,
+	output reg LED10,
+	output reg LED11, 
+	output reg LED12,
+	output reg LED13,
+	output reg LED14,
+	output reg LED15, 
+	output reg LED16	
+	);
+	//
+	initial
+		begin
+			LED1 <= 0; LED2 <= 0; LED3 <= 0; LED4 <= 0; LED5 <= 0; LED6 <= 0; LED7 <= 0; LED8 <= 0;
+			LED9 <= 0; LED10 <= 0; LED11 <= 0; LED12 <= 0; LED13 <= 0; LED14 <= 0; LED15 <= 0; LED16 <= 0;
+		end
+	//
+	always @(posedge CLK)
+	begin
+		LED1 <= S1;
+		LED2 <= S2;
+		LED3 <= S3;
+		LED4 <= S4;
+		LED5 <= S5;
+		LED6 <= S6;
+		LED7 <= S7;
+		LED8 <= S8;
+		LED9 <= S9;
+		LED10 <= S10;
+		LED11 <= S11;
+		LED12 <= S12;
+		LED13 <= S13;
+		LED14 <= S14;
+		LED15 <= S15;
+		LED16 <= S16;		
+	end
+endmodule

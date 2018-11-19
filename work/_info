@@ -1,0 +1,636 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/mschwarz/fhnw/pro5/fpga
+T_opt
+!s110 1542284479
+V_9056I>YILfiI13F7b0m>2
+04 8 4 work DC_MOTOR fast 0
+=1-60571875658e-5bed64bf-dced9-5f73
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7_1;67
+R0
+vADC_MCP3201
+Z2 !s110 1542284262
+!i10b 1
+!s100 EQKZ56dbCkIZlngCb6]KI2
+IbkLIjE[g3LM:JQ0];VUfW3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1542013498
+8/home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/ADC_MCP3201/ADC_MCP3201.v
+F/home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/ADC_MCP3201/ADC_MCP3201.v
+L0 1
+Z5 OL;L;10.7_1;67
+r1
+!s85 0
+31
+Z6 !s108 1542284262.000000
+Z7 !s107 /home/mschwarz/fhnw/pro5/fpga/src/TOOLBOX/SEL/SEL.v|/home/mschwarz/fhnw/pro5/fpga/src/TOOLBOX/SEL/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/TOOLBOX/MAX/MAX.v|/home/mschwarz/fhnw/pro5/fpga/src/SPI/ZUWEISUNG/ZUWEISUNG.v|/home/mschwarz/fhnw/pro5/fpga/src/SPI/HOST/SPI_HOST.v|/home/mschwarz/fhnw/pro5/fpga/src/SPI/HOST/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/RGB/RGB_PL9823/RGB_PL9823_START.v|/home/mschwarz/fhnw/pro5/fpga/src/RGB/RGB_PL9823/RGB_PL9823_FINAL.v|/home/mschwarz/fhnw/pro5/fpga/src/RGB/RGB_PL9823/RGB_PL9823.v|/home/mschwarz/fhnw/pro5/fpga/src/RGB/RGB_PL9823/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/SIMPLE/QUADRATUR_ENCODER_SIMPLE_START.v|/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/SIMPLE/QUADRATUR_ENCODER_SIMPLE_FINAL.v|/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/SIMPLE/QUADRATUR_ENCODER_SIMPLE.v|/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/SIMPLE/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/FULL/QUADRATUR_ENCODER.v|/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/FULL/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/FILTER/DIGITAL_INPUT_FILTER/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/FILTER/DIGITAL_INPUT_FILTER/DIG_INP_FILTER.v|/home/mschwarz/fhnw/pro5/fpga/src/CLOCK/WDT/WDT.v|/home/mschwarz/fhnw/pro5/fpga/src/CLOCK/WDT/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/CLOCK/GENERATOR/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/CLOCK/GENERATOR/CLOCK_GENERATOR.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/IO16_VERILOG/IO16_VERILOG_START.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/IO16_VERILOG/IO16_VERILOG.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/IO16_VERILOG/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/CLIENT_MCP23S17/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/CLIENT_MCP23S17/CLIENT_MCP23S17.v|/home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/DAC_MCP4921/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/DAC_MCP4921/DAC_MCP4921.v|/home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/ADC_MCP3201/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/ADC_MCP3201/ADC_MCP3201.v|
+Z8 !s90 -reportprogress|300|-work|work|/home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/ADC_MCP3201/ADC_MCP3201.v|/home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/ADC_MCP3201/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/DAC_MCP4921/DAC_MCP4921.v|/home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/DAC_MCP4921/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/CLIENT_MCP23S17/CLIENT_MCP23S17.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/CLIENT_MCP23S17/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/IO16_VERILOG/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/IO16_VERILOG/IO16_VERILOG.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/IO16_VERILOG/IO16_VERILOG_START.v|/home/mschwarz/fhnw/pro5/fpga/src/CLOCK/GENERATOR/CLOCK_GENERATOR.v|/home/mschwarz/fhnw/pro5/fpga/src/CLOCK/GENERATOR/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/CLOCK/WDT/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/CLOCK/WDT/WDT.v|/home/mschwarz/fhnw/pro5/fpga/src/FILTER/DIGITAL_INPUT_FILTER/DIG_INP_FILTER.v|/home/mschwarz/fhnw/pro5/fpga/src/FILTER/DIGITAL_INPUT_FILTER/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/FULL/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/FULL/QUADRATUR_ENCODER.v|/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/SIMPLE/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/SIMPLE/QUADRATUR_ENCODER_SIMPLE.v|/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/SIMPLE/QUADRATUR_ENCODER_SIMPLE_FINAL.v|/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/SIMPLE/QUADRATUR_ENCODER_SIMPLE_START.v|/home/mschwarz/fhnw/pro5/fpga/src/RGB/RGB_PL9823/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/RGB/RGB_PL9823/RGB_PL9823.v|/home/mschwarz/fhnw/pro5/fpga/src/RGB/RGB_PL9823/RGB_PL9823_FINAL.v|/home/mschwarz/fhnw/pro5/fpga/src/RGB/RGB_PL9823/RGB_PL9823_START.v|/home/mschwarz/fhnw/pro5/fpga/src/SPI/HOST/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/SPI/HOST/SPI_HOST.v|/home/mschwarz/fhnw/pro5/fpga/src/SPI/ZUWEISUNG/ZUWEISUNG.v|/home/mschwarz/fhnw/pro5/fpga/src/TOOLBOX/MAX/MAX.v|/home/mschwarz/fhnw/pro5/fpga/src/TOOLBOX/SEL/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/TOOLBOX/SEL/SEL.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@a@d@c_@m@c@p3201
+vCLIENT_MCP23S17
+R2
+!i10b 1
+!s100 8G^Wa`j>0dQQf=`Tzo8<F3
+IE3l^aT92XS[F]IS]:G?la2
+R3
+R0
+R4
+Z10 8/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/CLIENT_MCP23S17/CLIENT_MCP23S17.v
+Z11 F/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/CLIENT_MCP23S17/CLIENT_MCP23S17.v
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@c@l@i@e@n@t_@m@c@p23@s17
+vCLOCK_GENERATOR
+R2
+!i10b 1
+!s100 n3gFF7YD1:dWdVXUMYlK@1
+I5X1M_OX0j:Zk_U@V9jPTD3
+R3
+R0
+R4
+8/home/mschwarz/fhnw/pro5/fpga/src/CLOCK/GENERATOR/CLOCK_GENERATOR.v
+F/home/mschwarz/fhnw/pro5/fpga/src/CLOCK/GENERATOR/CLOCK_GENERATOR.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@c@l@o@c@k_@g@e@n@e@r@a@t@o@r
+vDAC_MCP4921
+R2
+!i10b 1
+!s100 CmF2m7Y3K5PC9a60aF9FI2
+I3mV2`N4?]M8R]EdkmD8lU2
+R3
+R0
+R4
+8/home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/DAC_MCP4921/DAC_MCP4921.v
+F/home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/DAC_MCP4921/DAC_MCP4921.v
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@d@a@c_@m@c@p4921
+vDATA_IN_VAR_FT2232
+R2
+!i10b 1
+!s100 oQVOSg5KJ10<T=jb64ncX0
+I?lX;Z:hM[YIW88LPXXm[g2
+R3
+R0
+R4
+Z12 8/home/mschwarz/fhnw/pro5/fpga/src/SPI/ZUWEISUNG/ZUWEISUNG.v
+Z13 F/home/mschwarz/fhnw/pro5/fpga/src/SPI/ZUWEISUNG/ZUWEISUNG.v
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@d@a@t@a_@i@n_@v@a@r_@f@t2232
+vDATA_IN_VAR_RPI
+R2
+!i10b 1
+!s100 1cR`T=el8ZGFlfI28M;A;2
+IdRE6a]nd8CUY6P^NKoChK1
+R3
+R0
+R4
+R12
+R13
+L0 68
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@d@a@t@a_@i@n_@v@a@r_@r@p@i
+vDATA_OUT_VAR_FT2232
+R2
+!i10b 1
+!s100 ^P6<3X1bU_6CTf0<9RKLf1
+I6IfJk61kZP0k74FOVc;_A2
+R3
+R0
+R4
+R12
+R13
+L0 44
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@d@a@t@a_@o@u@t_@v@a@r_@f@t2232
+vDATA_OUT_VAR_RPI
+R2
+!i10b 1
+!s100 kQo99lj9bXE9i@O<gBbTn3
+IfajjY05Fn7I5ZeezO4>4H3
+R3
+R0
+R4
+R12
+R13
+L0 139
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@d@a@t@a_@o@u@t_@v@a@r_@r@p@i
+vDC_MOTOR
+Z14 !s110 1542285815
+!i10b 1
+!s100 i9jQK_iiGXOzZK[]lB<C[0
+IKYPbWQN`Qh[>lU?lE6ci83
+R3
+R0
+w1542021200
+8/home/mschwarz/fhnw/pro5/fpga/src/DC_MOTOR/DC_MOTOR.v
+F/home/mschwarz/fhnw/pro5/fpga/src/DC_MOTOR/DC_MOTOR.v
+L0 1
+R5
+r1
+!s85 0
+31
+Z15 !s108 1542285815.000000
+!s107 /home/mschwarz/fhnw/pro5/fpga/src/DC_MOTOR/DC_MOTOR.v|/home/mschwarz/fhnw/pro5/fpga/src/DC_MOTOR/ICARUS_TB.v|
+Z16 !s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|/home/mschwarz/fhnw/pro5/fpga/src/DC_MOTOR/ICARUS_TB.v|
+!i113 0
+R9
+R1
+n@d@c_@m@o@t@o@r
+vDIG_INP_FILTER
+R2
+!i10b 1
+!s100 YmS59a6MBCbbS5Oa^O4dJ2
+I[0f_2JYL4]ooTUShYeMKT0
+R3
+R0
+R4
+8/home/mschwarz/fhnw/pro5/fpga/src/FILTER/DIGITAL_INPUT_FILTER/DIG_INP_FILTER.v
+F/home/mschwarz/fhnw/pro5/fpga/src/FILTER/DIGITAL_INPUT_FILTER/DIG_INP_FILTER.v
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@d@i@g_@i@n@p_@f@i@l@t@e@r
+vENC_INP_FILTER
+R2
+!i10b 1
+!s100 oo95Nk[LGzZzO@E`k<iab3
+Idb399eCX]Xd9T@SFL4QFf3
+R3
+R0
+R4
+Z17 8/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/FULL/QUADRATUR_ENCODER.v
+Z18 F/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/FULL/QUADRATUR_ENCODER.v
+L0 108
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@e@n@c_@i@n@p_@f@i@l@t@e@r
+vHEX_SEG_7
+Z19 !s110 1542284256
+!i10b 1
+!s100 J`e=m:jGa^=NK9P>IPKmV1
+IgS2XNMck=MjWSMG@DDW;C2
+R3
+R0
+R4
+Z20 8/home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/TIMER_APP_START.v
+Z21 F/home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/TIMER_APP_START.v
+L0 75
+R5
+r1
+!s85 0
+31
+Z22 !s108 1542284256.000000
+Z23 !s107 /home/mschwarz/fhnw/pro5/fpga/src/PLL/PLL_bb.v|/home/mschwarz/fhnw/pro5/fpga/src/PLL/PLL.v|/home/mschwarz/fhnw/pro5/fpga/src/DC_MOTOR/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/DC_MOTOR/DC_MOTOR.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/TIMER_APP_START.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/TIMER_APP_FINAL.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/TIMER_APP.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/ICARUS_TB.v|
+Z24 !s90 -reportprogress|300|-work|work|/home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/TIMER_APP.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/TIMER_APP_FINAL.v|/home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/TIMER_APP_START.v|/home/mschwarz/fhnw/pro5/fpga/src/DC_MOTOR/DC_MOTOR.v|/home/mschwarz/fhnw/pro5/fpga/src/DC_MOTOR/ICARUS_TB.v|/home/mschwarz/fhnw/pro5/fpga/src/PLL/PLL.v|/home/mschwarz/fhnw/pro5/fpga/src/PLL/PLL_bb.v|
+!i113 0
+R9
+R1
+n@h@e@x_@s@e@g_7
+vICARUS_TB
+R14
+!i10b 1
+!s100 5dVSVjM3T5Y5V3Y?bF3Z01
+I[z7KKNcPSGf]lGGbMbZKz2
+R3
+R0
+w1542285804
+8/home/mschwarz/fhnw/pro5/fpga/src/DC_MOTOR/ICARUS_TB.v
+F/home/mschwarz/fhnw/pro5/fpga/src/DC_MOTOR/ICARUS_TB.v
+L0 5
+R5
+r1
+!s85 0
+31
+R15
+Z25 !s107 /home/mschwarz/fhnw/pro5/fpga/src/DC_MOTOR/DC_MOTOR.v|/home/mschwarz/fhnw/pro5/fpga/src/DC_MOTOR/ICARUS_TB.v|
+R16
+!i113 0
+R9
+R1
+n@i@c@a@r@u@s_@t@b
+vIO16_VERILOG
+R2
+!i10b 1
+!s100 1`bA7@LAZejmDXJcO8ZkU1
+I_Ob3S`JTF3_KXlKTN^BFW2
+R3
+R0
+R4
+8/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/IO16_VERILOG/IO16_VERILOG_START.v
+F/home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/IO16_VERILOG/IO16_VERILOG_START.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@i@o16_@v@e@r@i@l@o@g
+vMAX_12_BIT
+R2
+!i10b 1
+!s100 <NFnnn9`<hnHNL@BZc2nH1
+I0;lM8>V4154o;@2oGd[I]0
+R3
+R0
+R4
+8/home/mschwarz/fhnw/pro5/fpga/src/TOOLBOX/MAX/MAX.v
+F/home/mschwarz/fhnw/pro5/fpga/src/TOOLBOX/MAX/MAX.v
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@m@a@x_12_@b@i@t
+vPLL
+R19
+!i10b 1
+!s100 U3l5=MCf4E5g`8?PhhXWV2
+ID2k6M:X88i6^O^@J<ZkYJ1
+R3
+R0
+R4
+8/home/mschwarz/fhnw/pro5/fpga/src/PLL/PLL_bb.v
+F/home/mschwarz/fhnw/pro5/fpga/src/PLL/PLL_bb.v
+L0 34
+R5
+r1
+!s85 0
+31
+R22
+R23
+R24
+!i113 0
+R9
+R1
+n@p@l@l
+vQUADRATUR_ENCODER
+R2
+!i10b 1
+!s100 VfXDYD>3Aoh3De2DGPA230
+I]YZdH5^GalaMI25:oi7=32
+R3
+R0
+R4
+R17
+R18
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@q@u@a@d@r@a@t@u@r_@e@n@c@o@d@e@r
+vQUADRATUR_ENCODER_SIMPLE
+R2
+!i10b 1
+!s100 Y>Xh;9O@G5:TW3E^=O:Dj2
+I36MOCSg39e5<Nk<R8k^^i1
+R3
+R0
+R4
+8/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/SIMPLE/QUADRATUR_ENCODER_SIMPLE_START.v
+F/home/mschwarz/fhnw/pro5/fpga/src/QUADRATUR_ENCODER/SIMPLE/QUADRATUR_ENCODER_SIMPLE_START.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@q@u@a@d@r@a@t@u@r_@e@n@c@o@d@e@r_@s@i@m@p@l@e
+vRGB_PL9823
+R2
+!i10b 1
+!s100 ?;oLAZTRHknkJ26Z@M<^`3
+Iz]doVMgaB6RG]g=e11ah<3
+R3
+R0
+R4
+8/home/mschwarz/fhnw/pro5/fpga/src/RGB/RGB_PL9823/RGB_PL9823_START.v
+F/home/mschwarz/fhnw/pro5/fpga/src/RGB/RGB_PL9823/RGB_PL9823_START.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@r@g@b_@p@l9823
+vSEL_12_BIT
+R2
+!i10b 1
+!s100 56E;0P>GAj]VV;JjA2mC>2
+I1UFNC61d2EXJDO_E;cYHB0
+R3
+R0
+R4
+Z26 8/home/mschwarz/fhnw/pro5/fpga/src/TOOLBOX/SEL/SEL.v
+Z27 F/home/mschwarz/fhnw/pro5/fpga/src/TOOLBOX/SEL/SEL.v
+L0 95
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@s@e@l_12_@b@i@t
+vSEL_1_BIT
+R2
+!i10b 1
+!s100 HcI]H3H0CF[]BIKC^cnVk2
+IKFCgKPPRE_2j6<Q[9<ZSd3
+R3
+R0
+R4
+R26
+R27
+L0 84
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@s@e@l_1_@b@i@t
+vSEL_SPI_INPUT
+R2
+!i10b 1
+!s100 `kmT43]i@`<MZz[oYjQQi2
+ImD8j]Z:1`KZOiW_Dk5eR]2
+R3
+R0
+R4
+R26
+R27
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@s@e@l_@s@p@i_@i@n@p@u@t
+vSHIFTER_24_BIT
+R2
+!i10b 1
+!s100 o4nLBZQoCa30:4?PWhO3U3
+I8?<h[RbiBih]H9?AXU@BG0
+R3
+R0
+R4
+R10
+R11
+L0 217
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@s@h@i@f@t@e@r_24_@b@i@t
+vSPI_HOST
+R2
+!i10b 1
+!s100 j8^M>[l=UiGJ99b2[5]572
+I]nz;H25aLmYk8BNZ@79nY2
+R3
+R0
+R4
+Z28 8/home/mschwarz/fhnw/pro5/fpga/src/SPI/HOST/SPI_HOST.v
+Z29 F/home/mschwarz/fhnw/pro5/fpga/src/SPI/HOST/SPI_HOST.v
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@s@p@i_@h@o@s@t
+vSPI_INP_FILTER_CLIENT
+R2
+!i10b 1
+!s100 Q3K>gOPIUQh3`<LYH3@RG2
+IZ[@kV>^Vn3;8OHRf=COn21
+R3
+R0
+R4
+R10
+R11
+L0 365
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@s@p@i_@i@n@p_@f@i@l@t@e@r_@c@l@i@e@n@t
+vSPI_INP_FILTER_HOST
+R2
+!i10b 1
+!s100 OA7[GkC7MMW[Y87DG7E<`1
+I][L>G4h95<jb83T@blQGb0
+R3
+R0
+R4
+R28
+R29
+L0 223
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@s@p@i_@i@n@p_@f@i@l@t@e@r_@h@o@s@t
+vTIMER_APP
+R19
+!i10b 1
+!s100 f7^KbVXz06RH]A[EGZPKG2
+ICF]]iKnjebZ?BC<SNFz<K0
+R3
+R0
+R4
+R20
+R21
+L0 1
+R5
+r1
+!s85 0
+31
+R22
+R23
+R24
+!i113 0
+R9
+R1
+n@t@i@m@e@r_@a@p@p
+vWDT
+R2
+!i10b 1
+!s100 YY<1Y5]LL?g;78XC4H9G72
+IYRlF@aDWjYXbE>G4EfQaf3
+R3
+R0
+R4
+8/home/mschwarz/fhnw/pro5/fpga/src/CLOCK/WDT/WDT.v
+F/home/mschwarz/fhnw/pro5/fpga/src/CLOCK/WDT/WDT.v
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@w@d@t

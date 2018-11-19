@@ -1,0 +1,89 @@
+module ADC_MCP3201 (
+	input CLK,
+	input CLK_ADC,
+	input LATCH,
+	input SDI,
+	output reg CS,
+	output reg CLK,
+	output reg [11:0] VALUE
+	);
+	//
+	reg [11:0] ctr;
+	reg [11:0] value_temp;
+	reg [12:0] index;
+	//
+	reg		st1;
+	reg		st2;
+	reg		st3;
+	reg		st4;
+	wire	start1;
+	//wire	start1_n;
+	//wire	stop1;
+	wire	stop1_n;
+	
+	
+	reg		hold1;
+	//
+	assign	start1 = (st1 && ! st2);
+	//assign	start1_n = (!st1 && st2);
+	//assign	stop1 = (st3 && ! st4);
+	assign	stop1_n = (!st3 && st4);
+	
+	//	
+	initial
+	begin
+		
+		CS <= 1;
+		CLK <= 0;
+		VALUE <= 0;
+		st1 <= 0;
+		st2 <= 0;
+		st3 <= 0;
+		st4 <= 0;
+		hold1 <= 0;
+		ctr <= 0;
+		value_temp <= 0;
+		index <= 0;
+	end	
+	//
+	always	@(posedge CLK_ADC)
+	begin
+		// START
+		st1 <= LATCH;
+		st2 <= st1;	
+		st3 <= hold1;
+		st4 <= st3;	
+		
+		
+		if(start1) 
+			begin
+				hold1 <= 1;
+				value_temp <= 0;
+				index <= 22;
+			end
+			
+		if (ctr >= 29) hold1 <= 0;			
+		
+		CS <= !hold1;
+		
+		if (hold1) CLK <= !CLK;
+		else CLK <= 1;
+		
+		if (ctr >= 7)
+			begin
+				value_temp[index/2] <= SDI;
+				if (index > 0) index <= index - 1;
+			end
+		
+		
+		if (stop1_n) 
+			begin
+				VALUE <= value_temp;
+			end
+		
+
+		// counter
+		if (hold1) ctr <= ctr + 1;
+		else ctr <= 0;
+	end
+endmodule

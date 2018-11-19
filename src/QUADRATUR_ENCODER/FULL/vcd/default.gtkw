@@ -1,0 +1,43 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Sat Mar 17 16:08:22 2018
+[*]
+[dumpfile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA\FPGA_MODUL_MAX1000_00_22\src\QUADRATUR_ENCODER\vcd\icarus_tb.vcd"
+[dumpfile_mtime] "Sat Mar 17 14:34:31 2018"
+[dumpfile_size] 19349
+[savefile] "D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA\FPGA_MODUL_MAX1000_00_22\src\QUADRATUR_ENCODER\vcd\default.gtkw"
+[timestart] 2654
+[size] 1918 2098
+[pos] -1 -1
+*-9.949345 740 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ICARUS_TB.
+[sst_width] 197
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 298
+@28
+ICARUS_TB.quadratur_encoder.CLK
+ICARUS_TB.quadratur_encoder.A
+ICARUS_TB.quadratur_encoder.B
+ICARUS_TB.quadratur_encoder.LATCH
+ICARUS_TB.quadratur_encoder.RESET
+@24
+ICARUS_TB.quadratur_encoder.COUNTER[31:0]
+ICARUS_TB.quadratur_encoder.SPEED[31:0]
+@28
+ICARUS_TB.quadratur_encoder.CW
+ICARUS_TB.quadratur_encoder.CCW
+ICARUS_TB.quadratur_encoder.A_
+ICARUS_TB.quadratur_encoder.B_
+@200
+-
+@28
+ICARUS_TB.quadratur_encoder.a_re
+ICARUS_TB.quadratur_encoder.a_fe
+ICARUS_TB.quadratur_encoder.b_re
+ICARUS_TB.quadratur_encoder.b_fe
+ICARUS_TB.quadratur_encoder.latch_re
+@25
+ICARUS_TB.quadratur_encoder.counter_temp[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

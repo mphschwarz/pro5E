@@ -1,0 +1,111 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000000856990 .scope module, "ICARUS_TB" "ICARUS_TB" 2 5;
+ .timescale -8 -9;
+v00000000008af4f0_0 .var "clk", 0 0;
+v00000000008af590_0 .var "in_1bit", 0 0;
+v00000000008af630_0 .var "in_8bit", 7 0;
+v00000000008afea0_0 .net "out_1bit_reg", 0 0, v000000000085b3c0_0;  1 drivers
+v00000000008b0440_0 .net "out_1bit_wire", 0 0, L_000000000085d8f0;  1 drivers
+v00000000008b04e0_0 .net "out_8bit_reg", 7 0, v00000000008af310_0;  1 drivers
+S_0000000000856b10 .scope module, "moduldemo" "MODULDEMO" 2 40, 3 1 0, S_0000000000856990;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "CLK"
+    .port_info 1 /INPUT 1 "IN_1BIT"
+    .port_info 2 /INPUT 8 "IN_8BIT"
+    .port_info 3 /OUTPUT 1 "OUT_1BIT_WIRE"
+    .port_info 4 /OUTPUT 1 "OUT_1BIT_REG"
+    .port_info 5 /OUTPUT 8 "OUT_8BIT_REG"
+P_00000000008585e0 .param/l "VALUE_STATE_1" 0 3 9, C4<11111111>;
+L_000000000085d8f0 .functor OR 1, v00000000008af590_0, L_00000000008aff40, C4<0>, C4<0>;
+v0000000000856c90_0 .net "CLK", 0 0, v00000000008af4f0_0;  1 drivers
+v000000000085d850_0 .net "IN_1BIT", 0 0, v00000000008af590_0;  1 drivers
+v00000000008599e0_0 .net "IN_8BIT", 7 0, v00000000008af630_0;  1 drivers
+v000000000085b3c0_0 .var "OUT_1BIT_REG", 0 0;
+v00000000008af270_0 .net "OUT_1BIT_WIRE", 0 0, L_000000000085d8f0;  alias, 1 drivers
+v00000000008af310_0 .var "OUT_8BIT_REG", 7 0;
+v00000000008af3b0_0 .net *"_s1", 0 0, L_00000000008aff40;  1 drivers
+v00000000008af450_0 .var "state", 0 0;
+E_00000000008579e0 .event posedge, v0000000000856c90_0;
+L_00000000008aff40 .part v00000000008af310_0, 0, 1;
+    .scope S_0000000000856b10;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000085b3c0_0, 0;
+    %pushi/vec4 0, 0, 8;
+    %assign/vec4 v00000000008af310_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000008af450_0, 0;
+    %end;
+    .thread T_0;
+    .scope S_0000000000856b10;
+T_1 ;
+    %wait E_00000000008579e0;
+    %load/vec4 v00000000008af450_0;
+    %nor/r;
+    %assign/vec4 v00000000008af450_0, 0;
+    %load/vec4 v000000000085d850_0;
+    %assign/vec4 v000000000085b3c0_0, 0;
+    %load/vec4 v00000000008af450_0;
+    %pad/u 32;
+    %cmpi/e 0, 0, 32;
+    %jmp/0xz  T_1.0, 4;
+    %pushi/vec4 255, 0, 8;
+    %assign/vec4 v00000000008af310_0, 0;
+T_1.0 ;
+    %load/vec4 v00000000008af450_0;
+    %pad/u 32;
+    %cmpi/e 1, 0, 32;
+    %jmp/0xz  T_1.2, 4;
+    %load/vec4 v00000000008599e0_0;
+    %assign/vec4 v00000000008af310_0, 0;
+T_1.2 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0000000000856990;
+T_2 ;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v00000000008af4f0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000008af590_0, 0;
+    %pushi/vec4 0, 0, 8;
+    %assign/vec4 v00000000008af630_0, 0;
+    %vpi_call 2 20 "$dumpfile", "vcd\134icarus_tb.vcd" {0 0 0};
+    %vpi_call 2 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000000000856990 {0 0 0};
+    %delay 30, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v00000000008af590_0, 0;
+    %pushi/vec4 170, 0, 8;
+    %assign/vec4 v00000000008af630_0, 0;
+    %delay 40, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000008af590_0, 0;
+    %pushi/vec4 204, 0, 8;
+    %assign/vec4 v00000000008af630_0, 0;
+    %delay 40, 0;
+    %pushi/vec4 238, 0, 8;
+    %assign/vec4 v00000000008af630_0, 0;
+    %delay 100, 0;
+    %vpi_call 2 35 "$finish" {0 0 0};
+    %end;
+    .thread T_2;
+    .scope S_0000000000856990;
+T_3 ;
+    %delay 10, 0;
+    %load/vec4 v00000000008af4f0_0;
+    %nor/r;
+    %assign/vec4 v00000000008af4f0_0, 0;
+    %jmp T_3;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "ICARUS_TB.v";
+    "./MODULDEMO.v";

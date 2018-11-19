@@ -1,0 +1,43 @@
+module TIMER_APP(
+	input CLK,
+	input CLK_100Hz,
+	input CLK_1Hz,
+	input USER_BTN,
+	input Sw7,
+	input Sw6,
+	input Sw5,
+	input Sw4,
+	input Sw3,
+	input Sw2,
+	input Sw1,
+	input Sw0,
+	//
+	output LED7,
+	output LED6,
+	output LED5,
+	output LED4,
+	output LED3,
+	output LED2,
+	output LED1,
+	output LED0,	
+	//
+	output [7:0] MIN_ZEHNER,
+	output [7:0] MIN_EINER,
+	output [7:0] SEK_ZEHNER,
+	output [7:0] SEK_EINER,
+	output [7:0] HUNDERTSTEL_ZEHNER,
+	output [7:0] HUNDERTSTEL_EINER
+	);
+	//
+	initial
+		begin
+			LED7 <= 0;
+		end
+	//
+	always @(posedge CLK)
+	begin
+		//
+		LED7 <= CLK_1Hz;
+		//
+	end
+endmodule
