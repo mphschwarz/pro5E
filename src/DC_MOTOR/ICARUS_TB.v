@@ -58,29 +58,20 @@ module ICARUS_TB;
 	//
 	always #1 clk <= !clk;
 	//
-	DC_MOTOR_ANTRIEB dc_motor_antrieb(
-			clk,
-			enable,
-	        cw,
-			ccw,
-	        value,
-			adc_cmp,
-			adc,
-			out_1,
-			out_2,
-			en_1,
-			en_2,
-			adc_latch
-			);
-	//
-	DC_MOTOR_RAMPE dc_motor_rampe(
-			clk,
-			enable,
-			value_in,
-			cw_out,
-			ccw_out,
-			value_out
-			);
+	DC_MOTOR dc_motor(
+		clk,
+		enable,
+		cw,
+		ccw,
+		value,
+		adc_cmp,
+		adc,
+		out_1,
+		out_2,
+		en_1,
+		en_2,
+		adc_latch
+		);
 	//
 endmodule
 //

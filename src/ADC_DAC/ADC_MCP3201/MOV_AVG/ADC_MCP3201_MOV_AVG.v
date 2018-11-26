@@ -30,7 +30,7 @@ module ADC_MCP3201_MOV_AVG(
 	wire [11:0] value_adc;
 	//
 	assign latch_adc = latch_start || (ctr_latch == CTR_LATCH_LIMIT);
-	ADC_MCP3201 adc_mcp3201(CLK, latch_adc, SDI_ADC, CS_ADC, CLK_ADC, value_adc);
+	ADC_MCP3201 adc_mcp3201(CLK, latch_adc, SDI_ADC, CS_ADC, CLK_ADC, value_adc);// siehe ..\src\ADC_DAC\ADC_MCP3201\ADC_MCP3201.v
 	//
 	assign	latch_start = (hri1 && !hri2);
 	assign	latch_cs_re = (hri3 && !hri4);	

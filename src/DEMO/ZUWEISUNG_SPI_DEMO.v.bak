@@ -1,0 +1,118 @@
+///////////////////////////////////////////////////////////////
+module DATA_IN_VAR_RPI(
+	input [11:0] ADC_U8,
+	//
+	input FPGA_TO_RPI_1,	
+	input FPGA_TO_RPI_2,	
+	input FPGA_TO_RPI_3,	
+	input FPGA_TO_RPI_4,	
+	input FPGA_TO_RPI_5,	
+	input FPGA_TO_RPI_6,	
+	input FPGA_TO_RPI_7,	
+	input FPGA_TO_RPI_8,	
+	input [15:0] FPGA_TO_RPI_16BIT_1,
+	input [15:0] FPGA_TO_RPI_16BIT_2,	
+	input [15:0] FPGA_TO_RPI_16BIT_3,	
+	input [15:0] FPGA_TO_RPI_16BIT_4,			
+	//
+	output [255:0] DATA
+	);
+	//
+	assign DATA[015:004] = ADC_U8[11:0];// MSB left
+	//
+	assign DATA[016]     = FPGA_TO_RPI_7;
+	assign DATA[017]     = FPGA_TO_RPI_6;
+	assign DATA[018]     = FPGA_TO_RPI_5;
+	assign DATA[019]     = FPGA_TO_RPI_4;
+	assign DATA[020]     = FPGA_TO_RPI_3;
+	assign DATA[021]     = FPGA_TO_RPI_2;
+	assign DATA[022]     = FPGA_TO_RPI_1;
+	assign DATA[023]     = FPGA_TO_RPI_0;	
+	//
+	assign DATA[039:024] = FPGA_TO_RPI_16BIT_1[15:0];
+	assign DATA[055:040] = FPGA_TO_RPI_16BIT_2[15:0];
+	assign DATA[071:056] = FPGA_TO_RPI_16BIT_3[15:0];
+	assign DATA[091:072] = FPGA_TO_RPI_16BIT_4[15:0];	
+	//
+endmodule
+///////////////////////////////////////////////////////////////
+module DATA_OUT_VAR_RPI(
+	input [255:0] DATA,
+	//
+	output[11:0] DAC_U5,
+	//
+	output RPI_TO_FPGA_15,
+	output RPI_TO_FPGA_14,
+	output RPI_TO_FPGA_13,
+	output RPI_TO_FPGA_12,
+	output RPI_TO_FPGA_11,
+	output RPI_TO_FPGA_10,
+	output RPI_TO_FPGA_09,
+	output RPI_TO_FPGA_08,
+	output RPI_TO_FPGA_07,
+	output RPI_TO_FPGA_06,
+	output RPI_TO_FPGA_05,
+	output RPI_TO_FPGA_04,
+	output RPI_TO_FPGA_03,
+	output RPI_TO_FPGA_02,
+	output RPI_TO_FPGA_01,
+	output RPI_TO_FPGA_00,
+	//
+	output [15:0] RPI_TO_FPGA_16BIT_1,
+	output [15:0] RPI_TO_FPGA_16BIT_2,
+	output [15:0] RPI_TO_FPGA_16BIT_3,
+	output [15:0] RPI_TO_FPGA_16BIT_4,
+	//
+	output WDT_ENABLE
+	);
+	//
+	assign DAC_U5[11:0]            = DATA[015:004];
+	assign DAC_U5_ADC_U8           = DATA[000];
+	//
+	assign ANTRIEB_ENABLE          = DATA[016];
+	assign ANTRIEB_CW              = DATA[017];
+	assign ANTRIEB_CCW             = DATA[018];	
+	assign ANTRIEB_PWM[11:0]       = DATA[031:020];
+	//
+	assign QES_RESET               = DATA[038];
+	assign QE_RESET                = DATA[039];
+	//
+	assign ANTRIEB_ADC_LIMIT[11:0] = DATA[055:044];
+	//
+	// RGB Leuchtdioden
+	assign D1_ROT[7:0]   = DATA[063:056];
+	assign D1_GRUEN[7:0] = DATA[071:064];
+	assign D1_BLAU[7:0]  = DATA[079:072];
+	assign D2_ROT[7:0]   = DATA[087:080];
+	assign D2_GRUEN[7:0] = DATA[095:088];
+	assign D2_BLAU[7:0]  = DATA[103:096];
+	assign D3_ROT[7:0]   = DATA[111:104];
+	assign D3_GRUEN[7:0] = DATA[119:112];
+	assign D3_BLAU[7:0]  = DATA[127:120];	
+	//
+	assign WDT_ENABLE   = !DATA[175];
+	//
+	assign RPI_TO_FPGA_15            = DATA[176];
+	assign RPI_TO_FPGA_14            = DATA[177];
+	assign RPI_TO_FPGA_13            = DATA[178];
+	assign RPI_TO_FPGA_12            = DATA[179];
+	assign RPI_TO_FPGA_11            = DATA[180];
+	assign RPI_TO_FPGA_10            = DATA[181];
+	assign RPI_TO_FPGA_09            = DATA[182];
+	assign RPI_TO_FPGA_08            = DATA[183];	
+	assign RPI_TO_FPGA_07            = DATA[184];
+	assign RPI_TO_FPGA_06            = DATA[185];
+	assign RPI_TO_FPGA_05            = DATA[186];
+	assign RPI_TO_FPGA_04            = DATA[187];
+	assign RPI_TO_FPGA_03            = DATA[188];
+	assign RPI_TO_FPGA_02            = DATA[189];
+	assign RPI_TO_FPGA_01            = DATA[190];
+	assign RPI_TO_FPGA_00            = DATA[191];	
+	//
+	assign RPI_TO_FPGA_16BIT_1[15:0] = DATA[207:192];	
+	assign RPI_TO_FPGA_16BIT_2[15:0] = DATA[223:208];	
+	assign RPI_TO_FPGA_16BIT_3[15:0] = DATA[239:224];	
+	assign RPI_TO_FPGA_16BIT_4[15:0] = DATA[255:240];	
+	//
+endmodule
+////////////////////////////////////////////////////////////////////////////////////////////
