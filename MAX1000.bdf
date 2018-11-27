@@ -501,7 +501,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 504 1688 680 1704)
+	(rect 824 1696 1000 1712)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "L6234_IN3" (rect 90 0 144 11)(font "Arial" ))
 	(pt 0 8)
@@ -517,7 +517,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 504 1712 680 1728)
+	(rect 824 1720 1000 1736)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "L6234_EN3" (rect 90 0 149 11)(font "Arial" ))
 	(pt 0 8)
@@ -533,7 +533,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 512 1616 688 1632)
+	(rect 832 1624 1008 1640)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "L6234_IN2" (rect 90 0 144 11)(font "Arial" ))
 	(pt 0 8)
@@ -549,7 +549,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 512 1600 688 1616)
+	(rect 832 1608 1008 1624)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "L6234_IN1" (rect 90 0 144 11)(font "Arial" ))
 	(pt 0 8)
@@ -565,7 +565,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 512 1632 688 1648)
+	(rect 832 1640 1008 1656)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "L6234_EN1" (rect 90 0 149 11)(font "Arial" ))
 	(pt 0 8)
@@ -581,7 +581,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 512 1648 688 1664)
+	(rect 832 1656 1008 1672)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "L6234_EN2" (rect 90 0 149 11)(font "Arial" ))
 	(pt 0 8)
@@ -772,7 +772,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 480 1728 512 1760)
+	(rect 800 1736 832 1768)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst4" (rect 3 21 26 32)(font "Arial" )(invisible))
 	(port
@@ -1086,7 +1086,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 848 1496 1080 1672)
+	(rect 1264 1528 1496 1704)
 	(text "DC_MOTOR" (rect 5 0 68 11)(font "Arial" ))
 	(text "dc_motor" (rect 8 160 54 171)(font "Arial" ))
 	(port
@@ -2818,7 +2818,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 208 1576 456 1752)
+	(rect 528 1584 776 1760)
 	(text "AC_MOTOR" (rect 5 0 67 11)(font "Arial" ))
 	(text "inst2" (rect 8 160 32 173)(font "Intel Clear" ))
 	(port
@@ -2940,7 +2940,7 @@ refer to the applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 232 160))
 	)
-	(annotation_block (parameter)(rect 160 1792 352 1888))
+	(annotation_block (parameter)(rect 480 1800 672 1896))
 )
 (connector
 	(text "SYS_CLK" (rect 714 128 760 141)(font "Intel Clear" ))
@@ -4318,95 +4318,131 @@ refer to the applicable agreement for further details.
 	(pt 80 1560)
 )
 (connector
-	(text "ANTRIEB_PWM[11..0]" (rect 754 1576 866 1587)(font "Arial" ))
-	(pt 752 1592)
-	(pt 848 1592)
+	(pt 1496 1576)
+	(pt 1528 1576)
+)
+(connector
+	(pt 1496 1560)
+	(pt 1528 1560)
+)
+(connector
+	(pt 1496 1592)
+	(pt 1528 1592)
+)
+(connector
+	(pt 1496 1608)
+	(pt 1528 1608)
+)
+(connector
+	(text "ADC_LATCH" (rect 1282 1984 1344 1997)(font "Intel Clear" ))
+	(pt 1232 2000)
+	(pt 1336 2000)
+)
+(connector
+	(pt 776 1664)
+	(pt 832 1664)
+)
+(connector
+	(pt 776 1648)
+	(pt 832 1648)
+)
+(connector
+	(pt 776 1632)
+	(pt 832 1632)
+)
+(connector
+	(pt 832 1616)
+	(pt 776 1616)
+)
+(connector
+	(pt 824 1728)
+	(pt 816 1728)
+)
+(connector
+	(pt 824 1704)
+	(pt 816 1704)
+)
+(connector
+	(text "ADC_LATCH" (rect 826 1664 888 1677)(font "Intel Clear" ))
+	(pt 776 1680)
+	(pt 880 1680)
+)
+(connector
+	(pt 816 1704)
+	(pt 816 1728)
+)
+(connector
+	(pt 816 1728)
+	(pt 816 1736)
+)
+(connector
+	(pt 1248 1560)
+	(pt 1264 1560)
+)
+(connector
+	(pt 1248 1576)
+	(pt 1264 1576)
+)
+(connector
+	(pt 1248 1592)
+	(pt 1264 1592)
+)
+(connector
+	(pt 1248 1608)
+	(pt 1264 1608)
+)
+(connector
+	(pt 1248 1624)
+	(pt 1264 1624)
 	(bus)
 )
 (connector
-	(text "ANTRIEB_ADC_LIMIT[11..0]" (rect 722 1592 864 1603)(font "Arial" ))
-	(pt 752 1608)
-	(pt 848 1608)
+	(pt 1248 1640)
+	(pt 1264 1640)
 	(bus)
 )
 (connector
-	(text "ADC_U8[11..0]" (rect 754 1608 828 1619)(font "Arial" ))
-	(pt 752 1624)
-	(pt 848 1624)
+	(pt 1248 1656)
+	(pt 1264 1656)
 	(bus)
 )
 (connector
-	(pt 1080 1544)
-	(pt 1112 1544)
+	(text "SYS_CLK" (rect 370 1600 416 1613)(font "Intel Clear" ))
+	(pt 368 1616)
+	(pt 528 1616)
 )
 (connector
-	(pt 1080 1528)
-	(pt 1112 1528)
+	(text "ANTRIEB_ENABLE" (rect 378 1616 468 1629)(font "Intel Clear" ))
+	(pt 368 1632)
+	(pt 528 1632)
 )
 (connector
-	(pt 1080 1560)
-	(pt 1112 1560)
+	(text "ANTRIEB_CW" (rect 378 1632 445 1645)(font "Intel Clear" ))
+	(pt 368 1648)
+	(pt 528 1648)
 )
 (connector
-	(pt 1080 1576)
-	(pt 1112 1576)
+	(text "ANTRIEB_CCW" (rect 378 1648 452 1661)(font "Intel Clear" ))
+	(pt 368 1664)
+	(pt 528 1664)
 )
 (connector
-	(text "ADC_LATCH" (rect 1130 1576 1192 1589)(font "Intel Clear" ))
-	(pt 1080 1592)
-	(pt 1184 1592)
+	(text "ANTRIEB_PWM[11..0]" (rect 370 1664 482 1675)(font "Arial" ))
+	(pt 368 1680)
+	(pt 528 1680)
+	(bus)
 )
 (connector
-	(text "SYS_CLK" (rect 754 1512 800 1525)(font "Intel Clear" ))
-	(pt 752 1528)
-	(pt 848 1528)
+	(text "ANTRIEB_ADC_LIMIT[11..0]" (rect 338 1680 480 1691)(font "Arial" ))
+	(pt 368 1696)
+	(pt 528 1696)
+	(bus)
 )
 (connector
-	(text "ANTRIEB_ENABLE" (rect 762 1528 852 1541)(font "Intel Clear" ))
-	(pt 752 1544)
-	(pt 848 1544)
-)
-(connector
-	(text "ANTRIEB_CW" (rect 762 1544 829 1557)(font "Intel Clear" ))
-	(pt 752 1560)
-	(pt 848 1560)
-)
-(connector
-	(text "ANTRIEB_CCW" (rect 762 1560 836 1573)(font "Intel Clear" ))
-	(pt 752 1576)
-	(pt 848 1576)
-)
-(connector
-	(pt 456 1656)
-	(pt 512 1656)
-)
-(connector
-	(pt 456 1640)
-	(pt 512 1640)
-)
-(connector
-	(pt 456 1624)
-	(pt 512 1624)
-)
-(connector
-	(pt 512 1608)
-	(pt 456 1608)
-)
-(connector
-	(pt 504 1720)
-	(pt 496 1720)
-)
-(connector
-	(pt 504 1696)
-	(pt 496 1696)
-)
-(connector
-	(pt 496 1696)
-	(pt 496 1720)
-)
-(connector
-	(pt 496 1720)
-	(pt 496 1728)
+	(text "ADC_U8[11..0]" (rect 370 1696 444 1707)(font "Arial" ))
+	(pt 368 1712)
+	(pt 528 1712)
+	(bus)
 )
 (junction (pt -160 200))
 (junction (pt 80 1464))
@@ -4421,7 +4457,7 @@ refer to the applicable agreement for further details.
 (junction (pt 80 1512))
 (junction (pt 80 1528))
 (junction (pt 80 1544))
-(junction (pt 496 1720))
+(junction (pt 816 1728))
 (text "FT2232_CS1" (rect -336 1568 -262 1583)(font "Intel Clear" (font_size 8)))
 (text "FT2232_CS2" (rect -336 1544 -262 1559)(font "Intel Clear" (font_size 8)))
 (text "FT2232_CS0" (rect -1320 88 -1246 103)(font "Intel Clear" (font_size 8)))
@@ -4430,5 +4466,19 @@ refer to the applicable agreement for further details.
 (text "FT2232_MOSI" (rect -1320 120 -1238 135)(font "Intel Clear" (font_size 8)))
 (text "Applikation Timer" (rect -976 -16 -657 26)(font "Intel Clear" (font_size 24)(bold)))
 (text "Applikation DC-Motor" (rect -184 -24 204 18)(font "Intel Clear" (font_size 24)(bold)))
+(text "SYS_CLK" (rect 370 1600 416 1613)(font "Intel Clear" ))
+(text "ANTRIEB_ENABLE" (rect 378 1616 468 1629)(font "Intel Clear" ))
+(text "ANTRIEB_CW" (rect 378 1632 445 1645)(font "Intel Clear" ))
+(text "ANTRIEB_CCW" (rect 378 1648 452 1661)(font "Intel Clear" ))
+(text "ANTRIEB_PWM[11..0]" (rect 370 1664 482 1675)(font "Arial" ))
+(text "ANTRIEB_ADC_LIMIT[11..0]" (rect 338 1680 480 1691)(font "Arial" ))
+(text "ADC_U8[11..0]" (rect 370 1696 444 1707)(font "Arial" ))
+(text "SYS_CLK" (rect 370 1600 416 1613)(font "Intel Clear" ))
+(text "ANTRIEB_ENABLE" (rect 378 1616 468 1629)(font "Intel Clear" ))
+(text "ANTRIEB_CW" (rect 378 1632 445 1645)(font "Intel Clear" ))
+(text "ANTRIEB_CCW" (rect 378 1648 452 1661)(font "Intel Clear" ))
+(text "ANTRIEB_PWM[11..0]" (rect 370 1664 482 1675)(font "Arial" ))
+(text "ANTRIEB_ADC_LIMIT[11..0]" (rect 338 1680 480 1691)(font "Arial" ))
+(text "ADC_U8[11..0]" (rect 370 1696 444 1707)(font "Arial" ))
 (rectangle (rect -1352 -32 -416 280)(color 0 0 0)(line_width 4))
 (rectangle (rect -384 -32 1640 1816)(color 0 0 0)(line_width 4))
