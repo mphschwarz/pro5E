@@ -1,0 +1,31 @@
+
+State Machine - |MAX1000|DAC_MCP4921:dac_mcp4921_u5|state
+Name state.00011 state.00010 state.00001 state.00000 state.00100 
+state.00000 0 0 0 0 0 
+state.00001 0 0 1 1 0 
+state.00010 0 1 0 1 0 
+state.00011 1 0 0 1 0 
+state.00100 0 0 0 1 1 
+
+State Machine - |MAX1000|ADC_MCP3201:adc_mcp3201_u9|state
+Name state.00000 state.00010 state.00001 
+state.00000 0 0 0 
+state.00001 1 0 1 
+state.00010 1 1 0 
+
+State Machine - |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ADC_MCP3201:adc_mcp3201|state
+Name state.00000 state.00010 state.00001 
+state.00000 0 0 0 
+state.00001 1 0 1 
+state.00010 1 1 0 
+
+State Machine - |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201|state
+Name state.00000 state.00010 state.00001 
+state.00000 0 0 0 
+state.00001 1 0 1 
+state.00010 1 1 0 
+
+State Machine - |MAX1000|WDT:wdt|status
+Name status.1 
+status.0 0 
+status.1 1 

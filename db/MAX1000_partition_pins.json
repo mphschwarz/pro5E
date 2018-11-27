@@ -1,0 +1,93 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "D6",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_CS",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_SDO",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_LDAC",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_CS",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_MISO",
+					"strict" : false
+				},
+				{
+					"name" : "BDBUS2",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_CS",
+					"strict" : false
+				},
+				{
+					"name" : "USER_BTN",
+					"strict" : false
+				},
+				{
+					"name" : "BDBUS3",
+					"strict" : false
+				},
+				{
+					"name" : "BDBUS0",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_U9_SDO",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_MOSI",
+					"strict" : false
+				},
+				{
+					"name" : "J4_P5",
+					"strict" : false
+				},
+				{
+					"name" : "J4_P4",
+					"strict" : false
+				},
+				{
+					"name" : "BDBUS1",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_U8_SDO",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_U4_SDO",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

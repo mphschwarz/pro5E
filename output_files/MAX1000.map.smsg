@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at CLIENT_MCP23S17.v(229): object "CLK_COUNTER" differs only in case from object "clk_counter" in the same scope File: /home/mschwarz/fhnw/pro5/fpga/src/APP_IO_EXPANDER/CLIENT_MCP23S17/CLIENT_MCP23S17.v Line: 229
