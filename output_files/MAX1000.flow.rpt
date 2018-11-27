@@ -1,5 +1,5 @@
 Flow report for MAX1000
-Tue Nov 27 10:23:22 2018
+Tue Nov 27 10:55:48 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov 27 10:23:15 2018           ;
+; Flow Status                        ; Successful - Tue Nov 27 10:55:42 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; MAX1000                                         ;
 ; Top-level Entity Name              ; MAX1000                                         ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M16SAU169C8G                                  ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 5,416 / 15,840 ( 34 % )                         ;
-;     Total combinational functions  ; 5,161 / 15,840 ( 33 % )                         ;
-;     Dedicated logic registers      ; 1,602 / 15,840 ( 10 % )                         ;
-; Total registers                    ; 1602                                            ;
+; Total logic elements               ; 5,356 / 15,840 ( 34 % )                         ;
+;     Total combinational functions  ; 5,105 / 15,840 ( 32 % )                         ;
+;     Dedicated logic registers      ; 1,560 / 15,840 ( 10 % )                         ;
+; Total registers                    ; 1560                                            ;
 ; Total pins                         ; 47 / 130 ( 36 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 562,176 ( 0 % )                             ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/27/2018 10:22:08 ;
+; Start date & time ; 11/27/2018 10:54:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MAX1000             ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 105927188768142.154331052701800        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 105927188768142.154331247602943        ; --            ; --          ; --         ;
 ; ENABLE_SIGNALTAP                    ; On                                     ; --            ; --          ; --         ;
 ; FLOW_ENABLE_POWER_ANALYZER          ; On                                     ; Off           ; --          ; --         ;
 ; IOBANK_VCCIO                        ; 3.3V                                   ; --            ; --          ; 1A         ;
@@ -110,12 +110,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 1213 MB             ; 00:00:35                           ;
-; Fitter                    ; 00:00:35     ; 1.2                     ; 1583 MB             ; 00:00:44                           ;
+; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 1210 MB             ; 00:00:39                           ;
+; Fitter                    ; 00:00:30     ; 1.2                     ; 1581 MB             ; 00:00:45                           ;
 ; Assembler                 ; 00:00:02     ; 1.0                     ; 1034 MB             ; 00:00:02                           ;
-; Power Analyzer            ; 00:00:06     ; 1.4                     ; 1435 MB             ; 00:00:08                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.5                     ; 1082 MB             ; 00:00:08                           ;
-; Total                     ; 00:01:09     ; --                      ; --                  ; 00:01:37                           ;
+; Power Analyzer            ; 00:00:07     ; 1.4                     ; 1437 MB             ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.5                     ; 1081 MB             ; 00:00:08                           ;
+; Total                     ; 00:01:07     ; --                      ; --                  ; 00:01:42                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

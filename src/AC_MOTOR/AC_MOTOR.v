@@ -24,6 +24,9 @@ module AC_MOTOR(
 	assign EN2 = ENABLE;
 	//
 	reg [11:0] sine_index;
+	reg [2: 0] sine_quadrant;  //which quarter of sine is acttive
+	reg signed [2:0] sine_sign;  //for negative sine values
+	reg signed [2:0] sine_direction; //counting direction for sine
 	reg [11:0] clock_div;
 	reg [11:0] temp_frequency;
 	reg [11:0] temp_amplitude;
@@ -91,9 +94,15 @@ module AC_MOTOR(
 		end
 	//
 	always @(posedge CLK) begin
+		if (sine_quadrant == 0 || sine_quadrant == 2) sine_direction <= 1;
+		else sine_direction <= -1;
+		if (sine_quadrant == 0 || sine_quadrant == 1) sine_sign <= 1;
+		else sine_direction <= -1;
+
 		if (clock_div >= temp_frequency) begin
 			clock_div <= 0;
-			if (sine_index >= sine_samples - 1) begin
+			if (sine_index >= sine_samples) begin
+				sine_quadrant <= sine_quadrant + 1;
 				sine_index <= 0;
 				value_temp <= sine[0];
 			end else begin
@@ -107,8 +116,8 @@ module AC_MOTOR(
 		if (ctr == ctr_max || ctr == ctr_min) begin
 			cw_temp <= CW;
 			ccw_temp <= CCW;
-			temp_frequency <= FREQUENCY;
-			temp_amplitude <= AMPLITUDE;
+			//temp_frequency <= FREQUENCY;
+			//temp_amplitude <= AMPLITUDE;
 		end
 		//
 		if (ctr == ctr_max) ctr_dir <= 0;
