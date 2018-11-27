@@ -24,6 +24,22 @@
 					"strict" : false
 				},
 				{
+					"name" : "L6234_IN2",
+					"strict" : false
+				},
+				{
+					"name" : "L6234_IN1",
+					"strict" : false
+				},
+				{
+					"name" : "L6234_EN1",
+					"strict" : false
+				},
+				{
+					"name" : "L6234_EN2",
+					"strict" : false
+				},
+				{
 					"name" : "ADC_CLK",
 					"strict" : false
 				},
@@ -48,6 +64,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "SPI_MOSI",
+					"strict" : false
+				},
+				{
 					"name" : "BDBUS3",
 					"strict" : false
 				},
@@ -57,14 +77,6 @@
 				},
 				{
 					"name" : "SPI_CLK",
-					"strict" : false
-				},
-				{
-					"name" : "ADC_U9_SDO",
-					"strict" : false
-				},
-				{
-					"name" : "SPI_MOSI",
 					"strict" : false
 				},
 				{
