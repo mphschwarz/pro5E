@@ -1,5 +1,5 @@
 Flow report for MAX1000
-Tue Nov 27 15:48:57 2018
+Tue Nov 27 15:53:25 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov 27 15:48:50 2018           ;
+; Flow Status                        ; Successful - Tue Nov 27 15:53:25 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; MAX1000                                         ;
 ; Top-level Entity Name              ; MAX1000                                         ;
@@ -140,6 +140,7 @@ quartus_fit --read_settings_files=off --write_settings_files=off MAX1000 -c MAX1
 quartus_asm --read_settings_files=off --write_settings_files=off MAX1000 -c MAX1000
 quartus_pow --read_settings_files=off --write_settings_files=off MAX1000 -c MAX1000
 quartus_sta MAX1000 -c MAX1000
+quartus_eda --read_settings_files=on --write_settings_files=off MAX1000 -c MAX1000
 
 
 

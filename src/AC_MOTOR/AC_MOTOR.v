@@ -112,10 +112,10 @@ module AC_MOTOR(
 			else if (sine_index == sine_samples / 2     + 2) value_temp <= 12'b000000000000;
 			else if (sine_index == sine_samples * 3 / 4 + 3) value_temp <= 12'b100000000001;
 			else if (sine_index == sine_samples         + 4) value_temp <= 12'b000000000000;
-			else if (sine_index > 0                        && sine_index < sine_samples     / 4 + 1) value_temp <=      sine[sine_index - 1];
-			else if (sine_index > sine_samples     / 4 + 1 && sine_index < sine_samples     / 2 + 2) value_temp <=      sine[sine_samples / 2 - sine_index + 1];
-			else if (sine_index > sine_samples     / 2 + 2 && sine_index < sine_samples * 3 / 4 + 3) value_temp <= -1 * sine[sine_index - sine_samples / 2 - 3];
-			else if (sine_index > sine_samples * 3 / 4 + 3 && sine_index < sine_samples         + 4) value_temp <= -1 * sine[sine_samples - sine_index + 3];
+			else if (sine_index >  0                        && sine_index < sine_samples     / 4 + 1) value_temp <=      sine[sine_index                    - 1];
+			else if (sine_index >  sine_samples     / 4 + 1 && sine_index < sine_samples     / 2 + 2) value_temp <=      sine[sine_samples / 2 - sine_index + 1];
+			else if (sine_index >  sine_samples     / 2 + 2 && sine_index < sine_samples * 3 / 4 + 3) value_temp <= -1 * sine[sine_index - sine_samples / 2 - 3];
+			else if (sine_index >  sine_samples * 3 / 4 + 3 && sine_index < sine_samples         + 4) value_temp <= -1 * sine[sine_samples - sine_index     + 3];
 			//sine_index <= sine_index + 1;
 			//value_temp <= sine_sign * sine[sine_index];
 			if (sine_index == sine_samples + 3) sine_index <= 0;
