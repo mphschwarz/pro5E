@@ -206,4 +206,7 @@ set_global_assignment -name VERILOG_FILE src/DEMO/DEMO.v
 set_global_assignment -name BDF_FILE MAX1000_DEMO.bdf
 set_global_assignment -name VERILOG_FILE src/DEMO/ZUWEISUNG_SPI_DEMO.v
 set_global_assignment -name VERILOG_FILE src/RGB/RGB_PL9823/RGB_PL9823_OFF.v
+set_global_assignment -name EDA_SIMULATION_TOOL VCS
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

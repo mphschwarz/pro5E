@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MAX1000
-Tue Nov 27 15:48:07 2018
+Thu Nov 29 14:23:37 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -86,15 +86,15 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 27 15:48:07 2018           ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 29 14:23:37 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; MAX1000                                         ;
 ; Top-level Entity Name              ; MAX1000                                         ;
 ; Family                             ; MAX 10                                          ;
-; Total logic elements               ; 5,667                                           ;
-;     Total combinational functions  ; 5,163                                           ;
-;     Dedicated logic registers      ; 1,551                                           ;
-; Total registers                    ; 1551                                            ;
+; Total logic elements               ; 5,856                                           ;
+;     Total combinational functions  ; 5,352                                           ;
+;     Dedicated logic registers      ; 1,559                                           ;
+; Total registers                    ; 1559                                            ;
 ; Total pins                         ; 47                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -204,7 +204,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -264,20 +264,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                      ;
 +---------------------------------------------+----------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 5,667                                                                      ;
+; Estimated Total logic elements              ; 5,856                                                                      ;
 ;                                             ;                                                                            ;
-; Total combinational functions               ; 5163                                                                       ;
+; Total combinational functions               ; 5352                                                                       ;
 ; Logic element usage by number of LUT inputs ;                                                                            ;
-;     -- 4 input functions                    ; 1683                                                                       ;
-;     -- 3 input functions                    ; 1307                                                                       ;
-;     -- <=2 input functions                  ; 2173                                                                       ;
+;     -- 4 input functions                    ; 1827                                                                       ;
+;     -- 3 input functions                    ; 1324                                                                       ;
+;     -- <=2 input functions                  ; 2201                                                                       ;
 ;                                             ;                                                                            ;
 ; Logic elements by mode                      ;                                                                            ;
-;     -- normal mode                          ; 3684                                                                       ;
-;     -- arithmetic mode                      ; 1479                                                                       ;
+;     -- normal mode                          ; 3844                                                                       ;
+;     -- arithmetic mode                      ; 1508                                                                       ;
 ;                                             ;                                                                            ;
-; Total registers                             ; 1551                                                                       ;
-;     -- Dedicated logic registers            ; 1551                                                                       ;
+; Total registers                             ; 1559                                                                       ;
+;     -- Dedicated logic registers            ; 1559                                                                       ;
 ;     -- I/O registers                        ; 0                                                                          ;
 ;                                             ;                                                                            ;
 ; I/O pins                                    ; 47                                                                         ;
@@ -288,9 +288,9 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 1                                                                          ;
 ;                                             ;                                                                            ;
 ; Maximum fan-out node                        ; PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 1552                                                                       ;
-; Total fan-out                               ; 19082                                                                      ;
-; Average fan-out                             ; 2.80                                                                       ;
+; Maximum fan-out                             ; 1560                                                                       ;
+; Total fan-out                               ; 19775                                                                      ;
+; Average fan-out                             ; 2.82                                                                       ;
 +---------------------------------------------+----------------------------------------------------------------------------+
 
 
@@ -299,18 +299,18 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
 ; Compilation Hierarchy Node                             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                              ; Entity Name              ; Library Name ;
 +--------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
-; |MAX1000                                               ; 5163 (1)            ; 1551 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 47   ; 0            ; 0          ; |MAX1000                                                                                                                                         ; MAX1000                  ; work         ;
-;    |AC_MOTOR:inst2|                                    ; 199 (199)           ; 41 (41)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR:inst2                                                                                                                          ; AC_MOTOR                 ; work         ;
+; |MAX1000                                               ; 5352 (1)            ; 1559 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 47   ; 0            ; 0          ; |MAX1000                                                                                                                                         ; MAX1000                  ; work         ;
+;    |AC_MOTOR:inst2|                                    ; 387 (387)           ; 51 (51)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR:inst2                                                                                                                          ; AC_MOTOR                 ; work         ;
 ;    |ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|        ; 274 (176)           ; 191 (130)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg                                                                                              ; ADC_MCP3201_MOV_AVG      ; work         ;
 ;       |ADC_MCP3201:adc_mcp3201|                        ; 98 (98)             ; 61 (61)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201                                                                      ; ADC_MCP3201              ; work         ;
 ;    |ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|        ; 157 (131)           ; 117 (93)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg                                                                                              ; ADC_MCP3201_MOV_AVG      ; work         ;
 ;       |ADC_MCP3201:adc_mcp3201|                        ; 26 (26)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ADC_MCP3201:adc_mcp3201                                                                      ; ADC_MCP3201              ; work         ;
-;    |APP_TIMER:app_timer|                               ; 3401 (0)            ; 349 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer                                                                                                                     ; APP_TIMER                ; work         ;
+;    |APP_TIMER:app_timer|                               ; 3404 (0)            ; 349 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer                                                                                                                     ; APP_TIMER                ; work         ;
 ;       |SPI_HOST:spi_host_ft2232|                       ; 257 (185)           ; 182 (149)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232                                                                                            ; SPI_HOST                 ; work         ;
 ;          |SPI_INP_FILTER_HOST:spi_inp_filter_clk|      ; 24 (24)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_clk                                                     ; SPI_INP_FILTER_HOST      ; work         ;
 ;          |SPI_INP_FILTER_HOST:spi_inp_filter_cs|       ; 24 (24)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_cs                                                      ; SPI_INP_FILTER_HOST      ; work         ;
 ;          |SPI_INP_FILTER_HOST:spi_inp_filter_mosi|     ; 24 (24)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_mosi                                                    ; SPI_INP_FILTER_HOST      ; work         ;
-;       |TIMER_APP:timer_app|                            ; 3144 (134)          ; 167 (117)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app                                                                                                 ; TIMER_APP                ; work         ;
+;       |TIMER_APP:timer_app|                            ; 3147 (134)          ; 167 (117)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app                                                                                                 ; TIMER_APP                ; work         ;
 ;          |HEX_SEG_7:hex_seg_7_min_einer|               ; 7 (7)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_min_einer                                                                   ; HEX_SEG_7                ; work         ;
 ;          |HEX_SEG_7:hex_seg_7_min_zehner|              ; 7 (7)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_min_zehner                                                                  ; HEX_SEG_7                ; work         ;
 ;          |HEX_SEG_7:hex_seg_7_sek_einer|               ; 7 (7)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_einer                                                                   ; HEX_SEG_7                ; work         ;
@@ -338,10 +338,10 @@ refer to the applicable agreement for further details.
 ;             |lpm_divide_mtl:auto_generated|            ; 258 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div4|lpm_divide_mtl:auto_generated                                                   ; lpm_divide_mtl           ; work         ;
 ;                |sign_div_unsign_olh:divider|           ; 258 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div4|lpm_divide_mtl:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh      ; work         ;
 ;                   |alt_u_div_qhe:divider|              ; 258 (258)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div4|lpm_divide_mtl:auto_generated|sign_div_unsign_olh:divider|alt_u_div_qhe:divider ; alt_u_div_qhe            ; work         ;
-;          |lpm_divide:Mod0|                             ; 624 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod0                                                                                 ; lpm_divide               ; work         ;
-;             |lpm_divide_6nl:auto_generated|            ; 624 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod0|lpm_divide_6nl:auto_generated                                                   ; lpm_divide_6nl           ; work         ;
-;                |sign_div_unsign_5nh:divider|           ; 624 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod0|lpm_divide_6nl:auto_generated|sign_div_unsign_5nh:divider                       ; sign_div_unsign_5nh      ; work         ;
-;                   |alt_u_div_kke:divider|              ; 624 (624)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod0|lpm_divide_6nl:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_kke:divider ; alt_u_div_kke            ; work         ;
+;          |lpm_divide:Mod0|                             ; 627 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod0                                                                                 ; lpm_divide               ; work         ;
+;             |lpm_divide_6nl:auto_generated|            ; 627 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod0|lpm_divide_6nl:auto_generated                                                   ; lpm_divide_6nl           ; work         ;
+;                |sign_div_unsign_5nh:divider|           ; 627 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod0|lpm_divide_6nl:auto_generated|sign_div_unsign_5nh:divider                       ; sign_div_unsign_5nh      ; work         ;
+;                   |alt_u_div_kke:divider|              ; 627 (627)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod0|lpm_divide_6nl:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_kke:divider ; alt_u_div_kke            ; work         ;
 ;          |lpm_divide:Mod1|                             ; 334 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod1                                                                                 ; lpm_divide               ; work         ;
 ;             |lpm_divide_rll:auto_generated|            ; 334 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod1|lpm_divide_rll:auto_generated                                                   ; lpm_divide_rll           ; work         ;
 ;                |sign_div_unsign_qlh:divider|           ; 334 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod1|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider                       ; sign_div_unsign_qlh      ; work         ;
@@ -370,7 +370,7 @@ refer to the applicable agreement for further details.
 ;    |QUADRATUR_ENCODER_SIMPLE:quadratur_encoder_simple| ; 36 (36)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|QUADRATUR_ENCODER_SIMPLE:quadratur_encoder_simple                                                                                       ; QUADRATUR_ENCODER_SIMPLE ; work         ;
 ;    |RGB_PL9823:rgb_pl_9823|                            ; 103 (103)           ; 94 (94)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|RGB_PL9823:rgb_pl_9823                                                                                                                  ; RGB_PL9823               ; work         ;
 ;    |SEL_12_BIT:inst|                                   ; 12 (12)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|SEL_12_BIT:inst                                                                                                                         ; SEL_12_BIT               ; work         ;
-;    |SPI_HOST:spi_host_rpi|                             ; 536 (464)           ; 433 (400)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|SPI_HOST:spi_host_rpi                                                                                                                   ; SPI_HOST                 ; work         ;
+;    |SPI_HOST:spi_host_rpi|                             ; 534 (462)           ; 431 (398)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|SPI_HOST:spi_host_rpi                                                                                                                   ; SPI_HOST                 ; work         ;
 ;       |SPI_INP_FILTER_HOST:spi_inp_filter_clk|         ; 24 (24)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_clk                                                                            ; SPI_INP_FILTER_HOST      ; work         ;
 ;       |SPI_INP_FILTER_HOST:spi_inp_filter_cs|          ; 24 (24)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_cs                                                                             ; SPI_INP_FILTER_HOST      ; work         ;
 ;       |SPI_INP_FILTER_HOST:spi_inp_filter_mosi|        ; 24 (24)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_mosi                                                                           ; SPI_INP_FILTER_HOST      ; work         ;
@@ -464,6 +464,8 @@ Encoding Type:  One-Hot
 ; DAC_MCP4921:dac_mcp4921_u5|value_temp[14,15]                                             ; Stuck at GND due to stuck port data_in                                                         ;
 ; ADC_MCP3201:adc_mcp3201_u9|hri1                                                          ; Stuck at GND due to stuck port data_in                                                         ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|hri1                                          ; Stuck at GND due to stuck port data_in                                                         ;
+; AC_MOTOR:inst2|cw_temp                                                                   ; Stuck at VCC due to stuck port data_in                                                         ;
+; AC_MOTOR:inst2|ccw_temp                                                                  ; Stuck at GND due to stuck port data_in                                                         ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|hri1                                          ; Stuck at GND due to stuck port data_in                                                         ;
 ; RGB_PL9823:rgb_pl_9823|data[72]                                                          ; Stuck at GND due to stuck port data_in                                                         ;
 ; ADC_MCP3201:adc_mcp3201_u9|hri2                                                          ; Lost fanout                                                                                    ;
@@ -473,8 +475,6 @@ Encoding Type:  One-Hot
 ; SPI_HOST:spi_host_rpi|data_in_temp[0..3,16..19,32..35,48..51,152..183,192..199,208..255] ; Stuck at GND due to stuck port data_in                                                         ;
 ; APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_min_einer|SEG7[0]            ; Merged with APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_einer|SEG7[0]      ;
 ; WDT:wdt|hri1                                                                             ; Merged with APP_TIMER:app_timer|TIMER_APP:timer_app|hri1                                       ;
-; AC_MOTOR:inst2|ctr_dir                                                                   ; Merged with AC_MOTOR:inst2|cw_temp                                                             ;
-; AC_MOTOR:inst2|temp_frequency[0..10]                                                     ; Merged with AC_MOTOR:inst2|temp_frequency[11]                                                  ;
 ; APP_TIMER:app_timer|TIMER_APP:timer_app|hri2                                             ; Merged with WDT:wdt|hri2                                                                       ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ADC_MCP3201:adc_mcp3201|hri2                  ; Merged with ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201|hri2            ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ADC_MCP3201:adc_mcp3201|hri1                  ; Merged with ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201|hri1            ;
@@ -505,9 +505,6 @@ Encoding Type:  One-Hot
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ctr_sample[2]                                 ; Merged with ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ctr_sample[2]                           ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ctr_sample[1]                                 ; Merged with ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ctr_sample[1]                           ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ctr_sample[0]                                 ; Merged with ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ctr_sample[0]                           ;
-; AC_MOTOR:inst2|temp_frequency[11]                                                        ; Merged with AC_MOTOR:inst2|ccw_temp                                                            ;
-; AC_MOTOR:inst2|cw_temp                                                                   ; Stuck at VCC due to stuck port data_in                                                         ;
-; AC_MOTOR:inst2|ccw_temp                                                                  ; Stuck at GND due to stuck port data_in                                                         ;
 ; DAC_MCP4921:dac_mcp4921_u5|state~7                                                       ; Lost fanout                                                                                    ;
 ; DAC_MCP4921:dac_mcp4921_u5|state~8                                                       ; Lost fanout                                                                                    ;
 ; DAC_MCP4921:dac_mcp4921_u5|state~10                                                      ; Lost fanout                                                                                    ;
@@ -612,7 +609,7 @@ Encoding Type:  One-Hot
 ; ADC_MCP3201:adc_mcp3201_u9|value_temp[0..11]                                             ; Stuck at GND due to stuck port data_in                                                         ;
 ; ADC_MCP3201:adc_mcp3201_u9|state.00000                                                   ; Stuck at GND due to stuck port data_in                                                         ;
 ; ADC_MCP3201:adc_mcp3201_u9|ctr_clk_spi[0]                                                ; Stuck at VCC due to stuck port data_in                                                         ;
-; CLOCK_GENERATOR:clock_generator|counter1k[0]                                             ; Merged with AC_MOTOR:inst2|ctr[7]                                                              ;
+; CLOCK_GENERATOR:clock_generator|counter1k[0]                                             ; Merged with AC_MOTOR:inst2|ctr[0]                                                              ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|summe_mov_avg[14,15]                          ; Lost fanout                                                                                    ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|summe_mov_avg[14,15]                          ; Lost fanout                                                                                    ;
 ; APP_TIMER:app_timer|TIMER_APP:timer_app|minuten[29..31]                                  ; Stuck at GND due to stuck port data_in                                                         ;
@@ -643,7 +640,7 @@ Encoding Type:  One-Hot
 ; APP_TIMER:app_timer|TIMER_APP:timer_app|minuten[20]                                      ; Stuck at GND due to stuck port data_in                                                         ;
 ; APP_TIMER:app_timer|TIMER_APP:timer_app|tausendstel[10..20]                              ; Stuck at GND due to stuck port data_in                                                         ;
 ; APP_TIMER:app_timer|TIMER_APP:timer_app|minuten[18,19]                                   ; Stuck at GND due to stuck port data_in                                                         ;
-; Total Number of Removed Registers = 550                                                  ;                                                                                                ;
+; Total Number of Removed Registers = 537                                                  ;                                                                                                ;
 +------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
 
 
@@ -671,12 +668,12 @@ Encoding Type:  One-Hot
 ;                                                                                     ;                           ; SPI_HOST:spi_host_rpi|data_in_temp[38], SPI_HOST:spi_host_rpi|data_in_temp[37],     ;
 ;                                                                                     ;                           ; SPI_HOST:spi_host_rpi|data_in_temp[36], ADC_MCP3201:adc_mcp3201_u9|state.00000,     ;
 ;                                                                                     ;                           ; ADC_MCP3201:adc_mcp3201_u9|ctr_clk_spi[0]                                           ;
-; ADC_MCP3201:adc_mcp3201_u9|state.00001                                              ; Stuck at GND              ; ADC_MCP3201:adc_mcp3201_u9|index[0], ADC_MCP3201:adc_mcp3201_u9|index[3],           ;
-;                                                                                     ; due to stuck port data_in ; ADC_MCP3201:adc_mcp3201_u9|index[4], ADC_MCP3201:adc_mcp3201_u9|index[5],           ;
-;                                                                                     ;                           ; ADC_MCP3201:adc_mcp3201_u9|index[6], ADC_MCP3201:adc_mcp3201_u9|index[7],           ;
-;                                                                                     ;                           ; ADC_MCP3201:adc_mcp3201_u9|index[8], ADC_MCP3201:adc_mcp3201_u9|index[9],           ;
-;                                                                                     ;                           ; ADC_MCP3201:adc_mcp3201_u9|index[10], ADC_MCP3201:adc_mcp3201_u9|index[11],         ;
-;                                                                                     ;                           ; ADC_MCP3201:adc_mcp3201_u9|CLK_ADC, ADC_MCP3201:adc_mcp3201_u9|ctr_clk_spi[7],      ;
+; ADC_MCP3201:adc_mcp3201_u9|state.00001                                              ; Stuck at GND              ; ADC_MCP3201:adc_mcp3201_u9|index[3], ADC_MCP3201:adc_mcp3201_u9|index[4],           ;
+;                                                                                     ; due to stuck port data_in ; ADC_MCP3201:adc_mcp3201_u9|index[5], ADC_MCP3201:adc_mcp3201_u9|index[6],           ;
+;                                                                                     ;                           ; ADC_MCP3201:adc_mcp3201_u9|index[7], ADC_MCP3201:adc_mcp3201_u9|index[8],           ;
+;                                                                                     ;                           ; ADC_MCP3201:adc_mcp3201_u9|index[9], ADC_MCP3201:adc_mcp3201_u9|index[10],          ;
+;                                                                                     ;                           ; ADC_MCP3201:adc_mcp3201_u9|index[11], ADC_MCP3201:adc_mcp3201_u9|CLK_ADC,           ;
+;                                                                                     ;                           ; ADC_MCP3201:adc_mcp3201_u9|ctr_clk_spi[7],                                          ;
 ;                                                                                     ;                           ; ADC_MCP3201:adc_mcp3201_u9|ctr_clk_spi[8],                                          ;
 ;                                                                                     ;                           ; ADC_MCP3201:adc_mcp3201_u9|ctr_clk_spi[9],                                          ;
 ;                                                                                     ;                           ; ADC_MCP3201:adc_mcp3201_u9|ctr_clk_spi[10],                                         ;
@@ -734,12 +731,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1551  ;
+; Total registers                              ; 1559  ;
 ; Number of registers using Synchronous Clear  ; 193   ;
 ; Number of registers using Synchronous Load   ; 22    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1109  ;
+; Number of registers using Clock Enable       ; 1110  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -751,11 +748,18 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------------------------------------+---------+
 ; DAC_MCP4921:dac_mcp4921_u5|CS_DAC                                                 ; 2       ;
 ; DAC_MCP4921:dac_mcp4921_u5|LDAC_DAC                                               ; 2       ;
-; AC_MOTOR:inst2|ctr[11]                                                            ; 2       ;
-; AC_MOTOR:inst2|ctr[7]                                                             ; 5       ;
-; AC_MOTOR:inst2|ctr[8]                                                             ; 2       ;
-; AC_MOTOR:inst2|ctr[9]                                                             ; 2       ;
-; AC_MOTOR:inst2|ctr[10]                                                            ; 2       ;
+; AC_MOTOR:inst2|ctr[11]                                                            ; 4       ;
+; AC_MOTOR:inst2|ctr[10]                                                            ; 4       ;
+; AC_MOTOR:inst2|ctr[9]                                                             ; 4       ;
+; AC_MOTOR:inst2|ctr[8]                                                             ; 4       ;
+; AC_MOTOR:inst2|ctr[7]                                                             ; 4       ;
+; AC_MOTOR:inst2|ctr[6]                                                             ; 4       ;
+; AC_MOTOR:inst2|ctr[5]                                                             ; 4       ;
+; AC_MOTOR:inst2|ctr[4]                                                             ; 4       ;
+; AC_MOTOR:inst2|ctr[3]                                                             ; 4       ;
+; AC_MOTOR:inst2|ctr[2]                                                             ; 4       ;
+; AC_MOTOR:inst2|ctr[1]                                                             ; 4       ;
+; AC_MOTOR:inst2|ctr[0]                                                             ; 6       ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201|CS_ADC         ; 3       ;
 ; RGB_PL9823:rgb_pl_9823|ctr[0]                                                     ; 5       ;
 ; DAC_MCP4921:dac_mcp4921_u5|ctr_clk_delay[0]                                       ; 2       ;
@@ -763,6 +767,7 @@ Encoding Type:  One-Hot
 ; DAC_MCP4921:dac_mcp4921_u5|index[0]                                               ; 8       ;
 ; DAC_MCP4921:dac_mcp4921_u5|index[3]                                               ; 5       ;
 ; DAC_MCP4921:dac_mcp4921_u5|index[2]                                               ; 4       ;
+; AC_MOTOR:inst2|ctr_dir                                                            ; 12      ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201|ctr_clk_spi[0] ; 3       ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201|index[0]       ; 2       ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201|index[1]       ; 2       ;
@@ -784,7 +789,7 @@ Encoding Type:  One-Hot
 ; APP_TIMER:app_timer|TIMER_APP:timer_app|COUNTER[0]                                ; 3       ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ctr_latch_enable                       ; 2       ;
 ; ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ctr_mov_avg[0]                         ; 5       ;
-; Total number of inverted registers = 35                                           ;         ;
+; Total number of inverted registers = 43                                           ;         ;
 +-----------------------------------------------------------------------------------+---------+
 
 
@@ -793,77 +798,77 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|DAC_MCP4921:dac_mcp4921_u5|index[9]                                                          ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201:adc_mcp3201_u9|index[9]                                                          ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ADC_MCP3201:adc_mcp3201|index[11]                 ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201|index[6]                  ;
-; 3:1                ; 99 bits   ; 198 LEs       ; 99 LEs               ; 99 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|DATA_OUT[109]                                                          ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|WDT:wdt|counter[14]                                                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|spi_cmd_enable                                                         ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|i_data_mosi[2]                                                         ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|i_data_miso[6]                                                         ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|spi_clk_ctr[7]                                                         ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|cmd[7]                                                                 ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|i_cmd[9]                                                               ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|i_data_mosi[5]                                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|DAC_MCP4921:dac_mcp4921_u5|index[6]                                                          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201:adc_mcp3201_u9|index[10]                                                         ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ADC_MCP3201:adc_mcp3201|index[4]                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201|index[4]                  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|WDT:wdt|counter[15]                                                                          ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|i_data_mosi[11]                                                        ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|spi_cmd_write                                                          ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|spi_clk_ctr[11]                                                        ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|cmd[6]                                                                 ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|i_data_miso[1]                                                         ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|i_cmd[0]                                                               ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|i_data_mosi[4]                                  ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|spi_cmd_read                                    ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|spi_clk_ctr[7]                                  ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|cmd[6]                                          ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|i_cmd[7]                                        ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|i_data_miso[4]                                  ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|COUNTER[17]                                          ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|state[5]                                          ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |MAX1000|QUADRATUR_ENCODER_SIMPLE:quadratur_encoder_simple|CW                                         ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER_SIMPLE:quadratur_encoder_simple|COUNTER[3]                                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|SPEED[19]                                                ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|spi_clk_ctr[1]                                  ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|cmd[5]                                          ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|i_cmd[10]                                       ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|i_data_miso[3]                                  ;
+; 3:1                ; 98 bits   ; 196 LEs       ; 98 LEs               ; 98 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|DATA_OUT[191]                                                          ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|COUNTER[21]                                          ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|state[1]                                          ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |MAX1000|QUADRATUR_ENCODER_SIMPLE:quadratur_encoder_simple|CCW                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER_SIMPLE:quadratur_encoder_simple|COUNTER[11]                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|SPEED[26]                                                ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|CCW                                                      ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|sekunden[16]                                         ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|sekunden[0]                                          ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|sekunden[21]                                         ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|sekunden[5]                                          ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|TEST:verilog_test|counter[0]                                                                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|counter_temp[15]                                         ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|state[0]                                          ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|ADC_MCP3201:adc_mcp3201_u9|ctr_clk_spi[7]                                                    ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ADC_MCP3201:adc_mcp3201|ctr_clk_spi[6]            ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201|ctr_clk_spi[8]            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|minuten[21]                                          ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|speed_temp[30]                                           ;
-; 3:1                ; 22 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|tausendstel[22]                                      ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|tausendstel[5]                                       ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |MAX1000|RGB_PL9823:rgb_pl_9823|i[0]                                                                  ;
-; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |MAX1000|DAC_MCP4921:dac_mcp4921_u5|ctr_clk_delay[13]                                                 ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|summe_mov_avg[6]                                  ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|summe_mov_avg[6]                                  ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr1[4]                          ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr0[0]                          ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr1[3]                        ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr0[4]                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|counter_temp[22]                                         ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|state[1]                                          ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|ADC_MCP3201:adc_mcp3201_u9|ctr_clk_spi[3]                                                    ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ADC_MCP3201:adc_mcp3201|ctr_clk_spi[7]            ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201|ctr_clk_spi[13]           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|minuten[30]                                          ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|speed_temp[2]                                            ;
+; 3:1                ; 22 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|tausendstel[18]                                      ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|tausendstel[4]                                       ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |MAX1000|RGB_PL9823:rgb_pl_9823|i[7]                                                                  ;
+; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |MAX1000|DAC_MCP4921:dac_mcp4921_u5|ctr_clk_delay[11]                                                 ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|summe_mov_avg[5]                                  ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|summe_mov_avg[15]                                 ;
+; 7:1                ; 11 bits   ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; Yes        ; |MAX1000|AC_MOTOR:inst2|value_temp[10]                                                                ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr1[3]                          ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr0[2]                          ;
 ; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr1[4]   ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr0[2]   ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_clk|ctr1[4]  ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr0[1]   ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_clk|ctr1[3]  ;
 ; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_clk|ctr0[4]  ;
 ; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_clk|ctr1[4]                         ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_clk|ctr0[4]                         ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:dig_inp_filter_qe_b|ctr1[0]                                                   ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:dig_inp_filter_qe_b|ctr0[3]                                                   ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:dig_inp_filter_qe_a|ctr1[0]                                                   ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:dig_inp_filter_qe_a|ctr0[4]                                                   ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|ENC_INP_FILTER:enc_inp_filter_b|ctr1[3]                  ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|ENC_INP_FILTER:enc_inp_filter_b|ctr0[4]                  ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|ENC_INP_FILTER:enc_inp_filter_a|ctr1[3]                  ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|ENC_INP_FILTER:enc_inp_filter_a|ctr0[4]                  ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_clk|ctr0[0]                         ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr1[4]                        ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr0[4]                        ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:dig_inp_filter_qe_b|ctr1[4]                                                   ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:dig_inp_filter_qe_b|ctr0[2]                                                   ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:dig_inp_filter_qe_a|ctr1[4]                                                   ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:dig_inp_filter_qe_a|ctr0[3]                                                   ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|ENC_INP_FILTER:enc_inp_filter_b|ctr1[0]                  ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|ENC_INP_FILTER:enc_inp_filter_b|ctr0[0]                  ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|ENC_INP_FILTER:enc_inp_filter_a|ctr1[4]                  ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder|ENC_INP_FILTER:enc_inp_filter_a|ctr0[3]                  ;
 ; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr1[4] ;
 ; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr0[4] ;
-; 8:1                ; 11 bits   ; 55 LEs        ; 44 LEs               ; 11 LEs                 ; Yes        ; |MAX1000|AC_MOTOR:inst2|value_temp[8]                                                                 ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|DAC_MCP4921:dac_mcp4921_u5|index[3]                                                          ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201:adc_mcp3201_u9|index[0]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|DAC_MCP4921:dac_mcp4921_u5|index[1]                                                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201:adc_mcp3201_u9|index[3]                                                          ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ADC_MCP3201:adc_mcp3201|index[2]                  ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201|index[3]                  ;
-; 3:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|COUNTER[0]                                           ;
+; 3:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|COUNTER[12]                                          ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MAX1000|ADC_MCP3201:adc_mcp3201_u9|state                                                             ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ADC_MCP3201:adc_mcp3201|state                     ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201|state                     ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MAX1000|WDT:wdt|status                                                                               ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |MAX1000|AC_MOTOR:inst2|sine.raddr_a[5]                                                               ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |MAX1000|AC_MOTOR:inst2|sine.raddr_a[1]                                                               ;
 ; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |MAX1000|DAC_MCP4921:dac_mcp4921_u5|state                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
 
@@ -1342,8 +1347,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; sine_samples   ; 64    ; Signed Integer                     ;
 ; clock_div_max  ; 63    ; Signed Integer                     ;
 ; bits           ; 12    ; Signed Integer                     ;
-; ctr_min        ; -2048 ; Signed Integer                     ;
-; ctr_max        ; 2048  ; Signed Integer                     ;
+; ctr_min        ; -2046 ; Signed Integer                     ;
+; ctr_max        ; 2046  ; Signed Integer                     ;
 +----------------+-------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1704,28 +1709,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 47                          ;
-; cycloneiii_ff         ; 1551                        ;
-;     ENA               ; 895                         ;
+; cycloneiii_ff         ; 1559                        ;
+;     ENA               ; 896                         ;
 ;     ENA SCLR          ; 192                         ;
 ;     ENA SLD           ; 22                          ;
 ;     SCLR              ; 1                           ;
-;     plain             ; 441                         ;
+;     plain             ; 448                         ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 5169                        ;
-;     arith             ; 1479                        ;
+; cycloneiii_lcell_comb ; 5359                        ;
+;     arith             ; 1508                        ;
 ;         1 data inputs ; 8                           ;
-;         2 data inputs ; 440                         ;
-;         3 data inputs ; 1031                        ;
-;     normal            ; 3690                        ;
-;         0 data inputs ; 169                         ;
-;         1 data inputs ; 87                          ;
-;         2 data inputs ; 1475                        ;
-;         3 data inputs ; 276                         ;
-;         4 data inputs ; 1683                        ;
+;         2 data inputs ; 448                         ;
+;         3 data inputs ; 1052                        ;
+;     normal            ; 3851                        ;
+;         0 data inputs ; 170                         ;
+;         1 data inputs ; 92                          ;
+;         2 data inputs ; 1490                        ;
+;         3 data inputs ; 272                         ;
+;         4 data inputs ; 1827                        ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 65.30                       ;
-; Average LUT depth     ; 26.08                       ;
+; Average LUT depth     ; 25.78                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1734,7 +1739,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:09     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -1744,7 +1749,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Tue Nov 27 15:47:45 2018
+    Info: Processing started: Thu Nov 29 14:23:10 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MAX1000 -c MAX1000
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1951,28 +1956,26 @@ Warning (10036): Verilog HDL or VHDL warning at AC_MOTOR.v(36): object "adc_cmp_
 Warning (10036): Verilog HDL or VHDL warning at AC_MOTOR.v(37): object "adc_temp" assigned a value but never read File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 37
 Warning (10036): Verilog HDL or VHDL warning at AC_MOTOR.v(38): object "en_adc" assigned a value but never read File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 38
 Warning (10036): Verilog HDL or VHDL warning at AC_MOTOR.v(41): object "ctr_adc_latch" assigned a value but never read File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 41
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR.v(102): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 102
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR.v(117): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 117
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR.v(118): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 118
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR.v(122): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 122
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR.v(125): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 125
-Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(133): variable "cw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 133
-Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(133): variable "ccw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 133
-Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(138): variable "cw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 138
-Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(138): variable "ccw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 138
-Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(145): variable "cw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 145
-Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(145): variable "ccw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 145
-Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(149): variable "cw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 149
-Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(149): variable "ccw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 149
-Warning (10240): Verilog HDL Always Construct warning at AC_MOTOR.v(131): inferring latch(es) for variable "OUT1", which holds its previous value in one or more paths through the always construct File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 131
-Warning (10240): Verilog HDL Always Construct warning at AC_MOTOR.v(131): inferring latch(es) for variable "OUT2", which holds its previous value in one or more paths through the always construct File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 131
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR.v(168): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 168
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR.v(169): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 169
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR.v(192): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 192
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR.v(212): truncated value with size 32 to match size of target (14) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 212
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR.v(215): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 215
+Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(226): variable "cw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 226
+Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(226): variable "ccw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 226
+Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(231): variable "cw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 231
+Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(231): variable "ccw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 231
+Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(238): variable "cw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 238
+Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(238): variable "ccw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 238
+Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(242): variable "cw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 242
+Warning (10235): Verilog HDL Always Construct warning at AC_MOTOR.v(242): variable "ccw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 242
+Warning (10240): Verilog HDL Always Construct warning at AC_MOTOR.v(221): inferring latch(es) for variable "OUT1", which holds its previous value in one or more paths through the always construct File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 221
+Warning (10240): Verilog HDL Always Construct warning at AC_MOTOR.v(221): inferring latch(es) for variable "OUT2", which holds its previous value in one or more paths through the always construct File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 221
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR.v(267): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 267
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR.v(268): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 268
 Warning (10030): Net "sine.data_a" at AC_MOTOR.v(42) has no driver or initial value, using a default initial value '0' File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 42
 Warning (10030): Net "sine.waddr_a" at AC_MOTOR.v(42) has no driver or initial value, using a default initial value '0' File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 42
 Warning (10030): Net "sine.we_a" at AC_MOTOR.v(42) has no driver or initial value, using a default initial value '0' File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 42
-Info (10041): Inferred latch for "OUT2" at AC_MOTOR.v(131) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 131
-Info (10041): Inferred latch for "OUT1" at AC_MOTOR.v(131) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 131
+Info (10041): Inferred latch for "OUT2" at AC_MOTOR.v(221) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 221
+Info (10041): Inferred latch for "OUT1" at AC_MOTOR.v(221) File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 221
 Info (12128): Elaborating entity "DAC_MCP4921" for hierarchy "DAC_MCP4921:dac_mcp4921_u5"
 Warning (10036): Verilog HDL or VHDL warning at DAC_MCP4921.v(19): object "clk_dac_re" assigned a value but never read File: /home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/DAC_MCP4921/DAC_MCP4921.v Line: 19
 Warning (10230): Verilog HDL assignment warning at DAC_MCP4921.v(67): truncated value with size 32 to match size of target (16) File: /home/mschwarz/fhnw/pro5/fpga/src/ADC_DAC/DAC_MCP4921/DAC_MCP4921.v Line: 67
@@ -2000,12 +2003,10 @@ Warning (10230): Verilog HDL assignment warning at TIMER_APP.v(155): truncated v
 Warning (10230): Verilog HDL assignment warning at TIMER_APP.v(157): truncated value with size 32 to match size of target (4) File: /home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/TIMER_APP.v Line: 157
 Info (12128): Elaborating entity "HEX_SEG_7" for hierarchy "APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_min_zehner" File: /home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/TIMER_APP.v Line: 64
 Info (12128): Elaborating entity "DATA_OUT_VAR_FT2232" for hierarchy "APP_TIMER:app_timer|DATA_OUT_VAR_FT2232:inst2"
-Warning (14026): LATCH primitive "AC_MOTOR:inst2|OUT2" is permanently enabled File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 12
 Warning (14026): LATCH primitive "AC_MOTOR:inst2|OUT1" is permanently enabled File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 11
 Warning (14026): LATCH primitive "AC_MOTOR:inst2|OUT2" is permanently enabled File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 12
-Warning (14026): LATCH primitive "AC_MOTOR:inst2|OUT1" is permanently enabled File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 11
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "AC_MOTOR:inst2|sine" is uninferred due to inappropriate RAM size File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 42
+    Info (276007): RAM logic "AC_MOTOR:inst2|sine" is uninferred due to asynchronous read logic File: /home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/AC_MOTOR.v Line: 42
 Info (278001): Inferred 10 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "APP_TIMER:app_timer|TIMER_APP:timer_app|Mod2" File: /home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/TIMER_APP.v Line: 153
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "APP_TIMER:app_timer|TIMER_APP:timer_app|Mod3" File: /home/mschwarz/fhnw/pro5/fpga/src/APP_TIMER/TIMER_APP.v Line: 155
@@ -2092,6 +2093,8 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "J4_P1" is stuck at GND
     Warning (13410): Pin "L6234_IN3" is stuck at GND
     Warning (13410): Pin "L6234_EN3" is stuck at GND
+    Warning (13410): Pin "L6234_EN1" is stuck at VCC
+    Warning (13410): Pin "L6234_EN2" is stuck at VCC
     Warning (13410): Pin "LED8" is stuck at GND
     Warning (13410): Pin "J6_P6" is stuck at GND
     Warning (13410): Pin "J6_P7" is stuck at GND
@@ -2113,16 +2116,16 @@ Warning (21074): Design contains 5 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "BDBUS4"
     Warning (15610): No output dependent on input pin "BDBUS5"
     Warning (15610): No output dependent on input pin "ADC_U9_SDO"
-Info (21057): Implemented 5729 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5918 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 30 output pins
-    Info (21061): Implemented 5681 logic cells
+    Info (21061): Implemented 5870 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 122 warnings
-    Info: Peak virtual memory: 1248 megabytes
-    Info: Processing ended: Tue Nov 27 15:48:07 2018
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:36
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 120 warnings
+    Info: Peak virtual memory: 1253 megabytes
+    Info: Processing ended: Thu Nov 29 14:23:37 2018
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:45
 
 
 +------------------------------------------+

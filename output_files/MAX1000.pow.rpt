@@ -1,5 +1,5 @@
 Power Analyzer report for MAX1000
-Tue Nov 27 15:48:50 2018
+Thu Nov 29 14:24:22 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -52,19 +52,19 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.38        ;
+; Average used               ; 1.37        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  38.3%      ;
+;     Processor 2            ;  36.7%      ;
 +----------------------------+-------------+
 
 
 +-------------------------------------------------------------------------------------------+
 ; Power Analyzer Summary                                                                    ;
 +----------------------------------------+--------------------------------------------------+
-; Power Analyzer Status                  ; Successful - Tue Nov 27 15:48:50 2018            ;
+; Power Analyzer Status                  ; Successful - Thu Nov 29 14:24:22 2018            ;
 ; Quartus Prime Version                  ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition  ;
 ; Revision Name                          ; MAX1000                                          ;
 ; Top-level Entity Name                  ; MAX1000                                          ;
@@ -119,10 +119,10 @@ refer to the applicable agreement for further details.
 ; SYS_CLK_12MHz                                                                      ; No valid clock domain found ;
 ; SPI_CS                                                                             ; No valid clock domain found ;
 ; USER_BTN                                                                           ; No valid clock domain found ;
-; SPI_MOSI                                                                           ; No valid clock domain found ;
 ; BDBUS3                                                                             ; No valid clock domain found ;
 ; BDBUS0                                                                             ; No valid clock domain found ;
 ; SPI_CLK                                                                            ; No valid clock domain found ;
+; SPI_MOSI                                                                           ; No valid clock domain found ;
 ; J4_P5                                                                              ; No valid clock domain found ;
 ; J4_P4                                                                              ; No valid clock domain found ;
 ; BDBUS1                                                                             ; No valid clock domain found ;
@@ -183,7 +183,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Compilation Hierarchy Node                             ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                                                              ;
 +--------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; |MAX1000                                               ; 3.29 mW (3.29 mW)                    ; 0.00 mW (0.00 mW)               ; 3.29 mW (3.29 mW)                 ; 0.00 mW (0.00 mW)                 ; |MAX1000                                                                                                                                         ;
+; |MAX1000                                               ; 3.28 mW (3.28 mW)                    ; 0.00 mW (0.00 mW)               ; 3.28 mW (3.28 mW)                 ; 0.00 mW (0.00 mW)                 ; |MAX1000                                                                                                                                         ;
 ;     |ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg                                                                                              ;
 ;         |ADC_MCP3201:adc_mcp3201                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201                                                                      ;
 ;     |ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg                                                                                              ;
@@ -313,7 +313,7 @@ refer to the applicable agreement for further details.
 ; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
 +---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 ; 2.5V          ; 0.83 mA                 ; 0.00 mA                   ; 0.83 mA                  ; 0.83 mA                          ;
-; 3.3V          ; 7.90 mA                 ; 0.00 mA                   ; 7.90 mA                  ; 7.90 mA                          ;
+; 3.3V          ; 7.89 mA                 ; 0.00 mA                   ; 7.89 mA                  ; 7.89 mA                          ;
 +---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 (1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
 (2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
@@ -333,9 +333,9 @@ refer to the applicable agreement for further details.
 ;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 1 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 1 (0.0%)      ;
 ;                                                                                        ;              ;            ;               ;               ;
 ; Vectorless estimation                                                                  ;              ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 8286 (99.7%) ; 31 (56.4%) ; 1551 (100.0%) ; 6704 (100.0%) ;
-;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 61 (0.7%)    ; 18 (32.7%) ; 5 (0.3%)      ; 38 (0.6%)     ;
-;     -- Number of signals with Static Probability from Vectorless estimation            ; 8285 (99.7%) ; 31 (56.4%) ; 1551 (100.0%) ; 6703 (100.0%) ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 8500 (99.7%) ; 31 (56.4%) ; 1559 (100.0%) ; 6910 (100.0%) ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 64 (0.8%)    ; 20 (36.4%) ; 5 (0.3%)      ; 39 (0.6%)     ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 8499 (99.7%) ; 31 (56.4%) ; 1559 (100.0%) ; 6909 (100.0%) ;
 ;                                                                                        ;              ;            ;               ;               ;
 ; Default assignment                                                                     ;              ;            ;               ;               ;
 ;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
@@ -360,7 +360,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Power Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Tue Nov 27 15:48:43 2018
+    Info: Processing started: Thu Nov 29 14:24:14 2018
 Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off MAX1000 -c MAX1000
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (21077): Low junction temperature is 0 degrees C
@@ -380,9 +380,9 @@ Info (334004): Delay annotation completed successfully
 Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
 Info (215031): Total thermal power estimate for the design is 254.13 mW
 Info: Quartus Prime Power Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 1439 megabytes
-    Info: Processing ended: Tue Nov 27 15:48:50 2018
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 1443 megabytes
+    Info: Processing ended: Thu Nov 29 14:24:22 2018
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:10
 
 

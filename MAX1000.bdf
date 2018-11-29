@@ -4327,15 +4327,6 @@ refer to the applicable agreement for further details.
 	(pt 528 1616)
 )
 (connector
-	(text "ANTRIEB_ENABLE" (rect 378 1616 468 1629)(font "Intel Clear" ))
-	(pt 368 1632)
-	(pt 528 1632)
-)
-(connector
-	(pt 528 1648)
-	(pt 344 1648)
-)
-(connector
 	(pt 344 1648)
 	(pt 344 1640)
 )
@@ -4379,6 +4370,15 @@ refer to the applicable agreement for further details.
 	(pt 504 1680)
 	(pt 528 1680)
 	(bus)
+)
+(connector
+	(pt 344 1648)
+	(pt 528 1648)
+)
+(connector
+	(text "ANTRIEB_ENABLE" (rect 378 1616 468 1629)(font "Intel Clear" ))
+	(pt 368 1632)
+	(pt 528 1632)
 )
 (junction (pt -160 200))
 (junction (pt 80 1464))
