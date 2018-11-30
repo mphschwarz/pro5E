@@ -2726,6 +2726,39 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 328 1624 360 1640)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst5" (rect 3 5 27 18)(font "Intel Clear" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 26 18)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 26 18)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 296 1608 328 1640)
+	(text "GND" (rect 8 6 29 16)(font "Arial" (font_size 6)))
+	(text "inst6" (rect 3 -2 27 11)(font "Intel Clear" )(invisible))
+	(port
+		(pt 16 32)
+		(output)
+		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 21 25 32)(font "Courier New" (bold))(invisible))
+		(line (pt 16 24)(pt 16 32))
+	)
+	(drawing
+		(line (pt 8 24)(pt 16 16))
+		(line (pt 16 16)(pt 24 24))
+		(line (pt 8 24)(pt 24 24))
+	)
+	(flipx)
+)
+(symbol
 	(rect 528 1584 776 1760)
 	(text "AC_MOTOR" (rect 5 0 67 11)(font "Arial" ))
 	(text "inst2" (rect 8 160 32 173)(font "Intel Clear" ))
@@ -2822,7 +2855,7 @@ refer to the applicable agreement for further details.
 	)
 	(parameter
 		"sine_samples"
-		"64"
+		"2048"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
@@ -2848,40 +2881,7 @@ refer to the applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 232 160))
 	)
-	(annotation_block (parameter)(rect 480 1800 672 1896))
-)
-(symbol
-	(rect 328 1624 360 1640)
-	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
-	(text "inst5" (rect 3 5 27 18)(font "Intel Clear" )(invisible))
-	(port
-		(pt 16 16)
-		(output)
-		(text "1" (rect 19 7 26 18)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 19 7 26 18)(font "Courier New" (bold))(invisible))
-		(line (pt 16 16)(pt 16 8))
-	)
-	(drawing
-		(line (pt 8 8)(pt 24 8))
-	)
-)
-(symbol
-	(rect 296 1608 328 1640)
-	(text "GND" (rect 8 6 29 16)(font "Arial" (font_size 6)))
-	(text "inst6" (rect 3 -2 27 11)(font "Intel Clear" )(invisible))
-	(port
-		(pt 16 32)
-		(output)
-		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 18 21 25 32)(font "Courier New" (bold))(invisible))
-		(line (pt 16 24)(pt 16 32))
-	)
-	(drawing
-		(line (pt 8 24)(pt 16 16))
-		(line (pt 16 16)(pt 24 24))
-		(line (pt 8 24)(pt 24 24))
-	)
-	(flipx)
+	(annotation_block (parameter)(rect 480 1800 669 1890))
 )
 (connector
 	(text "SYS_CLK" (rect 714 128 760 141)(font "Intel Clear" ))

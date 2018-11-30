@@ -2,7 +2,7 @@
 import numpy as np
 
 bits = 12
-samples = np.power(2, 8) + 2
+samples = np.power(2, 9) + 2
 variable_name = 'sine'
 
 def twos_comp(value, bits):

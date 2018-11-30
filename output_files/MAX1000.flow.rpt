@@ -1,5 +1,5 @@
 Flow report for MAX1000
-Thu Nov 29 14:24:33 2018
+Fri Nov 30 13:46:42 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov 29 14:24:33 2018           ;
+; Flow Status                        ; Successful - Fri Nov 30 13:46:42 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; MAX1000                                         ;
 ; Top-level Entity Name              ; MAX1000                                         ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M16SAU169C8G                                  ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 5,598 / 15,840 ( 35 % )                         ;
-;     Total combinational functions  ; 5,354 / 15,840 ( 34 % )                         ;
-;     Dedicated logic registers      ; 1,559 / 15,840 ( 10 % )                         ;
-; Total registers                    ; 1559                                            ;
+; Total logic elements               ; 5,922 / 15,840 ( 37 % )                         ;
+;     Total combinational functions  ; 5,653 / 15,840 ( 36 % )                         ;
+;     Dedicated logic registers      ; 1,631 / 15,840 ( 10 % )                         ;
+; Total registers                    ; 1631                                            ;
 ; Total pins                         ; 47 / 130 ( 36 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 562,176 ( 0 % )                             ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/29/2018 14:23:12 ;
+; Start date & time ; 11/30/2018 13:44:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MAX1000             ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 115410744367553.154349779124671        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 115410744367553.154358188430540        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; VCS                                    ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -113,13 +113,13 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:26     ; 1.0                     ; 1215 MB             ; 00:00:44                           ;
-; Fitter                    ; 00:00:31     ; 1.2                     ; 1585 MB             ; 00:00:46                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 1033 MB             ; 00:00:02                           ;
-; Power Analyzer            ; 00:00:08     ; 1.4                     ; 1443 MB             ; 00:00:10                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.5                     ; 1084 MB             ; 00:00:09                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 1304 MB             ; 00:00:02                           ;
-; Total                     ; 00:01:16     ; --                      ; --                  ; 00:01:53                           ;
+; Analysis & Synthesis      ; 00:00:36     ; 1.0                     ; 1216 MB             ; 00:00:56                           ;
+; Fitter                    ; 00:00:52     ; 1.2                     ; 1596 MB             ; 00:01:12                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 1039 MB             ; 00:00:02                           ;
+; Power Analyzer            ; 00:00:10     ; 1.4                     ; 1445 MB             ; 00:00:13                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.5                     ; 1090 MB             ; 00:00:13                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 1309 MB             ; 00:00:02                           ;
+; Total                     ; 00:01:52     ; --                      ; --                  ; 00:02:38                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

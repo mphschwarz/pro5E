@@ -64,6 +64,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "ADC_U9_SDO",
+					"strict" : false
+				},
+				{
 					"name" : "SPI_CLK",
 					"strict" : false
 				},
