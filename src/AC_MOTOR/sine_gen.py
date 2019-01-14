@@ -2,7 +2,7 @@
 import numpy as np
 
 bits = 12
-samples = np.power(2, 9) + 2
+samples = np.power(2, 9)
 variable_name = 'sine'
 
 def twos_comp(value, bits):
@@ -13,7 +13,7 @@ def twos_comp(value, bits):
 
 sine = np.sin(np.linspace(0, np.pi / 2, samples)) * np.power(2, bits - 1)
 print([int(x) for x in sine])
-sine = sine[1:-1]
+#sine = sine[1:-1]
 index = np.linspace(0, samples-1, samples)
 bin_sine = []
 for i in range(0, int(len(sine) / 2)):

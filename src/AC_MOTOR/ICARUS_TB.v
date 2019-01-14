@@ -56,8 +56,8 @@ module ICARUS_TB;
 		#125000 adc <= 4000;
 		#10 adc <= 1000;
 		//
-		// #25000 $finish; 
-		#1000000 $finish;
+		#25000 $finish; 
+		// #1000000 $finish;
 	end 
 	//
 	always #1 clk <= !clk;
