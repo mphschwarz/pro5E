@@ -24,14 +24,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "L6234_IN2",
-					"strict" : false
-				},
-				{
-					"name" : "L6234_IN1",
-					"strict" : false
-				},
-				{
 					"name" : "ADC_CLK",
 					"strict" : false
 				},
@@ -48,6 +40,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "L6234_IN2",
+					"strict" : false
+				},
+				{
+					"name" : "L6234_IN1",
+					"strict" : false
+				},
+				{
 					"name" : "SPI_CS",
 					"strict" : false
 				},
@@ -61,10 +61,6 @@
 				},
 				{
 					"name" : "BDBUS0",
-					"strict" : false
-				},
-				{
-					"name" : "ADC_U9_SDO",
 					"strict" : false
 				},
 				{

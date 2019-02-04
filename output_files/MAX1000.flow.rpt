@@ -1,5 +1,5 @@
 Flow report for MAX1000
-Fri Nov 30 13:46:42 2018
+Mon Feb  4 17:14:09 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -40,21 +40,21 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Nov 30 13:46:42 2018           ;
+; Flow Status                        ; Successful - Mon Feb  4 17:14:09 2019           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; MAX1000                                         ;
 ; Top-level Entity Name              ; MAX1000                                         ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M16SAU169C8G                                  ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 5,922 / 15,840 ( 37 % )                         ;
-;     Total combinational functions  ; 5,653 / 15,840 ( 36 % )                         ;
-;     Dedicated logic registers      ; 1,631 / 15,840 ( 10 % )                         ;
-; Total registers                    ; 1631                                            ;
+; Total logic elements               ; 5,356 / 15,840 ( 34 % )                         ;
+;     Total combinational functions  ; 5,117 / 15,840 ( 32 % )                         ;
+;     Dedicated logic registers      ; 1,550 / 15,840 ( 10 % )                         ;
+; Total registers                    ; 1550                                            ;
 ; Total pins                         ; 47 / 130 ( 36 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 562,176 ( 0 % )                             ;
-; Embedded Multiplier 9-bit elements ; 0 / 90 ( 0 % )                                  ;
+; Total memory bits                  ; 6,416 / 562,176 ( 1 % )                         ;
+; Embedded Multiplier 9-bit elements ; 2 / 90 ( 2 % )                                  ;
 ; Total PLLs                         ; 1 / 1 ( 100 % )                                 ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                                   ;
 ; ADC blocks                         ; 0 / 1 ( 0 % )                                   ;
@@ -66,46 +66,51 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/30/2018 13:44:45 ;
+; Start date & time ; 02/04/2019 17:12:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MAX1000             ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                            ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 115410744367553.154358188430540        ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; VCS                                    ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
-; ENABLE_SIGNALTAP                    ; On                                     ; --            ; --          ; --             ;
-; FLOW_ENABLE_POWER_ANALYZER          ; On                                     ; Off           ; --          ; --             ;
-; IOBANK_VCCIO                        ; 3.3V                                   ; --            ; --          ; 1A             ;
-; IOBANK_VCCIO                        ; 3.3V                                   ; --            ; --          ; 2              ;
-; IOBANK_VCCIO                        ; 3.3V                                   ; --            ; --          ; 5              ;
-; IOBANK_VCCIO                        ; 3.3V                                   ; --            ; --          ; 8              ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
-; MISC_FILE                           ; src/PLL/PLL.bsf                        ; --            ; --          ; --             ;
-; MISC_FILE                           ; src/PLL/PLL_bb.v                       ; --            ; --          ; --             ;
-; MISC_FILE                           ; src/PLL/PLL.ppf                        ; --            ; --          ; --             ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --             ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --             ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --             ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
-; POWER_DEFAULT_INPUT_IO_TOGGLE_RATE  ; 12.5 %                                 ; 12.5%         ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
-; SEARCH_PATH                         ; src                                    ; --            ; --          ; --             ;
-; USE_SIGNALTAP_FILE                  ; output_files/stp2.stp                  ; --            ; --          ; --             ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                ;
++-----------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                         ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
++-----------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION      ; On                                     ; Off           ; --          ; --             ;
+; ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION      ; On                                     ; Off           ; --          ; --             ;
+; ALM_REGISTER_PACKING_EFFORT             ; High                                   ; Medium        ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                   ; 115410744367553.154929676213394        ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT                  ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                     ; VCS                                    ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                          ; 1 ps                                   ; --            ; --          ; eda_simulation ;
+; ENABLE_SIGNALTAP                        ; On                                     ; --            ; --          ; --             ;
+; FLOW_ENABLE_POWER_ANALYZER              ; On                                     ; Off           ; --          ; --             ;
+; IOBANK_VCCIO                            ; 3.3V                                   ; --            ; --          ; 1A             ;
+; IOBANK_VCCIO                            ; 3.3V                                   ; --            ; --          ; 2              ;
+; IOBANK_VCCIO                            ; 3.3V                                   ; --            ; --          ; 5              ;
+; IOBANK_VCCIO                            ; 3.3V                                   ; --            ; --          ; 8              ;
+; MAX_CORE_JUNCTION_TEMP                  ; 85                                     ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP                  ; 0                                      ; --            ; --          ; --             ;
+; MISC_FILE                               ; src/PLL/PLL.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                               ; src/PLL/PLL_bb.v                       ; --            ; --          ; --             ;
+; MISC_FILE                               ; src/PLL/PLL.ppf                        ; --            ; --          ; --             ;
+; OPTIMIZATION_MODE                       ; Aggressive Area                        ; Balanced      ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS          ; Half Signal Swing                      ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS          ; Half Signal Swing                      ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS         ; Half Vccio                             ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS         ; Half Vccio                             ; --            ; --          ; --             ;
+; PARTITION_COLOR                         ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE                  ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA ; On                                     ; Off           ; --          ; --             ;
+; POWER_BOARD_THERMAL_MODEL               ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
+; POWER_DEFAULT_INPUT_IO_TOGGLE_RATE      ; 12.5 %                                 ; 12.5%         ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION           ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY                ; output_files                           ; --            ; --          ; --             ;
+; SEARCH_PATH                             ; src                                    ; --            ; --          ; --             ;
+; USE_SIGNALTAP_FILE                      ; output_files/stp2.stp                  ; --            ; --          ; --             ;
++-----------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -113,13 +118,13 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:36     ; 1.0                     ; 1216 MB             ; 00:00:56                           ;
-; Fitter                    ; 00:00:52     ; 1.2                     ; 1596 MB             ; 00:01:12                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 1039 MB             ; 00:00:02                           ;
-; Power Analyzer            ; 00:00:10     ; 1.4                     ; 1445 MB             ; 00:00:13                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.5                     ; 1090 MB             ; 00:00:13                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 1309 MB             ; 00:00:02                           ;
-; Total                     ; 00:01:52     ; --                      ; --                  ; 00:02:38                           ;
+; Analysis & Synthesis      ; 00:00:25     ; 1.0                     ; 1237 MB             ; 00:00:46                           ;
+; Fitter                    ; 00:00:39     ; 1.2                     ; 1616 MB             ; 00:00:55                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 1037 MB             ; 00:00:02                           ;
+; Power Analyzer            ; 00:00:07     ; 1.4                     ; 1438 MB             ; 00:00:09                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.5                     ; 1083 MB             ; 00:00:09                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 1346 MB             ; 00:00:02                           ;
+; Total                     ; 00:01:21     ; --                      ; --                  ; 00:02:03                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

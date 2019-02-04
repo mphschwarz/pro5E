@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Fri Nov 30 13:45:20 2018
+Analysis & Synthesis Status : Successful - Mon Feb  4 17:13:08 2019
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 Revision Name : MAX1000
 Top-level Entity Name : MAX1000
 Family : MAX 10
-Total logic elements : 6,182
-    Total combinational functions : 5,651
-    Dedicated logic registers : 1,631
-Total registers : 1631
+Total logic elements : 5,690
+    Total combinational functions : 5,114
+    Dedicated logic registers : 1,635
+Total registers : 1635
 Total pins : 47
 Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
+Total memory bits : 6,416
+Embedded Multiplier 9-bit elements : 2
 Total PLLs : 1
 UFM blocks : 0
 ADC blocks : 0

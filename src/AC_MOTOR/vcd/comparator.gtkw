@@ -1,0 +1,116 @@
+[*]
+[*] GTKWave Analyzer v3.3.89 (w)1999-2018 BSI
+[*] Mon Feb  4 10:39:59 2019
+[*]
+[dumpfile] "/home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/vcd/ac_motor_comparator_tb.vcd"
+[dumpfile_mtime] "Mon Feb  4 07:43:28 2019"
+[dumpfile_size] 21014438
+[savefile] "/home/mschwarz/fhnw/pro5/fpga/src/AC_MOTOR/vcd/comparator.gtkw"
+[timestart] 0
+[size] 1920 1025
+[pos] -1 -1
+*-18.461449 30000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] AC_MOTOR_COMPARATOR_TB.
+[treeopen] AC_MOTOR_COMPARATOR_TB.sine_gen.
+[sst_width] 223
+[signals_width] 276
+[sst_expanded] 1
+[sst_vpaned_height] 280
+@28
+AC_MOTOR_COMPARATOR_TB.comparator.CLK
+AC_MOTOR_COMPARATOR_TB.comparator.OUT1
+AC_MOTOR_COMPARATOR_TB.comparator.OUT2
+AC_MOTOR_COMPARATOR_TB.sine_gen.LOCK
+@420
+AC_MOTOR_COMPARATOR_TB.sine_gen.AMPLITUDE[12:0]
+@24
+AC_MOTOR_COMPARATOR_TB.sine_gen.FREQUENCY[11:0]
+@10420
+AC_MOTOR_COMPARATOR_TB.sine_gen.SINE_VAL_1[23:0]
+AC_MOTOR_COMPARATOR_TB.sine_gen.SINE_VAL_2[23:0]
+AC_MOTOR_COMPARATOR_TB.sine_gen.SINE_VAL_3[23:0]
+@8420
+AC_MOTOR_COMPARATOR_TB.triangle_gen.TRIANGLE[24:0]
+@24
+AC_MOTOR_COMPARATOR_TB.sine_gen.ampl_int[12:0]
+AC_MOTOR_COMPARATOR_TB.sine_gen.freq_int[12:0]
+@22
+AC_MOTOR_COMPARATOR_TB.amplitude[12:0]
+@28
+AC_MOTOR_COMPARATOR_TB.ccw_in
+AC_MOTOR_COMPARATOR_TB.ccw_out
+AC_MOTOR_COMPARATOR_TB.clk
+AC_MOTOR_COMPARATOR_TB.comparator.CCW
+AC_MOTOR_COMPARATOR_TB.comparator.CW
+AC_MOTOR_COMPARATOR_TB.comparator.EN1
+AC_MOTOR_COMPARATOR_TB.comparator.EN2
+AC_MOTOR_COMPARATOR_TB.comparator.ENABLE
+@22
+AC_MOTOR_COMPARATOR_TB.comparator.SINE[23:0]
+AC_MOTOR_COMPARATOR_TB.comparator.TRIANGLE[24:0]
+AC_MOTOR_COMPARATOR_TB.comparator.dead_time[3:0]
+AC_MOTOR_COMPARATOR_TB.comparator.out_count[3:0]
+@28
+AC_MOTOR_COMPARATOR_TB.comparator.out_count_dir[2:0]
+@22
+AC_MOTOR_COMPARATOR_TB.comparator.sine_int[23:0]
+AC_MOTOR_COMPARATOR_TB.comparator.triangle_int[23:0]
+@28
+AC_MOTOR_COMPARATOR_TB.cw_in
+AC_MOTOR_COMPARATOR_TB.cw_out
+AC_MOTOR_COMPARATOR_TB.en1
+@29
+AC_MOTOR_COMPARATOR_TB.en2
+@28
+AC_MOTOR_COMPARATOR_TB.enable
+@24
+AC_MOTOR_COMPARATOR_TB.frequency[11:0]
+@28
+AC_MOTOR_COMPARATOR_TB.lock
+AC_MOTOR_COMPARATOR_TB.out1
+AC_MOTOR_COMPARATOR_TB.out2
+@8420
+AC_MOTOR_COMPARATOR_TB.sine1[23:0]
+@10420
+AC_MOTOR_COMPARATOR_TB.sine2[23:0]
+AC_MOTOR_COMPARATOR_TB.sine3[23:0]
+@28
+AC_MOTOR_COMPARATOR_TB.sine_gen.CLK
+@10024
+AC_MOTOR_COMPARATOR_TB.sine_gen.clock_div[12:0]
+AC_MOTOR_COMPARATOR_TB.sine_gen.mem_index_1[8:0]
+AC_MOTOR_COMPARATOR_TB.sine_gen.mem_index_2[8:0]
+@10022
+AC_MOTOR_COMPARATOR_TB.sine_gen.mem_index_3[8:0]
+@22
+AC_MOTOR_COMPARATOR_TB.sine_gen.signed_sine_1[11:0]
+AC_MOTOR_COMPARATOR_TB.sine_gen.signed_sine_2[11:0]
+AC_MOTOR_COMPARATOR_TB.sine_gen.signed_sine_3[11:0]
+AC_MOTOR_COMPARATOR_TB.sine_gen.sine_index_1[13:0]
+@24
+AC_MOTOR_COMPARATOR_TB.sine_gen.sine_index_2[13:0]
+@22
+AC_MOTOR_COMPARATOR_TB.sine_gen.sine_index_3[13:0]
+@28
+AC_MOTOR_COMPARATOR_TB.sine_gen.sine_sign_1[2:0]
+AC_MOTOR_COMPARATOR_TB.sine_gen.sine_sign_2[2:0]
+AC_MOTOR_COMPARATOR_TB.sine_gen.sine_sign_3[2:0]
+@22
+AC_MOTOR_COMPARATOR_TB.sine_gen.unsigned_sine_1[11:0]
+AC_MOTOR_COMPARATOR_TB.sine_gen.unsigned_sine_2[11:0]
+AC_MOTOR_COMPARATOR_TB.sine_gen.unsigned_sine_3[11:0]
+AC_MOTOR_COMPARATOR_TB.triangle[24:0]
+@28
+AC_MOTOR_COMPARATOR_TB.triangle_gen.CCW_IN
+AC_MOTOR_COMPARATOR_TB.triangle_gen.CCW_OUT
+AC_MOTOR_COMPARATOR_TB.triangle_gen.CLK
+AC_MOTOR_COMPARATOR_TB.triangle_gen.CW_IN
+AC_MOTOR_COMPARATOR_TB.triangle_gen.CW_OUT
+AC_MOTOR_COMPARATOR_TB.triangle_gen.LOCK
+AC_MOTOR_COMPARATOR_TB.triangle_gen.ccw_int
+AC_MOTOR_COMPARATOR_TB.triangle_gen.cw_int
+AC_MOTOR_COMPARATOR_TB.triangle_gen.triangle_dir[1:0]
+@22
+AC_MOTOR_COMPARATOR_TB.triangle_gen.triangle_int[24:0]
+[pattern_trace] 1
+[pattern_trace] 0

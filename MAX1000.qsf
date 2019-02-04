@@ -111,7 +111,7 @@ set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 2
 set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 8
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name OPTIMIZATION_MODE BALANCED
+set_global_assignment -name OPTIMIZATION_MODE "AGGRESSIVE AREA"
 set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
 set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
 set_location_assignment PIN_E1 -to ADC_U4_SDO
@@ -167,6 +167,28 @@ set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to BDBUS5
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to ADC_U4_SDO
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to ADC_U8_SDO
 set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to ADC_U9_SDO
+set_global_assignment -name EDA_SIMULATION_TOOL VCS
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION ON
+set_global_assignment -name ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION ON
+set_global_assignment -name LL_ENABLED ON -section_id MAX1000
+set_global_assignment -name LL_AUTO_SIZE ON -section_id MAX1000
+set_global_assignment -name LL_STATE FLOATING -section_id MAX1000
+set_global_assignment -name LL_RESERVED OFF -section_id MAX1000
+set_global_assignment -name LL_CORE_ONLY OFF -section_id MAX1000
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id MAX1000
+set_global_assignment -name LL_IGNORE_IO_BANK_SECURITY_CONSTRAINT OFF -section_id MAX1000
+set_global_assignment -name LL_PR_REGION OFF -section_id MAX1000
+set_global_assignment -name LL_ROUTING_REGION_EXPANSION_SIZE 2147483647 -section_id MAX1000
+set_global_assignment -name LL_WIDTH 1 -section_id MAX1000
+set_global_assignment -name LL_HEIGHT 1 -section_id MAX1000
+set_global_assignment -name LL_ORIGIN X1_Y1 -section_id MAX1000
+set_global_assignment -name LL_MEMBER_OF MAX1000 -section_id MAX1000
+set_global_assignment -name VERILOG_FILE src/AC_MOTOR/AC_MOTOR_CONTROL.v
+set_global_assignment -name VERILOG_FILE src/AC_MOTOR/AC_MOTOR_TRIANGLE.v
+set_global_assignment -name VERILOG_FILE src/AC_MOTOR/AC_MOTOR_SINE.v
+set_global_assignment -name VERILOG_FILE src/AC_MOTOR/AC_MOTOR_COMPARATOR.v
 set_global_assignment -name VERILOG_FILE src/AC_MOTOR/AC_MOTOR.v
 set_global_assignment -name BDF_FILE MAX1000.bdf
 set_global_assignment -name CDF_FILE output_files/Chain1.cdf
@@ -206,7 +228,4 @@ set_global_assignment -name VERILOG_FILE src/DEMO/DEMO.v
 set_global_assignment -name BDF_FILE MAX1000_DEMO.bdf
 set_global_assignment -name VERILOG_FILE src/DEMO/ZUWEISUNG_SPI_DEMO.v
 set_global_assignment -name VERILOG_FILE src/RGB/RGB_PL9823/RGB_PL9823_OFF.v
-set_global_assignment -name EDA_SIMULATION_TOOL VCS
-set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

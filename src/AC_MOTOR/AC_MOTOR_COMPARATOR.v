@@ -4,8 +4,8 @@ module AC_MOTOR_COMPARATOR(
 	input CW,
 	input CCW,
 
-	input signed [bits + level_bits - 1:0] TRIANGLE,
-	input signed [bits-1:0] SINE,
+	input signed [bits + level_bits:0] TRIANGLE,
+	input signed [bits + level_bits - 1:0] SINE,
 
 	output reg OUT1,
 	output reg OUT2,
@@ -13,7 +13,7 @@ module AC_MOTOR_COMPARATOR(
 	output EN2);
 	
 	parameter bits = 12;
-	parameter level_bits = 5;
+	parameter level_bits = 12;
 
 	reg [3:0] dead_time;
 	reg signed [bits + level_bits - 1:0] sine_int;
@@ -36,7 +36,8 @@ module AC_MOTOR_COMPARATOR(
 	//sine and triangle comparator
 	always @(posedge CLK) begin
 		// assign sine_int = (bits + level_bits)'(signed'(SINE));
-		sine_int [bits + level_bits - 1:0] <= { {level_bits{SINE[bits - 1]}}, SINE[bits-1:0] };
+		//sine_int [bits + level_bits - 1:0] <= { {level_bits{SINE[bits - 1]}}, SINE[bits-1:0] };
+		sine_int <= SINE;
 		triangle_int <= TRIANGLE;
 		if (sine_int > triangle_int) out_count_dir <= 1;
 		else out_count_dir <= -1;

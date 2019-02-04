@@ -1,23 +1,32 @@
 module AC_MOTOR_SINE(
 	input CLK,
-	input [8:0] FREQUENCY,
-	output reg [bits-1:0] SINE_VAL_1,
-	output reg [bits-1:0] SINE_VAL_2,
-	output reg [bits-1:0] SINE_VAL_3
+	input [12:0] FREQUENCY,
+	input signed [12:0] AMPLITUDE,
+	input LOCK,
+	output reg signed [12 + 12 - 1:0] SINE_VAL_1,
+	output reg signed [12 + 12 - 1:0] SINE_VAL_2,
+	output reg signed [12 + 12 - 1:0] SINE_VAL_3
 	);
 
 	parameter starting_sample = 0;
 	parameter sine_samples = 512 * 4;
 	parameter bits = 12;
 
-	reg [11:0] clock_div;
-	reg [8:0] frequency_int;
+	parameter f_clk = 82000000;
+	parameter f_min = 10;
+	parameter f_max = 600;
+	parameter clock_div_min =  f_clk / (f_min * sine_samples);
+	parameter clock_div_max =  f_clk / (f_max * sine_samples);
+
+	reg [12:0] clock_div;
+	reg [12:0] freq_int;
+	reg signed [12:0] ampl_int;
 	reg [13:0] sine_index_1;	//time index of sine
 	reg [13:0] sine_index_2;	//time index of sine
 	reg [13:0] sine_index_3;	//time index of sine
-	reg [13:0] mem_index_1;	//memory index of sine sample to output
-	reg [13:0] mem_index_2;	//memory index of sine sample to output
-	reg [13:0] mem_index_3;	//memory index of sine sample to output
+	reg [8:0] mem_index_1;	//memory index of sine sample to output
+	reg [8:0] mem_index_2;	//memory index of sine sample to output
+	reg [8:0] mem_index_3;	//memory index of sine sample to output
 	reg signed [bits-1:0] unsigned_sine_1;  //stores the sine value without sign, enables RAM usage
 	reg signed [bits-1:0] unsigned_sine_2;  //stores the sine value without sign, enables RAM usage
 	reg signed [bits-1:0] unsigned_sine_3;  //stores the sine value without sign, enables RAM usage
@@ -29,40 +38,29 @@ module AC_MOTOR_SINE(
 	reg signed [2:0] sine_sign_3;
 
 	(* ramstyle = "M9K" *) reg signed [bits-1:0] sine [(sine_samples / 4) - 1:0];
+
+	always @(posedge LOCK) begin
+		freq_int <= FREQUENCY + clock_div_max;
+		ampl_int <= AMPLITUDE;
+	end
 	
 	always @(posedge CLK) begin
-		if (clock_div >= frequency_int) begin
+		if (clock_div >= freq_int) begin
 			clock_div <= 0;
-
-			// if      (sine_index_1 >= 0                        && sine_index_1 <= sine_samples * 1 / 4 - 1) mem_index_1 <= sine_index_1;
-			// else if (sine_index_1 >= sine_samples * 1 / 4     && sine_index_1 <= sine_samples * 2 / 4 - 2) mem_index_1 <= sine_samples / 2 - sine_index_1 - 2;
-			// else if (sine_index_1 >= sine_samples * 2 / 4 - 1 && sine_index_1 <= sine_samples * 3 / 4 - 1) mem_index_1 <= sine_index_1 - sine_samples / 2 - 2;
-			// else if (sine_index_1 >= sine_samples * 3 / 4 - 1 && sine_index_1 <= sine_samples         - 1) mem_index_1 <= sine_samples - sine_index_1     - 3;
-
 			if      (sine_index_1 >= 0                    && sine_index_1 <= sine_samples     / 4 - 1) mem_index_1 <= sine_index_1;
-			else if (sine_index_1 >= sine_samples     / 4 && sine_index_1 <= sine_samples     / 2 - 1) mem_index_1 <= sine_samples / 2 - sine_index_1 - 1;
-			else if (sine_index_1 >= sine_samples     / 2 && sine_index_1 <= sine_samples * 3 / 4 - 1) mem_index_1 <= sine_index_1 - sine_samples / 2;
-			else if (sine_index_1 >= sine_samples * 3 / 4 && sine_index_1 <= sine_samples         - 1) mem_index_1 <= sine_samples - sine_index_1 - 1;
-
-			// if      (sine_index_2 >= 0                    && sine_index_2 <= sine_samples     / 4 - 1) mem_index_2 <= sine_index_2;
-			// else if (sine_index_2 >= sine_samples     / 4 && sine_index_2 <= sine_samples     / 2 - 1) mem_index_2 <= sine_samples / 2 - sine_index_2 - 2;
-			// else if (sine_index_2 >= sine_samples     / 2 && sine_index_2 <= sine_samples * 3 / 4 - 1) mem_index_2 <= sine_index_2 - sine_samples / 2 + 2;
-			// else if (sine_index_2 >= sine_samples * 3 / 4 && sine_index_2 <= sine_samples         - 1) mem_index_2 <= sine_samples - sine_index_2     + 3;
+			else if (sine_index_1 >= sine_samples     / 4 && sine_index_1 <= sine_samples     / 2 - 1) mem_index_1 <= sine_samples / 2 - sine_index_1 - 1;// - 2;
+			else if (sine_index_1 >= sine_samples     / 2 && sine_index_1 <= sine_samples * 3 / 4 - 1) mem_index_1 <= sine_index_1 - sine_samples / 2;// + 2;
+			else if (sine_index_1 >= sine_samples * 3 / 4 && sine_index_1 <= sine_samples         - 1) mem_index_1 <= sine_samples - sine_index_1     - 1;// + 3;
 
 			if      (sine_index_2 >= 0                    && sine_index_2 <= sine_samples     / 4 - 1) mem_index_2 <= sine_index_2;
-			else if (sine_index_2 >= sine_samples     / 4 && sine_index_2 <= sine_samples     / 2 - 1) mem_index_2 <= sine_samples / 2 - sine_index_2 - 1;
-			else if (sine_index_2 >= sine_samples     / 2 && sine_index_2 <= sine_samples * 3 / 4 - 1) mem_index_2 <= sine_index_2 - sine_samples / 2;
-			else if (sine_index_2 >= sine_samples * 3 / 4 && sine_index_2 <= sine_samples         - 1) mem_index_2 <= sine_samples - sine_index_2 - 1;
-
-			// if      (sine_index_3 >= 0                    && sine_index_3 <= sine_samples     / 4 - 1) mem_index_3 <= sine_index_3;
-			// else if (sine_index_3 >= sine_samples     / 4 && sine_index_3 <= sine_samples     / 2 - 1) mem_index_3 <= sine_samples / 2 - sine_index_3 - 2;
-			// else if (sine_index_3 >= sine_samples     / 2 && sine_index_3 <= sine_samples * 3 / 4 - 1) mem_index_3 <= sine_index_3 - sine_samples / 2 + 2;
-			// else if (sine_index_3 >= sine_samples * 3 / 4 && sine_index_3 <= sine_samples         - 1) mem_index_3 <= sine_samples - sine_index_3     + 3;
+			else if (sine_index_2 >= sine_samples     / 4 && sine_index_2 <= sine_samples     / 2 - 1) mem_index_2 <= sine_samples / 2 - sine_index_2 - 1;// - 2;
+			else if (sine_index_2 >= sine_samples     / 2 && sine_index_2 <= sine_samples * 3 / 4 - 1) mem_index_2 <= sine_index_2 - sine_samples / 2;// + 2;
+			else if (sine_index_2 >= sine_samples * 3 / 4 && sine_index_2 <= sine_samples         - 1) mem_index_2 <= sine_samples - sine_index_2     - 1;// + 3;
 			
 			if      (sine_index_3 >= 0                    && sine_index_3 <= sine_samples     / 4 - 1) mem_index_3 <= sine_index_3;
-			else if (sine_index_3 >= sine_samples     / 4 && sine_index_3 <= sine_samples     / 2 - 1) mem_index_3 <= sine_samples / 2 - sine_index_3 - 1;
-			else if (sine_index_3 >= sine_samples     / 2 && sine_index_3 <= sine_samples * 3 / 4 - 1) mem_index_3 <= sine_index_3 - sine_samples / 2;
-			else if (sine_index_3 >= sine_samples * 3 / 4 && sine_index_3 <= sine_samples         - 1) mem_index_3 <= sine_samples - sine_index_3 - 1;
+			else if (sine_index_3 >= sine_samples     / 4 && sine_index_3 <= sine_samples     / 2 - 1) mem_index_3 <= sine_samples / 2 - sine_index_3 - 1;// - 2;
+			else if (sine_index_3 >= sine_samples     / 2 && sine_index_3 <= sine_samples * 3 / 4 - 1) mem_index_3 <= sine_index_3 - sine_samples / 2;// + 2;
+			else if (sine_index_3 >= sine_samples * 3 / 4 && sine_index_3 <= sine_samples         - 1) mem_index_3 <= sine_samples - sine_index_3     - 1;// + 3;
 
 
 			if (sine_index_1 >= sine_samples / 2 && sine_index_1 <= sine_samples - 1) sine_sign_1 <= -1;
@@ -76,49 +74,44 @@ module AC_MOTOR_SINE(
 
 
 			// value_temp <= 12'b000000000000; // für triangle frequency testing
-			if (sine_index_1 == sine_samples - 1) sine_index_1 <= 0;
+			if (sine_index_1 == sine_samples + 3) sine_index_1 <= 0;
 			else sine_index_1 <= sine_index_1 + 1;
-			if (sine_index_2 == sine_samples - 1) sine_index_2 <= 0;
+			if (sine_index_2 == sine_samples + 3) sine_index_2 <= 0;
 			else sine_index_2 <= sine_index_2 + 1;
-			if (sine_index_3 == sine_samples - 1) sine_index_3 <= 0;
+			if (sine_index_3 == sine_samples + 3) sine_index_3 <= 0;
 			else sine_index_3 <= sine_index_3 + 1;
 
 
 		end else begin
 			clock_div <= clock_div + 1;
 		end
+	end
 
+	always @(posedge CLK) begin
 		unsigned_sine_1 <= sine[mem_index_1];
 		unsigned_sine_2 <= sine[mem_index_2];
 		unsigned_sine_3 <= sine[mem_index_3];
-		SINE_VAL_1 <= unsigned_sine_1 * sine_sign_1;
-		SINE_VAL_2 <= unsigned_sine_2 * sine_sign_2;
-		SINE_VAL_3 <= unsigned_sine_3 * sine_sign_3;
-		// SINE_VAL_1 <= signed_sine_1;
-		// SINE_VAL_2 <= signed_sine_2;
-		// SINE_VAL_3 <= signed_sine_3;
+	end
 
+	always @(posedge CLK) begin
+		signed_sine_1 <= unsigned_sine_1 * sine_sign_1;
+		signed_sine_2 <= unsigned_sine_2 * sine_sign_2;
+		signed_sine_3 <= unsigned_sine_3 * sine_sign_3;
+	end
+
+	always @(posedge CLK) begin
+		SINE_VAL_1 <= signed_sine_1 * ampl_int;
+		SINE_VAL_2 <= signed_sine_2 * ampl_int;
+		SINE_VAL_3 <= signed_sine_3 * ampl_int;
 	end
 
 	initial begin
 		clock_div <= 0;
-		frequency_int <= 400;
 		sine_index_1 <= 0;
 		sine_index_2 <= sine_samples / 3;
-		sine_index_3 <= sine_samples * 2 / 3;
-		mem_index_1 <= 0;
-		mem_index_2 <= 0;
-		mem_index_3 <= 0;
-		unsigned_sine_1 <= 0; 
-		unsigned_sine_2 <= 0; 
-		unsigned_sine_3 <= 0; 
-		signed_sine_1 <= 0;
-		signed_sine_2 <= 0;
-		signed_sine_3 <= 0;
-		sine_sign_1 <= 0;
-		sine_sign_2 <= 0;
-		sine_sign_3 <= 0;
-
+		sine_index_3 <= sine_samples / 3 * 2;
+		freq_int <= clock_div_max;
+		ampl_int <= 2**11;
 		sine[0] = 12'b000000000000; sine[1] = 12'b000000000110; /*12'b000000000000*/
 		sine[2] = 12'b000000001100; sine[3] = 12'b000000010010;
 		sine[4] = 12'b000000011001; sine[5] = 12'b000000011111;
@@ -374,6 +367,6 @@ module AC_MOTOR_SINE(
 		sine[504] = 12'b011111111111; sine[505] = 12'b011111111111;
 		sine[506] = 12'b011111111111; sine[507] = 12'b011111111111;
 		sine[508] = 12'b011111111111; sine[509] = 12'b011111111111;
-		sine[510] = 12'b011111111111; sine[511] = 12'b100000000000/*12'b100000000000*/;
+		sine[510] = 12'b011111111111; sine[511] = 12'b011111111111/*12'b100000000000*/;
 	end
 endmodule

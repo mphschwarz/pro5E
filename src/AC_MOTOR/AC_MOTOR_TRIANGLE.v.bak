@@ -1,0 +1,45 @@
+module AC_MOTOR_TRIANGLE(
+	input CLK,
+	input CW_IN,
+	input CCW_IN,
+	input [log2(levels) - 1:0] AMPLITUDE,
+	output CW_OUT,
+	output CCW_OUT,
+	output reg signed [sine_bits + log2(levels):0] TRIANGLE);
+	
+	parameter levels = 16;
+	parameter sine_bits = 12
+	
+	// reg [log2(levels) - 1:0] amplitude_int;
+	reg cw_int;
+	reg cw_out;
+	reg signed [1:0] triangle_dir;
+	reg signed [sine_bits + log2(levels):0] triangle_int;
+	reg signed [sine_bits + log2(levels):0] triangle_max;
+	reg signed [sine_bits + log2(levels):0] triangle_min;
+
+	initial begin
+		cw_int = 0;
+		ccw_int = 1;
+		triangle_dir <= 1;
+		triangle_int <= 0;
+		triangle_max <= 2048;
+		triangle_min <= -2048;
+	end
+
+	always @(posedge CLK) begin
+		if (triangle_int >= triangle_max || triangle_int <= triangle_min) begin
+			cw_int <= CW_IN;
+			ccw_int <= CCW_IN;
+			triangle_max <= AMPLITUDE * 2048;  //12b'011111111111';
+			triangle_min <= AMPLITUDE * -2048; //12b'100000000001';
+		end
+		if (triangle_int >= triangle_max) triangle_dir <= -AMPLITUDE;
+		else if (triangle_int <= triangle_min) triangle_dir <= AMPLITUDE;
+
+		triangle_int <= triangle_int + triangle_dir;
+
+		TRIANGLE <= triangle_int;
+		CW_OUT <= cw_int;
+		CCW_OUT <= ccw_int;
+	end

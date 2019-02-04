@@ -8,18 +8,20 @@ module AC_MOTOR_COMPARATOR_TB;
 	integer file;
 	reg clk;
 	reg enable;
-	reg [4:0] amplitude;
-	reg [8:0] frequency;
+	reg signed [12:0] amplitude;
+	reg [12:0] frequency;
 	//
-	wire signed [12+5-1:0] triangle;
-	wire signed [12-1:0] sine1;
-	wire signed [12-1:0] sine2;
-	wire signed [12-1:0] sine3;
+	wire signed [24:0] triangle;
+	wire signed [23:0] sine1;
+	wire signed [23:0] sine2;
+	wire signed [23:0] sine3;
 
 	reg cw_in;
 	reg ccw_in;
 	wire cw_out;
 	wire ccw_out;
+
+	wire lock;
 
 	wire out1;
 	wire out2;
@@ -29,13 +31,14 @@ module AC_MOTOR_COMPARATOR_TB;
 	initial begin
 		clk <= 1;
 		frequency <= 10;
-		amplitude <= 1;
+		amplitude <= 2**12 - 1;
 		cw_in <= 0;
 		ccw_in <= 1;
 
 		$dumpfile("vcd/ac_motor_comparator_tb.vcd"); 
 		$dumpvars(0, AC_MOTOR_COMPARATOR_TB); 
 		//#25000 $finish; 
+		//#124500 frequency <= 2**12 - 1;
 		#250000 $finish;
 	end 
 	//
@@ -56,13 +59,15 @@ module AC_MOTOR_COMPARATOR_TB;
 		clk,
 		cw_in,
 		ccw_in,
-		amplitude,
 		cw_out,
 		ccw_out,
+		lock,
 		triangle);
 	AC_MOTOR_SINE sine_gen(
 		clk,
 		frequency,
+		amplitude,
+		lock,
 		sine1,
 		sine2,
 		sine3);

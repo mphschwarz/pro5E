@@ -6,18 +6,19 @@ module AC_MOTOR_TRIANGLE_TB;
 	reg clk;
 	reg cw_in;
 	reg ccw_in;
-	reg [4:0] amplitude;
+	// reg [4:0] amplitude;
 	//
-	wire signed [5+12-1:0] triangle;
+	wire signed [12+12:0] triangle;
 	wire cw_out;
 	wire ccw_out;
+	wire lock;
 	//
 	initial begin
 		clk <= 1;
 		cw_in <= 0;
 		ccw_in <= 1;
 		//
-		amplitude <= 1;
+		// amplitude <= 1;
 		//
 		$dumpfile("vcd/ac_motor_triangle_tb.vcd"); 
 		$dumpvars(0, AC_MOTOR_TRIANGLE_TB); 
@@ -31,9 +32,10 @@ module AC_MOTOR_TRIANGLE_TB;
 		clk,
 		cw_in,
 		ccw_in,
-		amplitude,
+		// amplitude,
 		cw_out,
 		ccw_out,
+		lock,
 		triangle);
 	//
 endmodule

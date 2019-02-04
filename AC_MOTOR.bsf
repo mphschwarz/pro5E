@@ -116,12 +116,12 @@ refer to the applicable agreement for further details.
 	)
 	(parameter
 		"sine_samples"
-		"64"
+		"2048"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
-		"clock_div_max"
-		""
+		"dead_time"
+		"2"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter

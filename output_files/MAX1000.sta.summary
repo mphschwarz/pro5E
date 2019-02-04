@@ -3,35 +3,19 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -63.541
-TNS   : -1735.862
-
-Type  : Slow 1200mV 85C Model Setup 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : -7.104
-TNS   : -88.313
+Slack : -71.174
+TNS   : -2586.406
 
 Type  : Slow 1200mV 85C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -0.727
-TNS   : -0.727
-
-Type  : Slow 1200mV 85C Model Hold 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : 0.589
+Slack : 0.345
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : -5.271
-TNS   : -62.990
-
-Type  : Slow 1200mV 85C Model Removal 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : 1.953
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : 0.354
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AC_MOTOR_TRIANGLE:triangle|LOCK'
+Slack : -1.487
+TNS   : -1.487
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 9.701
+Slack : 5.681
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SYS_CLK_12MHz'
@@ -39,35 +23,19 @@ Slack : 41.533
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -56.938
-TNS   : -1517.123
-
-Type  : Slow 1200mV 0C Model Setup 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : -6.723
-TNS   : -82.572
+Slack : -64.782
+TNS   : -2327.436
 
 Type  : Slow 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -0.735
-TNS   : -0.735
-
-Type  : Slow 1200mV 0C Model Hold 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : 0.519
+Slack : 0.308
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : -5.008
-TNS   : -59.412
-
-Type  : Slow 1200mV 0C Model Removal 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : 1.839
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : 0.242
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AC_MOTOR_TRIANGLE:triangle|LOCK'
+Slack : -1.487
+TNS   : -1.487
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 9.671
+Slack : 5.703
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SYS_CLK_12MHz'
@@ -75,35 +43,19 @@ Slack : 41.396
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -11.770
-TNS   : -153.340
-
-Type  : Fast 1200mV 0C Model Setup 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : -2.025
-TNS   : -24.804
+Slack : -19.357
+TNS   : -572.089
 
 Type  : Fast 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -0.356
-TNS   : -0.356
-
-Type  : Fast 1200mV 0C Model Hold 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : -0.057
-TNS   : -0.057
-
-Type  : Fast 1200mV 0C Model Recovery 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : -1.554
-TNS   : -17.918
-
-Type  : Fast 1200mV 0C Model Removal 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : 0.513
+Slack : 0.145
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AC_MOTOR:inst2|ADC_LATCH'
-Slack : 0.363
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AC_MOTOR_TRIANGLE:triangle|LOCK'
+Slack : -1.000
+TNS   : -1.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 9.744
+Slack : 5.803
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SYS_CLK_12MHz'

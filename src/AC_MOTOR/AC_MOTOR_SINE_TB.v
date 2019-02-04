@@ -2,18 +2,22 @@
 `timescale 10ns/1ns
 
 
-module AC_MOTOR_COMPARATOR_TB;
+module AC_MOTOR_SINE_TB;
 	integer file;
 	reg clk;
-	reg [8:0] frequency;
+	reg lock;
+	reg [11:0] frequency;
+	reg signed [12:0] amplitude;
 	//
-	wire signed [12-1:0] sine1;
-	wire signed [12-1:0] sine2;
-	wire signed [12-1:0] sine3;
+	wire signed [24-1:0] sine1;
+	wire signed [24-1:0] sine2;
+	wire signed [24-1:0] sine3;
 	//
 	initial begin
 		clk <= 1;
-		frequency <= 10;
+		frequency <= 2**12;
+		amplitude <= 2**11;
+		lock <= 0;
 		$dumpfile("vcd/ac_motor_sine_tb.vcd"); 
 		$dumpvars(0, AC_MOTOR_SINE_TB); 
 		#25000 $finish; 
@@ -21,12 +25,11 @@ module AC_MOTOR_COMPARATOR_TB;
 	//
 	always #1 clk <= !clk;
 
-	AC_MOTOR_TRIANGLE triangle(
-		clk,
-		);
 	AC_MOTOR_SINE sine(
 		clk,
 		frequency,
+		amplitude,
+		lock,
 		sine1,
 		sine2,
 		sine3);

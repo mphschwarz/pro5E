@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M16SAU169) Path("/home/mschwarz/fhnw/pro5/fpga/output_files/") File("MAX1000.pof") MfrSpec(OpMask(1) Child_OpMask(2 1 1));
+		Device PartName(10M16SAU169) Path("/home/mschwarz/fhnw/pro5/fpga/output_files/") File("MAX1000.pof") MfrSpec(OpMask(3) Child_OpMask(2 3 3));
 
 ChainEnd;
 
