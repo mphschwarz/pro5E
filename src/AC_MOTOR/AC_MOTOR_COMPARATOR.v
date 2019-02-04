@@ -35,8 +35,6 @@ module AC_MOTOR_COMPARATOR(
 	
 	//sine and triangle comparator
 	always @(posedge CLK) begin
-		// assign sine_int = (bits + level_bits)'(signed'(SINE));
-		//sine_int [bits + level_bits - 1:0] <= { {level_bits{SINE[bits - 1]}}, SINE[bits-1:0] };
 		sine_int <= SINE;
 		triangle_int <= TRIANGLE;
 		if (sine_int > triangle_int) out_count_dir <= 1;

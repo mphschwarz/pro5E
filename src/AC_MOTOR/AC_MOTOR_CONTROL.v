@@ -14,13 +14,11 @@ module AC_MOTOR_CONTROL(
 	end
 
 	always @(posedge CLK) begin
-		AMPLITUDE <= 2**12 - 1;
-		FREQUENCY <= 2**12 - 1;
+		AMPLITUDE <= power_int;
+		FREQUENCY <= 2**12 - 1 - power_int;
 		CW <= 0;
 		CCW <= 1;
 	end
-		//AMPLITUDE <= 2**12 - 1;
-		//FREQUENCY <= 0;
 
 
 endmodule

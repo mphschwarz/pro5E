@@ -48,19 +48,19 @@ module AC_MOTOR_SINE(
 		if (clock_div >= freq_int) begin
 			clock_div <= 0;
 			if      (sine_index_1 >= 0                    && sine_index_1 <= sine_samples     / 4 - 1) mem_index_1 <= sine_index_1;
-			else if (sine_index_1 >= sine_samples     / 4 && sine_index_1 <= sine_samples     / 2 - 1) mem_index_1 <= sine_samples / 2 - sine_index_1 - 1;// - 2;
-			else if (sine_index_1 >= sine_samples     / 2 && sine_index_1 <= sine_samples * 3 / 4 - 1) mem_index_1 <= sine_index_1 - sine_samples / 2;// + 2;
-			else if (sine_index_1 >= sine_samples * 3 / 4 && sine_index_1 <= sine_samples         - 1) mem_index_1 <= sine_samples - sine_index_1     - 1;// + 3;
+			else if (sine_index_1 >= sine_samples     / 4 && sine_index_1 <= sine_samples     / 2 - 1) mem_index_1 <= sine_samples / 2 - sine_index_1 - 1;
+			else if (sine_index_1 >= sine_samples     / 2 && sine_index_1 <= sine_samples * 3 / 4 - 1) mem_index_1 <= sine_index_1 - sine_samples / 2;
+			else if (sine_index_1 >= sine_samples * 3 / 4 && sine_index_1 <= sine_samples         - 1) mem_index_1 <= sine_samples - sine_index_1 - 1;
 
 			if      (sine_index_2 >= 0                    && sine_index_2 <= sine_samples     / 4 - 1) mem_index_2 <= sine_index_2;
-			else if (sine_index_2 >= sine_samples     / 4 && sine_index_2 <= sine_samples     / 2 - 1) mem_index_2 <= sine_samples / 2 - sine_index_2 - 1;// - 2;
-			else if (sine_index_2 >= sine_samples     / 2 && sine_index_2 <= sine_samples * 3 / 4 - 1) mem_index_2 <= sine_index_2 - sine_samples / 2;// + 2;
-			else if (sine_index_2 >= sine_samples * 3 / 4 && sine_index_2 <= sine_samples         - 1) mem_index_2 <= sine_samples - sine_index_2     - 1;// + 3;
+			else if (sine_index_2 >= sine_samples     / 4 && sine_index_2 <= sine_samples     / 2 - 1) mem_index_2 <= sine_samples / 2 - sine_index_2 - 1;
+			else if (sine_index_2 >= sine_samples     / 2 && sine_index_2 <= sine_samples * 3 / 4 - 1) mem_index_2 <= sine_index_2 - sine_samples / 2;
+			else if (sine_index_2 >= sine_samples * 3 / 4 && sine_index_2 <= sine_samples         - 1) mem_index_2 <= sine_samples - sine_index_2 - 1;
 			
 			if      (sine_index_3 >= 0                    && sine_index_3 <= sine_samples     / 4 - 1) mem_index_3 <= sine_index_3;
-			else if (sine_index_3 >= sine_samples     / 4 && sine_index_3 <= sine_samples     / 2 - 1) mem_index_3 <= sine_samples / 2 - sine_index_3 - 1;// - 2;
-			else if (sine_index_3 >= sine_samples     / 2 && sine_index_3 <= sine_samples * 3 / 4 - 1) mem_index_3 <= sine_index_3 - sine_samples / 2;// + 2;
-			else if (sine_index_3 >= sine_samples * 3 / 4 && sine_index_3 <= sine_samples         - 1) mem_index_3 <= sine_samples - sine_index_3     - 1;// + 3;
+			else if (sine_index_3 >= sine_samples     / 4 && sine_index_3 <= sine_samples     / 2 - 1) mem_index_3 <= sine_samples / 2 - sine_index_3 - 1;
+			else if (sine_index_3 >= sine_samples     / 2 && sine_index_3 <= sine_samples * 3 / 4 - 1) mem_index_3 <= sine_index_3 - sine_samples / 2;
+			else if (sine_index_3 >= sine_samples * 3 / 4 && sine_index_3 <= sine_samples         - 1) mem_index_3 <= sine_samples - sine_index_3 - 1;
 
 
 			if (sine_index_1 >= sine_samples / 2 && sine_index_1 <= sine_samples - 1) sine_sign_1 <= -1;

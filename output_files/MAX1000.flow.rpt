@@ -1,5 +1,5 @@
 Flow report for MAX1000
-Mon Feb  4 17:14:09 2019
+Mon Feb  4 20:12:26 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -40,20 +40,20 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Feb  4 17:14:09 2019           ;
+; Flow Status                        ; Successful - Mon Feb  4 20:12:26 2019           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; MAX1000                                         ;
 ; Top-level Entity Name              ; MAX1000                                         ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M16SAU169C8G                                  ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 5,356 / 15,840 ( 34 % )                         ;
-;     Total combinational functions  ; 5,117 / 15,840 ( 32 % )                         ;
-;     Dedicated logic registers      ; 1,550 / 15,840 ( 10 % )                         ;
-; Total registers                    ; 1550                                            ;
-; Total pins                         ; 47 / 130 ( 36 % )                               ;
+; Total logic elements               ; 222 / 15,840 ( 1 % )                            ;
+;     Total combinational functions  ; 203 / 15,840 ( 1 % )                            ;
+;     Dedicated logic registers      ; 140 / 15,840 ( < 1 % )                          ;
+; Total registers                    ; 140                                             ;
+; Total pins                         ; 7 / 130 ( 5 % )                                 ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 6,416 / 562,176 ( 1 % )                         ;
+; Total memory bits                  ; 5,632 / 562,176 ( 1 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 2 / 90 ( 2 % )                                  ;
 ; Total PLLs                         ; 1 / 1 ( 100 % )                                 ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                                   ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/04/2019 17:12:42 ;
+; Start date & time ; 02/04/2019 20:11:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MAX1000             ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ refer to the applicable agreement for further details.
 ; ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION      ; On                                     ; Off           ; --          ; --             ;
 ; ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION      ; On                                     ; Off           ; --          ; --             ;
 ; ALM_REGISTER_PACKING_EFFORT             ; High                                   ; Medium        ; --          ; --             ;
-; COMPILER_SIGNATURE_ID                   ; 115410744367553.154929676213394        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                   ; 115410744367553.154930750818211        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT                  ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                     ; VCS                                    ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                          ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -118,13 +118,13 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:25     ; 1.0                     ; 1237 MB             ; 00:00:46                           ;
-; Fitter                    ; 00:00:39     ; 1.2                     ; 1616 MB             ; 00:00:55                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 1037 MB             ; 00:00:02                           ;
-; Power Analyzer            ; 00:00:07     ; 1.4                     ; 1438 MB             ; 00:00:09                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.5                     ; 1083 MB             ; 00:00:09                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 1346 MB             ; 00:00:02                           ;
-; Total                     ; 00:01:21     ; --                      ; --                  ; 00:02:03                           ;
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 1185 MB             ; 00:00:34                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 1537 MB             ; 00:00:09                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 1024 MB             ; 00:00:01                           ;
+; Power Analyzer            ; 00:00:02     ; 1.1                     ; 1403 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.1                     ; 1040 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1300 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:34     ; --                      ; --                  ; 00:00:49                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

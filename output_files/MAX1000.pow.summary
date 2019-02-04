@@ -1,12 +1,12 @@
-Power Analyzer Status : Successful - Mon Feb  4 17:13:59 2019
+Power Analyzer Status : Successful - Mon Feb  4 20:12:21 2019
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 Revision Name : MAX1000
 Top-level Entity Name : MAX1000
 Family : MAX 10
 Device : 10M16SAU169C8G
 Power Models : Final
-Total Thermal Power Dissipation : 254.13 mW
+Total Thermal Power Dissipation : 252.31 mW
 Core Dynamic Thermal Power Dissipation : 0.00 mW
-Core Static Thermal Power Dissipation : 226.50 mW
-I/O Thermal Power Dissipation : 27.63 mW
+Core Static Thermal Power Dissipation : 226.49 mW
+I/O Thermal Power Dissipation : 25.82 mW
 Power Estimation Confidence : Low: user provided insufficient toggle rate data

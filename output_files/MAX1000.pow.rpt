@@ -1,5 +1,5 @@
 Power Analyzer report for MAX1000
-Mon Feb  4 17:13:59 2019
+Mon Feb  4 20:12:21 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -52,29 +52,29 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.38        ;
+; Average used               ; 1.08        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  37.5%      ;
+;     Processor 2            ;   8.5%      ;
 +----------------------------+-------------+
 
 
 +-------------------------------------------------------------------------------------------+
 ; Power Analyzer Summary                                                                    ;
 +----------------------------------------+--------------------------------------------------+
-; Power Analyzer Status                  ; Successful - Mon Feb  4 17:13:59 2019            ;
+; Power Analyzer Status                  ; Successful - Mon Feb  4 20:12:21 2019            ;
 ; Quartus Prime Version                  ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition  ;
 ; Revision Name                          ; MAX1000                                          ;
 ; Top-level Entity Name                  ; MAX1000                                          ;
 ; Family                                 ; MAX 10                                           ;
 ; Device                                 ; 10M16SAU169C8G                                   ;
 ; Power Models                           ; Final                                            ;
-; Total Thermal Power Dissipation        ; 254.13 mW                                        ;
+; Total Thermal Power Dissipation        ; 252.31 mW                                        ;
 ; Core Dynamic Thermal Power Dissipation ; 0.00 mW                                          ;
-; Core Static Thermal Power Dissipation  ; 226.50 mW                                        ;
-; I/O Thermal Power Dissipation          ; 27.63 mW                                         ;
+; Core Static Thermal Power Dissipation  ; 226.49 mW                                        ;
+; I/O Thermal Power Dissipation          ; 25.82 mW                                         ;
 ; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
 +----------------------------------------+--------------------------------------------------+
 
@@ -111,23 +111,7 @@ refer to the applicable agreement for further details.
 ; Node                                                                               ; Reason                      ;
 +------------------------------------------------------------------------------------+-----------------------------+
 ; PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[0]         ; No valid clock domain found ;
-; J4_P3                                                                              ; No valid clock domain found ;
-; J4_P2                                                                              ; No valid clock domain found ;
-; BDBUS4                                                                             ; No valid clock domain found ;
-; BDBUS5                                                                             ; No valid clock domain found ;
-; ADC_U9_SDO                                                                         ; No valid clock domain found ;
 ; SYS_CLK_12MHz                                                                      ; No valid clock domain found ;
-; SPI_CS                                                                             ; No valid clock domain found ;
-; USER_BTN                                                                           ; No valid clock domain found ;
-; BDBUS3                                                                             ; No valid clock domain found ;
-; BDBUS0                                                                             ; No valid clock domain found ;
-; SPI_CLK                                                                            ; No valid clock domain found ;
-; SPI_MOSI                                                                           ; No valid clock domain found ;
-; J4_P5                                                                              ; No valid clock domain found ;
-; J4_P4                                                                              ; No valid clock domain found ;
-; BDBUS1                                                                             ; No valid clock domain found ;
-; ADC_U8_SDO                                                                         ; No valid clock domain found ;
-; ADC_U4_SDO                                                                         ; No valid clock domain found ;
 ; PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[0]~clkctrl ; No valid clock domain found ;
 +------------------------------------------------------------------------------------+-----------------------------+
 
@@ -175,123 +159,36 @@ refer to the applicable agreement for further details.
 ; Embedded multiplier output ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
 ; Combinational cell         ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
 ; Register cell              ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
-; I/O                        ; 2.32 mW                           ; 0.00 mW                     ; 2.32 mW                        ; 0.00 mW                       ;    0.000                                                  ;
+; I/O                        ; 0.51 mW                           ; 0.00 mW                     ; 0.51 mW                        ; 0.00 mW                       ;    0.000                                                  ;
 ; Voltage Regulator          ; 0.96 mW                           ; 0.00 mW                     ; 0.96 mW                        ; --                            ; --                                                        ;
 +----------------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
 (1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                                                                                                                     ;
-+--------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Compilation Hierarchy Node                             ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                                                              ;
-+--------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; |MAX1000                                               ; 3.28 mW (3.28 mW)                    ; 0.00 mW (0.00 mW)               ; 3.28 mW (3.28 mW)                 ; 0.00 mW (0.00 mW)                 ; |MAX1000                                                                                                                                         ;
-;     |ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg                                                                                              ;
-;         |ADC_MCP3201:adc_mcp3201                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u4_mov_avg|ADC_MCP3201:adc_mcp3201                                                                      ;
-;     |ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg                                                                                              ;
-;         |ADC_MCP3201:adc_mcp3201                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|ADC_MCP3201_MOV_AVG:adc_mcp3201_u8_mov_avg|ADC_MCP3201:adc_mcp3201                                                                      ;
-;     |ADC_MCP3201:adc_mcp3201_u9                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|ADC_MCP3201:adc_mcp3201_u9                                                                                                              ;
-;     |APP_TIMER:app_timer                               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer                                                                                                                     ;
-;         |SPI_HOST:spi_host_ft2232                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232                                                                                            ;
-;             |SPI_INP_FILTER_HOST:spi_inp_filter_clk    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_clk                                                     ;
-;             |SPI_INP_FILTER_HOST:spi_inp_filter_cs     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_cs                                                      ;
-;             |SPI_INP_FILTER_HOST:spi_inp_filter_mosi   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|SPI_HOST:spi_host_ft2232|SPI_INP_FILTER_HOST:spi_inp_filter_mosi                                                    ;
-;         |TIMER_APP:timer_app                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app                                                                                                 ;
-;             |lpm_divide:Div0                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div0                                                                                 ;
-;                 |lpm_divide_3vl:auto_generated         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div0|lpm_divide_3vl:auto_generated                                                   ;
-;                     |sign_div_unsign_5nh:divider       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div0|lpm_divide_3vl:auto_generated|sign_div_unsign_5nh:divider                       ;
-;                         |alt_u_div_kke:divider         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div0|lpm_divide_3vl:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_kke:divider ;
-;             |lpm_divide:Div1                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div1                                                                                 ;
-;                 |lpm_divide_otl:auto_generated         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div1|lpm_divide_otl:auto_generated                                                   ;
-;                     |sign_div_unsign_qlh:divider       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div1|lpm_divide_otl:auto_generated|sign_div_unsign_qlh:divider                       ;
-;                         |alt_u_div_uhe:divider         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div1|lpm_divide_otl:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider ;
-;             |lpm_divide:Div2                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div2                                                                                 ;
-;                 |lpm_divide_mtl:auto_generated         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div2|lpm_divide_mtl:auto_generated                                                   ;
-;                     |sign_div_unsign_olh:divider       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div2|lpm_divide_mtl:auto_generated|sign_div_unsign_olh:divider                       ;
-;                         |alt_u_div_qhe:divider         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div2|lpm_divide_mtl:auto_generated|sign_div_unsign_olh:divider|alt_u_div_qhe:divider ;
-;             |lpm_divide:Div3                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div3                                                                                 ;
-;                 |lpm_divide_mtl:auto_generated         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div3|lpm_divide_mtl:auto_generated                                                   ;
-;                     |sign_div_unsign_olh:divider       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div3|lpm_divide_mtl:auto_generated|sign_div_unsign_olh:divider                       ;
-;                         |alt_u_div_qhe:divider         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div3|lpm_divide_mtl:auto_generated|sign_div_unsign_olh:divider|alt_u_div_qhe:divider ;
-;             |lpm_divide:Div4                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div4                                                                                 ;
-;                 |lpm_divide_mtl:auto_generated         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div4|lpm_divide_mtl:auto_generated                                                   ;
-;                     |sign_div_unsign_olh:divider       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div4|lpm_divide_mtl:auto_generated|sign_div_unsign_olh:divider                       ;
-;                         |alt_u_div_qhe:divider         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Div4|lpm_divide_mtl:auto_generated|sign_div_unsign_olh:divider|alt_u_div_qhe:divider ;
-;             |lpm_divide:Mod0                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod0                                                                                 ;
-;                 |lpm_divide_6nl:auto_generated         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod0|lpm_divide_6nl:auto_generated                                                   ;
-;                     |sign_div_unsign_5nh:divider       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod0|lpm_divide_6nl:auto_generated|sign_div_unsign_5nh:divider                       ;
-;                         |alt_u_div_kke:divider         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod0|lpm_divide_6nl:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_kke:divider ;
-;             |lpm_divide:Mod1                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod1                                                                                 ;
-;                 |lpm_divide_rll:auto_generated         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod1|lpm_divide_rll:auto_generated                                                   ;
-;                     |sign_div_unsign_qlh:divider       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod1|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider                       ;
-;                         |alt_u_div_uhe:divider         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod1|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider ;
-;             |lpm_divide:Mod2                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod2                                                                                 ;
-;                 |lpm_divide_pll:auto_generated         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod2|lpm_divide_pll:auto_generated                                                   ;
-;                     |sign_div_unsign_olh:divider       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod2|lpm_divide_pll:auto_generated|sign_div_unsign_olh:divider                       ;
-;                         |alt_u_div_qhe:divider         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod2|lpm_divide_pll:auto_generated|sign_div_unsign_olh:divider|alt_u_div_qhe:divider ;
-;             |lpm_divide:Mod3                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod3                                                                                 ;
-;                 |lpm_divide_pll:auto_generated         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod3|lpm_divide_pll:auto_generated                                                   ;
-;                     |sign_div_unsign_olh:divider       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod3|lpm_divide_pll:auto_generated|sign_div_unsign_olh:divider                       ;
-;                         |alt_u_div_qhe:divider         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod3|lpm_divide_pll:auto_generated|sign_div_unsign_olh:divider|alt_u_div_qhe:divider ;
-;             |lpm_divide:Mod4                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod4                                                                                 ;
-;                 |lpm_divide_pll:auto_generated         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod4|lpm_divide_pll:auto_generated                                                   ;
-;                     |sign_div_unsign_olh:divider       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod4|lpm_divide_pll:auto_generated|sign_div_unsign_olh:divider                       ;
-;                         |alt_u_div_qhe:divider         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|lpm_divide:Mod4|lpm_divide_pll:auto_generated|sign_div_unsign_olh:divider|alt_u_div_qhe:divider ;
-;             |HEX_SEG_7:hex_seg_7_min_einer             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_min_einer                                                                   ;
-;                 |altsyncram:WideOr0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_min_einer|altsyncram:WideOr0_rtl_0                                          ;
-;                     |altsyncram_2eu:auto_generated     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_min_einer|altsyncram:WideOr0_rtl_0|altsyncram_2eu:auto_generated            ;
-;             |HEX_SEG_7:hex_seg_7_min_zehner            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_min_zehner                                                                  ;
-;                 |altsyncram:WideOr0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_min_zehner|altsyncram:WideOr0_rtl_0                                         ;
-;                     |altsyncram_1eu:auto_generated     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_min_zehner|altsyncram:WideOr0_rtl_0|altsyncram_1eu:auto_generated           ;
-;             |HEX_SEG_7:hex_seg_7_sek_einer             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_einer                                                                   ;
-;                 |altsyncram:WideOr0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_einer|altsyncram:WideOr0_rtl_0                                          ;
-;                     |altsyncram_4eu:auto_generated     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_einer|altsyncram:WideOr0_rtl_0|altsyncram_4eu:auto_generated            ;
-;             |HEX_SEG_7:hex_seg_7_sek_hundertstel       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_hundertstel                                                             ;
-;                 |altsyncram:WideOr0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_hundertstel|altsyncram:WideOr0_rtl_0                                    ;
-;                     |altsyncram_6eu:auto_generated     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_hundertstel|altsyncram:WideOr0_rtl_0|altsyncram_6eu:auto_generated      ;
-;             |HEX_SEG_7:hex_seg_7_sek_tausendstel       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_tausendstel                                                             ;
-;                 |altsyncram:WideOr0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_tausendstel|altsyncram:WideOr0_rtl_0                                    ;
-;                     |altsyncram_7eu:auto_generated     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_tausendstel|altsyncram:WideOr0_rtl_0|altsyncram_7eu:auto_generated      ;
-;             |HEX_SEG_7:hex_seg_7_sek_zehner            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_zehner                                                                  ;
-;                 |altsyncram:WideOr0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_zehner|altsyncram:WideOr0_rtl_0                                         ;
-;                     |altsyncram_3eu:auto_generated     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_zehner|altsyncram:WideOr0_rtl_0|altsyncram_3eu:auto_generated           ;
-;             |HEX_SEG_7:hex_seg_7_sek_zehntel           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_zehntel                                                                 ;
-;                 |altsyncram:WideOr0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_zehntel|altsyncram:WideOr0_rtl_0                                        ;
-;                     |altsyncram_5eu:auto_generated     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|APP_TIMER:app_timer|TIMER_APP:timer_app|HEX_SEG_7:hex_seg_7_sek_zehntel|altsyncram:WideOr0_rtl_0|altsyncram_5eu:auto_generated          ;
-;     |hard_block:auto_generated_inst                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|hard_block:auto_generated_inst                                                                                                          ;
-;     |CLOCK_GENERATOR:clock_generator                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|CLOCK_GENERATOR:clock_generator                                                                                                         ;
-;     |AC_MOTOR_COMPARATOR:comp1                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_COMPARATOR:comp1                                                                                                               ;
-;     |DAC_MCP4921:dac_mcp4921_u5                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|DAC_MCP4921:dac_mcp4921_u5                                                                                                              ;
-;     |DIG_INP_FILTER:dig_inp_filter_qe_a                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|DIG_INP_FILTER:dig_inp_filter_qe_a                                                                                                      ;
-;     |DIG_INP_FILTER:dig_inp_filter_qe_b                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|DIG_INP_FILTER:dig_inp_filter_qe_b                                                                                                      ;
-;     |SEL_12_BIT:inst                                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|SEL_12_BIT:inst                                                                                                                         ;
-;     |PLL:pll                                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|PLL:pll                                                                                                                                 ;
-;         |altpll:altpll_component                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|PLL:pll|altpll:altpll_component                                                                                                         ;
-;             |PLL_altpll:auto_generated                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated                                                                               ;
-;     |QUADRATUR_ENCODER:quadratur_encoder               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|QUADRATUR_ENCODER:quadratur_encoder                                                                                                     ;
-;     |QUADRATUR_ENCODER_SIMPLE:quadratur_encoder_simple ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|QUADRATUR_ENCODER_SIMPLE:quadratur_encoder_simple                                                                                       ;
-;     |RGB_PL9823:rgb_pl_9823                            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|RGB_PL9823:rgb_pl_9823                                                                                                                  ;
-;     |AC_MOTOR_SINE:sine                                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine                                                                                                                      ;
-;         |lpm_mult:Mult0                                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult0                                                                                                       ;
-;             |multcore:mult_core                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult0|multcore:mult_core                                                                                    ;
-;                 |mul_lfrg:$00030                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult0|multcore:mult_core|mul_lfrg:$00030                                                                    ;
-;                 |mul_lfrg:mul_lfrg_first_mod           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult0|multcore:mult_core|mul_lfrg:mul_lfrg_first_mod                                                        ;
-;                 |mpar_add:padder                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                    ;
-;                     |lpm_add_sub:adder[0]              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                               ;
-;         |lpm_mult:Mult3                                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult3                                                                                                       ;
-;             |mult_mgs:auto_generated                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult3|mult_mgs:auto_generated                                                                               ;
-;         |altsyncram:Mux11_rtl_0                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|altsyncram:Mux11_rtl_0                                                                                               ;
-;             |altsyncram_1hu:auto_generated             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|altsyncram:Mux11_rtl_0|altsyncram_1hu:auto_generated                                                                 ;
-;     |SPI_HOST:spi_host_rpi                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|SPI_HOST:spi_host_rpi                                                                                                                   ;
-;         |SPI_INP_FILTER_HOST:spi_inp_filter_clk        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_clk                                                                            ;
-;         |SPI_INP_FILTER_HOST:spi_inp_filter_cs         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_cs                                                                             ;
-;         |SPI_INP_FILTER_HOST:spi_inp_filter_mosi       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|SPI_HOST:spi_host_rpi|SPI_INP_FILTER_HOST:spi_inp_filter_mosi                                                                           ;
-;     |AC_MOTOR_TRIANGLE:triangle                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_TRIANGLE:triangle                                                                                                              ;
-;     |GLUE_LOGIC:verilog_glue_logic                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|GLUE_LOGIC:verilog_glue_logic                                                                                                           ;
-;     |TEST:verilog_test                                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|TEST:verilog_test                                                                                                                       ;
-;     |WDT:wdt                                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|WDT:wdt                                                                                                                                 ;
-+--------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                                                             ;
++----------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                   ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                ;
++----------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------+
+; |MAX1000                                     ; 1.48 mW (1.48 mW)                    ; 0.00 mW (0.00 mW)               ; 1.48 mW (1.48 mW)                 ; 0.00 mW (0.00 mW)                 ; |MAX1000                                                                                           ;
+;     |hard_block:auto_generated_inst          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|hard_block:auto_generated_inst                                                            ;
+;     |AC_MOTOR_COMPARATOR:comp1               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_COMPARATOR:comp1                                                                 ;
+;     |PLL:pll                                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|PLL:pll                                                                                   ;
+;         |altpll:altpll_component             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|PLL:pll|altpll:altpll_component                                                           ;
+;             |PLL_altpll:auto_generated       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated                                 ;
+;     |AC_MOTOR_SINE:sine                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine                                                                        ;
+;         |lpm_mult:Mult0                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult0                                                         ;
+;             |multcore:mult_core              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult0|multcore:mult_core                                      ;
+;                 |mul_lfrg:$00030             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult0|multcore:mult_core|mul_lfrg:$00030                      ;
+;                 |mul_lfrg:mul_lfrg_first_mod ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult0|multcore:mult_core|mul_lfrg:mul_lfrg_first_mod          ;
+;                 |mpar_add:padder             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                      ;
+;                     |lpm_add_sub:adder[0]    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0] ;
+;         |lpm_mult:Mult3                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult3                                                         ;
+;             |mult_mgs:auto_generated         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|lpm_mult:Mult3|mult_mgs:auto_generated                                 ;
+;         |altsyncram:Mux11_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|altsyncram:Mux11_rtl_0                                                 ;
+;             |altsyncram_1hu:auto_generated   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:sine|altsyncram:Mux11_rtl_0|altsyncram_1hu:auto_generated                   ;
+;     |AC_MOTOR_TRIANGLE:triangle              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_TRIANGLE:triangle                                                                ;
++----------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------+
 (1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
 
 (2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
@@ -311,7 +208,7 @@ refer to the applicable agreement for further details.
 +----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 ; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
 +----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
-; VCCIO          ; 8.73 mA                 ; 0.00 mA                   ; 8.73 mA                  ; 8.73 mA                          ;
+; VCCIO          ; 8.06 mA                 ; 0.00 mA                   ; 8.06 mA                  ; 8.06 mA                          ;
 ; VCCA           ; 3.04 mA                 ; 0.00 mA                   ; 3.04 mA                  ; 3.04 mA                          ;
 ; VCC_ONE        ; 72.46 mA                ; 0.00 mA                   ; 72.46 mA                 ; 72.46 mA                         ;
 +----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
@@ -324,15 +221,15 @@ refer to the applicable agreement for further details.
 +----------+---------------+---------------------+-----------------------+----------------------+
 ; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
 +----------+---------------+---------------------+-----------------------+----------------------+
-; 1A       ; 3.3V          ; 1.89 mA             ; 0.00 mA               ; 1.89 mA              ;
+; 1A       ; 3.3V          ; 1.76 mA             ; 0.00 mA               ; 1.76 mA              ;
 ; 1B       ; 2.5V          ; 0.28 mA             ; 0.00 mA               ; 0.28 mA              ;
-; 2        ; 3.3V          ; 1.97 mA             ; 0.00 mA               ; 1.97 mA              ;
+; 2        ; 3.3V          ; 1.85 mA             ; 0.00 mA               ; 1.85 mA              ;
 ; 3        ; 2.5V          ; 0.27 mA             ; 0.00 mA               ; 0.27 mA              ;
 ; 4        ; --            ; --                  ; --                    ; --                   ;
-; 5        ; 3.3V          ; 1.95 mA             ; 0.00 mA               ; 1.95 mA              ;
+; 5        ; 3.3V          ; 1.80 mA             ; 0.00 mA               ; 1.80 mA              ;
 ; 6        ; 2.5V          ; 0.27 mA             ; 0.00 mA               ; 0.27 mA              ;
 ; 7        ; --            ; --                  ; --                    ; --                   ;
-; 8        ; 3.3V          ; 2.08 mA             ; 0.00 mA               ; 2.08 mA              ;
+; 8        ; 3.3V          ; 1.83 mA             ; 0.00 mA               ; 1.83 mA              ;
 +----------+---------------+---------------------+-----------------------+----------------------+
 
 
@@ -342,37 +239,37 @@ refer to the applicable agreement for further details.
 ; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
 +---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 ; 2.5V          ; 0.83 mA                 ; 0.00 mA                   ; 0.83 mA                  ; 0.83 mA                          ;
-; 3.3V          ; 7.89 mA                 ; 0.00 mA                   ; 7.89 mA                  ; 7.89 mA                          ;
+; 3.3V          ; 7.23 mA                 ; 0.00 mA                   ; 7.23 mA                  ; 7.23 mA                          ;
 +---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 (1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
 (2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Confidence Metric Details                                                                                                                          ;
-+----------------------------------------------------------------------------------------+--------------+------------+---------------+---------------+
-; Data Source                                                                            ; Total        ; Pin        ; Registered    ; Combinational ;
-+----------------------------------------------------------------------------------------+--------------+------------+---------------+---------------+
-; Simulation (from file)                                                                 ;              ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
-;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
-;                                                                                        ;              ;            ;               ;               ;
-; Node, entity or clock assignment                                                       ;              ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
-;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 1 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 1 (0.0%)      ;
-;                                                                                        ;              ;            ;               ;               ;
-; Vectorless estimation                                                                  ;              ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 8385 (99.7%) ; 31 (56.4%) ; 1623 (100.0%) ; 6731 (100.0%) ;
-;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 76 (0.9%)    ; 20 (36.4%) ; 5 (0.3%)      ; 51 (0.8%)     ;
-;     -- Number of signals with Static Probability from Vectorless estimation            ; 8384 (99.7%) ; 31 (56.4%) ; 1623 (100.0%) ; 6730 (100.0%) ;
-;                                                                                        ;              ;            ;               ;               ;
-; Default assignment                                                                     ;              ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
-;     -- Number of signals with Static Probability from Default assignment               ; 25 (0.3%)    ; 24 (43.6%) ; 0 (0.0%)      ; 1 (0.0%)      ;
-;                                                                                        ;              ;            ;               ;               ;
-; Assumed 0                                                                              ;              ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate assumed 0                                    ; 25 (0.3%)    ; 24 (43.6%) ; 0 (0.0%)      ; 1 (0.0%)      ;
-+----------------------------------------------------------------------------------------+--------------+------------+---------------+---------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                       ;
++----------------------------------------------------------------------------------------+-------------+-----------+--------------+---------------+
+; Data Source                                                                            ; Total       ; Pin       ; Registered   ; Combinational ;
++----------------------------------------------------------------------------------------+-------------+-----------+--------------+---------------+
+; Simulation (from file)                                                                 ;             ;           ;              ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)    ; 0 (0.0%)  ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)    ; 0 (0.0%)  ; 0 (0.0%)     ; 0 (0.0%)      ;
+;                                                                                        ;             ;           ;              ;               ;
+; Node, entity or clock assignment                                                       ;             ;           ;              ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)    ; 0 (0.0%)  ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 1 (0.2%)    ; 0 (0.0%)  ; 0 (0.0%)     ; 1 (0.3%)      ;
+;                                                                                        ;             ;           ;              ;               ;
+; Vectorless estimation                                                                  ;             ;           ;              ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 540 (98.4%) ; 7 (46.7%) ; 164 (100.0%) ; 369 (99.7%)   ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 26 (4.7%)   ; 5 (33.3%) ; 0 (0.0%)     ; 21 (5.7%)     ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 539 (98.2%) ; 7 (46.7%) ; 164 (100.0%) ; 368 (99.5%)   ;
+;                                                                                        ;             ;           ;              ;               ;
+; Default assignment                                                                     ;             ;           ;              ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)    ; 0 (0.0%)  ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 9 (1.6%)    ; 8 (53.3%) ; 0 (0.0%)     ; 1 (0.3%)      ;
+;                                                                                        ;             ;           ;              ;               ;
+; Assumed 0                                                                              ;             ;           ;              ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 9 (1.6%)    ; 8 (53.3%) ; 0 (0.0%)     ; 1 (0.3%)      ;
++----------------------------------------------------------------------------------------+-------------+-----------+--------------+---------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------+
@@ -389,16 +286,16 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Power Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Mon Feb  4 17:13:52 2019
+    Info: Processing started: Mon Feb  4 20:12:19 2019
 Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off MAX1000 -c MAX1000
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'MAX1000.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Warning (332060): Node: SYS_CLK_12MHz was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register RGB_PL9823:rgb_pl_9823|OUT is being clocked by SYS_CLK_12MHz
+    Info (13166): Register AC_MOTOR_COMPARATOR:comp1|out_count[1] is being clocked by SYS_CLK_12MHz
 Warning (332060): Node: AC_MOTOR_TRIANGLE:triangle|LOCK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register AC_MOTOR_SINE:sine|ampl_int[1] is being clocked by AC_MOTOR_TRIANGLE:triangle|LOCK
+    Info (13166): Register AC_MOTOR_SINE:sine|ampl_int[0] is being clocked by AC_MOTOR_TRIANGLE:triangle|LOCK
 Warning (332068): No clocks defined in design.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: pll|altpll_component|auto_generated|pll1|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 83.333
@@ -409,11 +306,11 @@ Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specifi
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
-Info (215031): Total thermal power estimate for the design is 254.13 mW
+Info (215031): Total thermal power estimate for the design is 252.31 mW
 Info: Quartus Prime Power Analyzer was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 1438 megabytes
-    Info: Processing ended: Mon Feb  4 17:13:59 2019
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 1403 megabytes
+    Info: Processing ended: Mon Feb  4 20:12:21 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
